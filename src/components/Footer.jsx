@@ -11,15 +11,15 @@ export default function Footer({ onOpenJoin }) {
     <footer className="bg-[#3E2723] text-[#F7F2E7] border-t-3 border-[#3E2723] pt-16 pb-14 relative">
       
       {/* Monkey sitting on top of the footer border */}
-      <div className="absolute -top-12 sm:-top-14 right-8 sm:right-24 z-30 group cursor-pointer select-none">
+      <div className="absolute bottom-full mb-[-4px] right-8 sm:right-24 z-30 group cursor-pointer select-none">
         {/* Tooltip bubble on hover */}
-        <div className="absolute -top-9 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none whitespace-nowrap bg-[#FFEDA8] text-[#3E2723] text-[11px] font-black px-2.5 py-1 rounded-lg border-2 border-[#3E2723] shadow-[2px_2px_0px_#3E2723]">
+        <div className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none whitespace-nowrap bg-[#FFEDA8] text-[#3E2723] text-xs font-black px-3 py-1.5 rounded-xl border-2 border-[#3E2723] shadow-[3px_3px_0px_#3E2723]">
           Taking a nap... 💤
-          <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#FFEDA8] border-r-2 border-b-2 border-[#3E2723] rotate-45"></div>
+          <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-2.5 h-2.5 bg-[#FFEDA8] border-r-2 border-b-2 border-[#3E2723] rotate-45"></div>
         </div>
 
         <svg
-          className="w-13 h-13 sm:w-16 sm:h-16 transform transition-transform duration-200 group-hover:scale-110 group-hover:-translate-y-1 drop-shadow-sm"
+          className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 transform transition-transform duration-200 group-hover:scale-105 group-hover:-translate-y-2 drop-shadow-md"
           viewBox="0 0 64 64"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
