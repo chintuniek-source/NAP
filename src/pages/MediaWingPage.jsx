@@ -67,16 +67,29 @@ export default function MediaWingPage({ onOpenJoin }) {
             {/* Player Console */}
             <div className="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between border-b-3 lg:border-b-0 lg:border-r-3 border-[#3E2723] bg-white">
               <div>
-                {/* Embedded Responsive YouTube Player */}
+                {/* Embedded Responsive YouTube Player / Clean Thumbnail */}
                 <div className="relative aspect-video rounded-2xl overflow-hidden border-3 border-[#3E2723] shadow-[5px_5px_0px_#3E2723] bg-black mb-6">
-                  <iframe
-                    key={current.youtubeId}
-                    src={`https://www.youtube.com/embed/${current.youtubeId}?rel=0`}
-                    title={current.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    className="w-full h-full border-0"
-                  ></iframe>
+                  {isPlaying ? (
+                    <iframe
+                      key={current.youtubeId}
+                      src={`https://www.youtube.com/embed/${current.youtubeId}?autoplay=1&rel=0`}
+                      title={current.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      className="w-full h-full border-0"
+                    ></iframe>
+                  ) : (
+                    <div
+                      onClick={() => setIsPlaying(true)}
+                      className="w-full h-full cursor-pointer relative group overflow-hidden"
+                    >
+                      <img
+                        src={current.thumbnail}
+                        alt={current.title}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  )}
                 </div>
 
                 <div className="flex items-center justify-between gap-2 mb-3">
@@ -129,7 +142,10 @@ export default function MediaWingPage({ onOpenJoin }) {
                       <div
                         key={ep.id}
                         ref={(el) => (itemRefs.current[i] = el)}
-                        onClick={() => setActiveEp(i)}
+                        onClick={() => {
+                          setActiveEp(i);
+                          setIsPlaying(false);
+                        }}
                         className={`p-3 rounded-2xl border-2 border-[#3E2723] cursor-pointer transition-all ${
                           isSelected 
                             ? 'bg-white shadow-[4px_4px_0px_#3E2723] translate-x-1 border-[#004958]' 
@@ -137,21 +153,12 @@ export default function MediaWingPage({ onOpenJoin }) {
                         }`}
                       >
                         <div className="flex items-center gap-3">
-                          <div className="relative w-18 h-12 rounded-xl overflow-hidden border border-black flex-shrink-0 bg-black">
+                          <div className="relative w-18 h-12 rounded-xl overflow-hidden border border-[#3E2723] flex-shrink-0 bg-black">
                             <img
                               src={ep.thumbnail}
                               alt={ep.title}
                               className="w-full h-full object-cover"
                             />
-                            {/* Duration overlay badge on thumbnail */}
-                            <span className="absolute bottom-0.5 right-0.5 bg-black/85 text-white text-[9px] font-mono font-bold px-1 py-0.2 rounded">
-                              {ep.duration}
-                            </span>
-                            {isSelected && (
-                              <div className="absolute inset-0 bg-[#004958]/40 flex items-center justify-center">
-                                <Play className="w-4 h-4 fill-white text-white" />
-                              </div>
-                            )}
                           </div>
                           <div className="flex-1 min-w-0">
                             <p className={`text-xs font-black truncate ${isSelected ? 'text-[#004958]' : 'text-[#3E2723]'}`}>

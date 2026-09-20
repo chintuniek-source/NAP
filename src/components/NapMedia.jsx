@@ -5,6 +5,7 @@ import { episodes } from '../data/episodes';
 
 export default function NapMedia() {
   const [activeEpisode, setActiveEpisode] = useState(episodes.length > 0 ? episodes.length - 1 : 0);
+  const [isPlaying, setIsPlaying] = useState(false);
   const itemRefs = useRef([]);
   const currentEp = episodes[activeEpisode] || episodes[0];
 
@@ -52,14 +53,27 @@ export default function NapMedia() {
             {/* Left: Compact Video Embed */}
             <div className="lg:col-span-7">
               <div className="relative aspect-video rounded-xl overflow-hidden border-2 border-[#3E2723] shadow-[3px_3px_0px_#3E2723] bg-black">
-                <iframe
-                  key={currentEp.youtubeId}
-                  src={`https://www.youtube.com/embed/${currentEp.youtubeId}?rel=0`}
-                  title={currentEp.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="w-full h-full border-0"
-                ></iframe>
+                {isPlaying ? (
+                  <iframe
+                    key={currentEp.youtubeId}
+                    src={`https://www.youtube.com/embed/${currentEp.youtubeId}?autoplay=1&rel=0`}
+                    title={currentEp.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="w-full h-full border-0"
+                  ></iframe>
+                ) : (
+                  <div
+                    onClick={() => setIsPlaying(true)}
+                    className="w-full h-full cursor-pointer relative group overflow-hidden"
+                  >
+                    <img
+                      src={currentEp.thumbnail}
+                      alt={currentEp.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                )}
               </div>
               <div className="mt-3 flex items-center justify-between gap-2">
                 <div className="min-w-0 flex-1">
@@ -98,24 +112,22 @@ export default function NapMedia() {
                     <button
                       key={ep.id}
                       ref={(el) => (itemRefs.current[index] = el)}
-                      onClick={() => setActiveEpisode(index)}
+                      onClick={() => {
+                        setActiveEpisode(index);
+                        setIsPlaying(false);
+                      }}
                       className={`w-full text-left p-2 rounded-xl border transition-all flex items-center gap-2.5 ${
                         isSelected
                           ? 'bg-[#004958]/10 border-[#004958] shadow-[2px_2px_0px_#004958]'
                           : 'bg-[#F7F2E7]/60 hover:bg-[#F7F2E7] border-gray-200'
                       }`}
                     >
-                      <div className="relative w-12 h-9 rounded-lg overflow-hidden border border-black flex-shrink-0 bg-black">
+                      <div className="relative w-12 h-9 rounded-lg overflow-hidden border border-[#3E2723] flex-shrink-0 bg-black">
                         <img
                           src={ep.thumbnail}
                           alt={ep.title}
                           className="w-full h-full object-cover"
                         />
-                        {isSelected && (
-                          <div className="absolute inset-0 bg-[#004958]/50 flex items-center justify-center">
-                            <Play className="w-3 h-3 fill-white text-white" />
-                          </div>
-                        )}
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className={`text-xs font-black truncate ${isSelected ? 'text-[#004958]' : 'text-[#3E2723]'}`}>
