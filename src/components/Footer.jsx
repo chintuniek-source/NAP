@@ -33,8 +33,8 @@ export default function Footer({ onOpenJoin }) {
           {/* Col 1 & 2: Brand & Mission */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-[#7E3940] border-2 border-white shadow-[3px_3px_0px_white] flex items-center justify-center text-2xl">
-                🛋️
+              <div className="w-12 h-12 rounded-full border-2 border-white shadow-[3px_3px_0px_white] overflow-hidden bg-[#FFEDA8] flex items-center justify-center">
+                <img src="/NAP.png" alt="NAP Logo" className="w-full h-full object-cover" />
               </div>
               <div>
                 <span className="text-3xl font-black tracking-tight font-display text-white">NAP</span>
