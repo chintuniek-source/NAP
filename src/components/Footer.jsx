@@ -96,7 +96,7 @@ export default function Footer({ onOpenJoin }) {
 
           {/* Col 4: Image PR */}
           <div>
-            <span className="text-xs font-black uppercase tracking-wider text-[#CDD6B7]">
+            <span className="text-xs font-black uppercase tracking-wider text-[#3E2723]">
               Image PR
             </span>
             <ul className="mt-4 space-y-2.5 text-xs font-bold text-[#F7F2E7]/80">
@@ -125,7 +125,7 @@ export default function Footer({ onOpenJoin }) {
 
           {/* Col 5: Media Wing */}
           <div>
-            <span className="text-xs font-black uppercase tracking-wider text-[#CDD6B7]">
+            <span className="text-xs font-black uppercase tracking-wider text-[#004958]">
               Media Wing
             </span>
             <ul className="mt-4 space-y-2.5 text-xs font-bold text-[#F7F2E7]/80">
