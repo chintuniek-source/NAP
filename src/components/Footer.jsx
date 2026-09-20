@@ -10,232 +10,365 @@ export default function Footer({ onOpenJoin }) {
   return (
     <footer className="bg-[#3E2723] text-[#F7F2E7] border-t-3 border-[#3E2723] pt-16 pb-14 relative">
       
-      {/* Skeleton Monkey sitting on top of the footer border */}
-      <div className="absolute bottom-full mb-[-4px] right-8 sm:right-24 z-30 group cursor-pointer select-none">
+      {/* Completely Redesigned Skeleton Monkey Mascot sitting on top of the footer border */}
+      <div className="absolute bottom-full mb-[-4px] right-6 sm:right-20 z-30 group cursor-pointer select-none">
         {/* Tooltip bubble on hover */}
-        <div className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none whitespace-nowrap bg-[#FFEDA8] text-[#3E2723] text-xs font-black px-3 py-1.5 rounded-xl border-2 border-[#3E2723] shadow-[3px_3px_0px_#3E2723]">
-          Dead tired... taking a nap 💀💤
+        <div className="absolute -top-11 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none whitespace-nowrap bg-[#FFEDA8] text-[#3E2723] text-xs font-black px-3.5 py-1.5 rounded-xl border-2 border-[#3E2723] shadow-[3px_3px_0px_#3E2723] flex items-center gap-1.5">
+          <span>🎧 Chill to the bone... 💀☕</span>
           <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-2.5 h-2.5 bg-[#FFEDA8] border-r-2 border-b-2 border-[#3E2723] rotate-45"></div>
         </div>
 
         <svg
-          className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 transform transition-transform duration-200 group-hover:scale-105 group-hover:-translate-y-2 drop-shadow-md"
-          viewBox="0 0 72 72"
+          className="w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 transform transition-all duration-300 group-hover:scale-105 group-hover:-translate-y-2 drop-shadow-lg"
+          viewBox="0 0 100 100"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Vertebral Bone Tail */}
+          {/* Steam puffs from mug */}
           <path
-            d="M 22 56 C 14 56 6 48 8 38 C 10 28 20 30 18 38 C 16 44 20 48 24 50"
-            stroke="#3E2723"
-            strokeWidth="3.5"
-            strokeLinecap="round"
-            fill="none"
-          />
-          <path
-            d="M 22 56 C 14 56 6 48 8 38 C 10 28 20 30 18 38 C 16 44 20 48 24 50"
-            stroke="#F7F2E7"
+            d="M 72 44 Q 70 38 74 34 Q 78 30 74 26"
+            stroke="#7E3940"
             strokeWidth="2"
             strokeLinecap="round"
+            className="opacity-60 group-hover:opacity-100 transition-opacity"
             fill="none"
           />
-          {/* Tail Vertebrae joints */}
-          <circle cx="10" cy="45" r="1.5" fill="#3E2723" />
-          <circle cx="8" cy="38" r="1.5" fill="#3E2723" />
-          <circle cx="12" cy="33" r="1.5" fill="#3E2723" />
-          <circle cx="17" cy="36" r="1.5" fill="#3E2723" />
-
-          {/* Left Bone Ear */}
-          <circle cx="18" cy="26" r="7.5" fill="#F7F2E7" stroke="#3E2723" strokeWidth="2" />
-          <circle cx="18" cy="26" r="4" fill="#3E2723" />
-
-          {/* Right Bone Ear */}
-          <circle cx="54" cy="26" r="7.5" fill="#F7F2E7" stroke="#3E2723" strokeWidth="2" />
-          <circle cx="54" cy="26" r="4" fill="#3E2723" />
-
-          {/* Pelvis Bone */}
           <path
-            d="M 26 62 Q 36 65 46 62 Q 44 68 36 67 Q 28 68 26 62 Z"
+            d="M 77 46 Q 81 40 78 35 Q 75 30 79 25"
+            stroke="#FFEDA8"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            className="opacity-70 group-hover:opacity-100 transition-opacity"
+            fill="none"
+          />
+
+          {/* S-Curved Skeleton Vertebrae Tail */}
+          <path
+            d="M 32 78 C 16 78 6 66 10 50 C 14 36 28 40 24 50 C 20 58 26 64 34 68"
+            stroke="#3E2723"
+            strokeWidth="5"
+            strokeLinecap="round"
+            fill="none"
+          />
+          <path
+            d="M 32 78 C 16 78 6 66 10 50 C 14 36 28 40 24 50 C 20 58 26 64 34 68"
+            stroke="#F7F2E7"
+            strokeWidth="3"
+            strokeLinecap="round"
+            fill="none"
+          />
+          {/* Tail bone nodules */}
+          <circle cx="10" cy="50" r="2.5" fill="#3E2723" />
+          <circle cx="14" cy="40" r="2.5" fill="#3E2723" />
+          <circle cx="23" cy="44" r="2.5" fill="#3E2723" />
+          <circle cx="24" cy="55" r="2.5" fill="#3E2723" />
+
+          {/* Left Leg (Crossed on border) */}
+          <path
+            d="M 36 78 Q 24 78 22 88 Q 28 92 38 90"
             fill="#F7F2E7"
             stroke="#3E2723"
-            strokeWidth="2"
+            strokeWidth="2.5"
+            strokeLinejoin="round"
           />
-          <circle cx="31" cy="64" r="1.5" fill="#3E2723" />
-          <circle cx="41" cy="64" r="1.5" fill="#3E2723" />
+          {/* Left Bony Foot Phalanges */}
+          <ellipse cx="23" cy="94" rx="5" ry="2.8" fill="#F7F2E7" stroke="#3E2723" strokeWidth="2" />
+          <line x1="20" y1="93" x2="20" y2="96" stroke="#3E2723" strokeWidth="1.5" />
+          <line x1="23" y1="93" x2="23" y2="96.5" stroke="#3E2723" strokeWidth="1.5" />
+          <line x1="26" y1="93" x2="26" y2="96" stroke="#3E2723" strokeWidth="1.5" />
 
-          {/* Spine Column */}
-          <rect x="34.5" y="44" width="3" height="18" rx="1.5" fill="#3E2723" />
-          <circle cx="36" cy="46" r="2" fill="#F7F2E7" stroke="#3E2723" strokeWidth="1" />
-          <circle cx="36" cy="50" r="2" fill="#F7F2E7" stroke="#3E2723" strokeWidth="1" />
-          <circle cx="36" cy="54" r="2" fill="#F7F2E7" stroke="#3E2723" strokeWidth="1" />
-          <circle cx="36" cy="58" r="2" fill="#F7F2E7" stroke="#3E2723" strokeWidth="1" />
+          {/* Right Leg (Resting on border) */}
+          <path
+            d="M 64 78 Q 76 78 78 88 Q 72 92 62 90"
+            fill="#F7F2E7"
+            stroke="#3E2723"
+            strokeWidth="2.5"
+            strokeLinejoin="round"
+          />
+          {/* Right Bony Foot Phalanges */}
+          <ellipse cx="77" cy="94" rx="5" ry="2.8" fill="#F7F2E7" stroke="#3E2723" strokeWidth="2" />
+          <line x1="74" y1="93" x2="74" y2="96" stroke="#3E2723" strokeWidth="1.5" />
+          <line x1="77" y1="93" x2="77" y2="96.5" stroke="#3E2723" strokeWidth="1.5" />
+          <line x1="80" y1="93" x2="80" y2="96" stroke="#3E2723" strokeWidth="1.5" />
 
-          {/* Rib Cage (3 Pairs of Skeleton Ribs) */}
+          {/* Pelvis & Sacrum Bone */}
+          <path
+            d="M 36 76 C 36 84 64 84 64 76 C 60 72 40 72 36 76 Z"
+            fill="#F7F2E7"
+            stroke="#3E2723"
+            strokeWidth="2.5"
+          />
+          <circle cx="43" cy="78" r="2" fill="#3E2723" />
+          <circle cx="57" cy="78" r="2" fill="#3E2723" />
+
+          {/* Spine Vertebrae Column */}
+          <rect x="47.5" y="52" width="5" height="26" rx="2.5" fill="#3E2723" />
+          <circle cx="50" cy="55" r="2.5" fill="#F7F2E7" stroke="#3E2723" strokeWidth="1.5" />
+          <circle cx="50" cy="61" r="2.5" fill="#F7F2E7" stroke="#3E2723" strokeWidth="1.5" />
+          <circle cx="50" cy="67" r="2.5" fill="#F7F2E7" stroke="#3E2723" strokeWidth="1.5" />
+          <circle cx="50" cy="73" r="2.5" fill="#F7F2E7" stroke="#3E2723" strokeWidth="1.5" />
+
+          {/* Rib Cage (Bold Chunky Cartoon Ribs) */}
           {/* Top Ribs */}
           <path
-            d="M 36 46 Q 26 44 24 47 Q 26 49 36 48"
+            d="M 50 55 Q 36 51 34 56 Q 38 59 50 58"
             fill="#F7F2E7"
             stroke="#3E2723"
-            strokeWidth="1.6"
+            strokeWidth="2.2"
             strokeLinejoin="round"
           />
           <path
-            d="M 36 46 Q 46 44 48 47 Q 46 49 36 48"
+            d="M 50 55 Q 64 51 66 56 Q 62 59 50 58"
             fill="#F7F2E7"
             stroke="#3E2723"
-            strokeWidth="1.6"
+            strokeWidth="2.2"
             strokeLinejoin="round"
           />
-          {/* Middle Ribs */}
+          {/* Mid Ribs */}
           <path
-            d="M 36 50 Q 24 48 22 52 Q 24 54 36 53"
+            d="M 50 61 Q 32 57 30 63 Q 36 67 50 64"
             fill="#F7F2E7"
             stroke="#3E2723"
-            strokeWidth="1.6"
+            strokeWidth="2.2"
             strokeLinejoin="round"
           />
           <path
-            d="M 36 50 Q 48 48 50 52 Q 48 54 36 53"
+            d="M 50 61 Q 68 57 70 63 Q 64 67 50 64"
             fill="#F7F2E7"
             stroke="#3E2723"
-            strokeWidth="1.6"
+            strokeWidth="2.2"
             strokeLinejoin="round"
           />
           {/* Bottom Ribs */}
           <path
-            d="M 36 54 Q 26 53 25 57 Q 27 59 36 57"
+            d="M 50 67 Q 36 65 35 70 Q 40 73 50 70"
             fill="#F7F2E7"
             stroke="#3E2723"
-            strokeWidth="1.6"
+            strokeWidth="2.2"
             strokeLinejoin="round"
           />
           <path
-            d="M 36 54 Q 46 53 47 57 Q 45 59 36 57"
-            fill="#F7F2E7"
-            stroke="#3E2723"
-            strokeWidth="1.6"
-            strokeLinejoin="round"
-          />
-
-          {/* Left Arm Bone */}
-          <path
-            d="M 24 46 Q 16 54 21 68"
-            stroke="#3E2723"
-            strokeWidth="3.5"
-            strokeLinecap="round"
-            fill="none"
-          />
-          <path
-            d="M 24 46 Q 16 54 21 68"
-            stroke="#F7F2E7"
-            strokeWidth="2"
-            strokeLinecap="round"
-            fill="none"
-          />
-          {/* Left Hand Bony Phalanges resting on border */}
-          <ellipse cx="21" cy="69" rx="3.5" ry="2" fill="#F7F2E7" stroke="#3E2723" strokeWidth="1.5" />
-          <line x1="19" y1="68" x2="19" y2="70.5" stroke="#3E2723" strokeWidth="1" />
-          <line x1="21" y1="68" x2="21" y2="71" stroke="#3E2723" strokeWidth="1" />
-          <line x1="23" y1="68" x2="23" y2="70.5" stroke="#3E2723" strokeWidth="1" />
-
-          {/* Right Arm Bone */}
-          <path
-            d="M 48 46 Q 56 54 51 68"
-            stroke="#3E2723"
-            strokeWidth="3.5"
-            strokeLinecap="round"
-            fill="none"
-          />
-          <path
-            d="M 48 46 Q 56 54 51 68"
-            stroke="#F7F2E7"
-            strokeWidth="2"
-            strokeLinecap="round"
-            fill="none"
-          />
-          {/* Right Hand Bony Phalanges resting on border */}
-          <ellipse cx="51" cy="69" rx="3.5" ry="2" fill="#F7F2E7" stroke="#3E2723" strokeWidth="1.5" />
-          <line x1="49" y1="68" x2="49" y2="70.5" stroke="#3E2723" strokeWidth="1" />
-          <line x1="51" y1="68" x2="51" y2="71" stroke="#3E2723" strokeWidth="1" />
-          <line x1="53" y1="68" x2="53" y2="70.5" stroke="#3E2723" strokeWidth="1" />
-
-          {/* Left Foot Bones on border */}
-          <ellipse cx="29" cy="69.5" rx="4" ry="2" fill="#F7F2E7" stroke="#3E2723" strokeWidth="1.5" />
-          <line x1="27" y1="69" x2="27" y2="71" stroke="#3E2723" strokeWidth="1" />
-          <line x1="29" y1="69" x2="29" y2="71.5" stroke="#3E2723" strokeWidth="1" />
-          <line x1="31" y1="69" x2="31" y2="71" stroke="#3E2723" strokeWidth="1" />
-
-          {/* Right Foot Bones on border */}
-          <ellipse cx="43" cy="69.5" rx="4" ry="2" fill="#F7F2E7" stroke="#3E2723" strokeWidth="1.5" />
-          <line x1="41" y1="69" x2="41" y2="71" stroke="#3E2723" strokeWidth="1" />
-          <line x1="43" y1="69" x2="43" y2="71.5" stroke="#3E2723" strokeWidth="1" />
-          <line x1="45" y1="69" x2="45" y2="71" stroke="#3E2723" strokeWidth="1" />
-
-          {/* Skull Base & Muzzle */}
-          <path
-            d="M 23 26 C 21 14 31 10 36 10 C 41 10 51 14 49 26 C 49 32 47 37 44 38 L 44 44 C 44 46 41 47 36 47 C 31 47 28 46 28 44 L 28 38 C 25 37 23 32 23 26 Z"
+            d="M 50 67 Q 64 65 65 70 Q 60 73 50 70"
             fill="#F7F2E7"
             stroke="#3E2723"
             strokeWidth="2.2"
             strokeLinejoin="round"
           />
 
-          {/* Skull Cranium Suture Line */}
+          {/* Left Arm (Relaxed, hand resting on ledge) */}
           <path
-            d="M 36 10 L 35 15 L 37 18 L 36 21"
+            d="M 34 56 Q 20 66 28 92"
             stroke="#3E2723"
-            strokeWidth="1.2"
+            strokeWidth="4.5"
+            strokeLinecap="round"
+            fill="none"
+          />
+          <path
+            d="M 34 56 Q 20 66 28 92"
+            stroke="#F7F2E7"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            fill="none"
+          />
+          {/* Left Hand Fingers gripping border line */}
+          <ellipse cx="28" cy="94" rx="4.5" ry="2.5" fill="#F7F2E7" stroke="#3E2723" strokeWidth="2" />
+          <line x1="25" y1="93" x2="25" y2="96" stroke="#3E2723" strokeWidth="1.5" />
+          <line x1="28" y1="93" x2="28" y2="96.5" stroke="#3E2723" strokeWidth="1.5" />
+          <line x1="31" y1="93" x2="31" y2="96" stroke="#3E2723" strokeWidth="1.5" />
+
+          {/* Right Arm (Holding steaming mug) */}
+          <path
+            d="M 66 56 Q 78 62 74 72"
+            stroke="#3E2723"
+            strokeWidth="4.5"
+            strokeLinecap="round"
+            fill="none"
+          />
+          <path
+            d="M 66 56 Q 78 62 74 72"
+            stroke="#F7F2E7"
+            strokeWidth="2.5"
             strokeLinecap="round"
             fill="none"
           />
 
-          {/* Skeleton Eye Sockets */}
-          <ellipse cx="29.5" cy="27" rx="5.5" ry="6.5" fill="#3E2723" />
-          <ellipse cx="42.5" cy="27" rx="5.5" ry="6.5" fill="#3E2723" />
-
-          {/* Lazy / Sleeping Eye Slits / Glints */}
+          {/* Steaming Coffee Mug in hand */}
+          <rect
+            x="70"
+            y="54"
+            width="12"
+            height="14"
+            rx="3"
+            fill="#F7F2E7"
+            stroke="#3E2723"
+            strokeWidth="2"
+          />
+          {/* Mug handle */}
           <path
-            d="M 27 27 Q 29.5 29.5 32 27"
+            d="M 82 57 C 86 57 86 65 82 65"
+            stroke="#3E2723"
+            strokeWidth="2"
+            fill="none"
+          />
+          {/* Little smiley face on mug */}
+          <circle cx="74" cy="60" r="0.8" fill="#7E3940" />
+          <circle cx="78" cy="60" r="0.8" fill="#7E3940" />
+          <path d="M 74.5 63 Q 76 65 77.5 63" stroke="#7E3940" strokeWidth="1" strokeLinecap="round" fill="none" />
+
+          {/* Right Hand gripping mug */}
+          <ellipse cx="73" cy="68" rx="4" ry="2.5" fill="#F7F2E7" stroke="#3E2723" strokeWidth="2" />
+
+          {/* Headphone Arch (Behind skull) */}
+          <path
+            d="M 24 32 C 24 10 76 10 76 32"
+            stroke="#3E2723"
+            strokeWidth="6"
+            strokeLinecap="round"
+            fill="none"
+          />
+          <path
+            d="M 24 32 C 24 10 76 10 76 32"
+            stroke="#004958"
+            strokeWidth="3.5"
+            strokeLinecap="round"
+            fill="none"
+          />
+
+          {/* Monkey Bone Ears */}
+          <circle cx="24" cy="34" r="10" fill="#F7F2E7" stroke="#3E2723" strokeWidth="2.5" />
+          <circle cx="24" cy="34" r="5" fill="#3E2723" />
+          
+          <circle cx="76" cy="34" r="10" fill="#F7F2E7" stroke="#3E2723" strokeWidth="2.5" />
+          <circle cx="76" cy="34" r="5" fill="#3E2723" />
+
+          {/* Skull Cranium Dome */}
+          <path
+            d="M 30 34 C 28 14 42 12 50 12 C 58 12 72 14 70 34 C 70 42 66 47 62 49 L 62 55 C 62 58 57 59 50 59 C 43 59 38 58 38 55 L 38 49 C 34 47 30 42 30 34 Z"
+            fill="#F7F2E7"
+            stroke="#3E2723"
+            strokeWidth="3"
+            strokeLinejoin="round"
+          />
+
+          {/* Skull Suture / Crack Line */}
+          <path
+            d="M 50 12 L 48 18 L 52 22 L 50 26"
+            stroke="#3E2723"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            fill="none"
+          />
+
+          {/* Brow Ridge */}
+          <path
+            d="M 33 28 Q 50 24 67 28"
+            stroke="#3E2723"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            fill="none"
+          />
+
+          {/* Eye Sockets (Deep & Expressive) */}
+          <ellipse cx="41" cy="34" rx="7" ry="8" fill="#3E2723" />
+          <ellipse cx="59" cy="34" rx="7" ry="8" fill="#3E2723" />
+
+          {/* Lazy Glowing Crescent Eyes */}
+          <path
+            d="M 37 34 Q 41 38 45 34"
             stroke="#FFEDA8"
-            strokeWidth="1.8"
+            strokeWidth="2.5"
             strokeLinecap="round"
             fill="none"
           />
           <path
-            d="M 40 27 Q 42.5 29.5 45 27"
+            d="M 55 34 Q 59 38 63 34"
             stroke="#FFEDA8"
-            strokeWidth="1.8"
+            strokeWidth="2.5"
             strokeLinecap="round"
             fill="none"
           />
 
-          {/* Nasal Cavity (Inverted Heart Cavity) */}
+          {/* Heart-Shaped Nasal Cavity */}
           <path
-            d="M 36 34.5 L 34 38 L 38 38 Z"
+            d="M 50 43 C 48 40 45 42 47 45 L 50 49 L 53 45 C 55 42 52 40 50 43 Z"
             fill="#3E2723"
           />
 
-          {/* Teeth & Jaw Line */}
+          {/* Muzzle & Cheekbones */}
           <path
-            d="M 28 41.5 L 44 41.5"
-            stroke="#3E2723"
-            strokeWidth="1.5"
-          />
-          {/* Vertical Teeth Separators */}
-          <line x1="31" y1="39" x2="31" y2="44" stroke="#3E2723" strokeWidth="1.5" />
-          <line x1="34" y1="39" x2="34" y2="44" stroke="#3E2723" strokeWidth="1.5" />
-          <line x1="36" y1="38.5" x2="36" y2="44.5" stroke="#3E2723" strokeWidth="1.5" />
-          <line x1="38" y1="39" x2="38" y2="44" stroke="#3E2723" strokeWidth="1.5" />
-          <line x1="41" y1="39" x2="41" y2="44" stroke="#3E2723" strokeWidth="1.5" />
-
-          {/* Sleepy Nightcap on Skull */}
-          <path
-            d="M 25 14 Q 36 6 47 14 Q 55 9 60 18 Q 50 14 41 11 Z"
-            fill="#7E3940"
+            d="M 38 48 Q 50 46 62 48"
             stroke="#3E2723"
             strokeWidth="1.8"
+            fill="none"
           />
-          <circle cx="60" cy="18" r="3.5" fill="#FFEDA8" stroke="#3E2723" strokeWidth="1.5" />
+
+          {/* Wide Grinning Teeth Row */}
+          <path
+            d="M 38 53 L 62 53"
+            stroke="#3E2723"
+            strokeWidth="2"
+          />
+          <line x1="42" y1="49.5" x2="42" y2="56.5" stroke="#3E2723" strokeWidth="2" />
+          <line x1="46" y1="49" x2="46" y2="57" stroke="#3E2723" strokeWidth="2" />
+          <line x1="50" y1="49" x2="50" y2="57.5" stroke="#3E2723" strokeWidth="2" />
+          <line x1="54" y1="49" x2="54" y2="57" stroke="#3E2723" strokeWidth="2" />
+          <line x1="58" y1="49.5" x2="58" y2="56.5" stroke="#3E2723" strokeWidth="2" />
+
+          {/* Retro Studio Headphones (Earcups over ears) */}
+          {/* Left Earcup */}
+          <rect
+            x="17"
+            y="24"
+            width="7"
+            height="20"
+            rx="3.5"
+            fill="#004958"
+            stroke="#3E2723"
+            strokeWidth="2.5"
+          />
+          <rect
+            x="19"
+            y="27"
+            width="3"
+            height="14"
+            rx="1.5"
+            fill="#FFEDA8"
+          />
+          {/* Right Earcup */}
+          <rect
+            x="76"
+            y="24"
+            width="7"
+            height="20"
+            rx="3.5"
+            fill="#004958"
+            stroke="#3E2723"
+            strokeWidth="2.5"
+          />
+          <rect
+            x="78"
+            y="27"
+            width="3"
+            height="14"
+            rx="1.5"
+            fill="#FFEDA8"
+          />
+
+          {/* Headband Padding at Top */}
+          <path
+            d="M 36 12 C 42 10 58 10 64 12"
+            stroke="#7E3940"
+            strokeWidth="5"
+            strokeLinecap="round"
+            fill="none"
+          />
+          <path
+            d="M 36 12 C 42 10 58 10 64 12"
+            stroke="#3E2723"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            fill="none"
+          />
         </svg>
       </div>
       
