@@ -202,8 +202,8 @@ export default function BecomeANapperCTA() {
                   {/* Card Header */}
                   <div className="flex items-center justify-between border-b-2 border-[#3E2723] pb-4">
                     <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-lg bg-[#7E3940] text-white border border-[#3E2723] flex items-center justify-center text-lg">
-                        🛋️
+                      <div className="w-8 h-8 rounded-full bg-[#FFEDA8] border border-[#3E2723] overflow-hidden flex items-center justify-center">
+                        <img src="/NAP.png" alt="NAP Logo" className="w-full h-full object-cover" />
                       </div>
                       <div>
                         <span className="font-black text-lg tracking-tight font-display text-[#3E2723]">NAP</span>
