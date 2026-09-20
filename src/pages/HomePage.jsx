@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Sparkles, Star, Coffee, Users, Flame, Zap, Headphones, Heart, ArrowUpRight, Play, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Sparkles, Coffee, Users, Flame, Zap, Headphones, Heart, ArrowUpRight, Play, CheckCircle2 } from 'lucide-react';
 import UpcomingSpecials from '../components/UpcomingSpecials';
 import NapMedia from '../components/NapMedia';
 
@@ -56,33 +56,6 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
           <p className="mt-6 text-base sm:text-xl text-[#3E2723]/80 max-w-3xl mx-auto leading-relaxed font-medium">
             Welcome to <strong className="font-extrabold text-[#3E2723]">NAP</strong>. We run 3 interconnected creative universes: joyful community gatherings at <Link to="/sleep-over" className="text-[#7E3940] underline font-extrabold">Sleep Over</Link>, culture-shaping PR advisory at <Link to="/image-pr" className="text-[#7E3940] underline font-extrabold">Image PR</Link>, and intimate acoustic storytelling on <Link to="/media" className="text-[#004958] underline font-extrabold">Nap Media</Link>.
           </p>
-
-          {/* Hero CTAs */}
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <Link
-              to="/sleep-over"
-              className="px-8 py-4 rounded-2xl font-black text-lg bg-[#FFEDA8] hover:bg-[#ffe380] text-[#3E2723] border-3 border-[#3E2723] shadow-[6px_6px_0px_#3E2723] hover:shadow-[3px_3px_0px_#3E2723] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-3 group"
-            >
-              <span>Explore Our Wings</span>
-              <span className="text-2xl group-hover:rotate-12 transition-transform">🛋️</span>
-            </Link>
-
-            <a
-              href="#specials"
-              className="px-7 py-4 rounded-2xl font-black text-lg bg-[#CDD6B7] hover:bg-[#bcc7a1] text-[#3E2723] border-3 border-[#3E2723] shadow-[6px_6px_0px_#3E2723] hover:shadow-[3px_3px_0px_#3E2723] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-2"
-            >
-              <Star className="w-5 h-5 fill-[#3E2723]" />
-              <span>Amol Parashar Live</span>
-            </a>
-
-            <button
-              onClick={onOpenQuiz}
-              className="px-6 py-4 rounded-2xl font-extrabold text-base bg-white hover:bg-[#F7F2E7] text-[#3E2723] border-3 border-[#3E2723] shadow-[5px_5px_0px_#3E2723] hover:shadow-[2px_2px_0px_#3E2723] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-2"
-            >
-              <Sparkles className="w-4 h-4 text-[#004958]" />
-              <span>Nap Persona Quiz</span>
-            </button>
-          </div>
         </div>
       </section>
 
