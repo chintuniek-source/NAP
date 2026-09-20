@@ -8,7 +8,7 @@ export const episodes = [
     role: 'Filmmaker',
     duration: '22:25',
     badge: 'EPISODE 01',
-    color: '#845EC2',
+    color: '#004958',
     thumbnail: 'https://i.ytimg.com/vi/4L9LrszhjWM/hqdefault.jpg',
     description: 'National Award-winning master filmmaker Jahnu Barua joins An Aalap for an unfiltered, reflective conversation on cinema, truth, and decades of visual storytelling.'
   },
@@ -21,7 +21,7 @@ export const episodes = [
     role: 'Filmmaker (Part 2)',
     duration: '37:19',
     badge: 'PART 2',
-    color: '#FF6584',
+    color: '#7E3940',
     thumbnail: 'https://i.ytimg.com/vi/APeJ09g2TW0/hqdefault.jpg',
     description: 'Part 2 with filmmaker Jahnu Barua delving into authentic narrative discipline, world cinema, and preserving indigenous identity in film.'
   },
@@ -34,7 +34,7 @@ export const episodes = [
     role: 'Digital Creators',
     duration: '34:39',
     badge: 'EPISODE 03',
-    color: '#FFD166',
+    color: '#004958',
     thumbnail: 'https://i.ytimg.com/vi/YXsJGrEhXzA/hqdefault.jpg',
     description: 'The creators behind Nostolora speak on digital content creation, regional humor, building a passionate internet community, and storytelling.'
   },
@@ -47,7 +47,7 @@ export const episodes = [
     role: 'Actor',
     duration: '15:07',
     badge: 'EPISODE 04',
-    color: '#06D6A0',
+    color: '#CDD6B7',
     thumbnail: 'https://i.ytimg.com/vi/2MqX87D_n6Y/hqdefault.jpg',
     description: 'Acclaimed actor Bibhash Sinha sits down for a candid dialogue on the nuances of acting, stagecraft, perseverance, and emotional expression.'
   },
@@ -60,7 +60,7 @@ export const episodes = [
     role: 'Filmmaker & Playwright',
     duration: '14:43',
     badge: 'EPISODE 05',
-    color: '#FF8A5B',
+    color: '#7E3940',
     thumbnail: 'https://i.ytimg.com/vi/u-I5XIc1atM/hqdefault.jpg',
     description: 'Outspoken filmmaker and theatre writer Himanshu Prasad Das shares his perspectives on independent voices, social commentary, and fearless art.'
   },
@@ -73,7 +73,7 @@ export const episodes = [
     role: 'Veteran Actress',
     duration: '17:40',
     badge: 'EPISODE 06',
-    color: '#845EC2',
+    color: '#004958',
     thumbnail: 'https://i.ytimg.com/vi/uGklfSupimc/hqdefault.jpg',
     description: 'Beloved actress Chetana Das brings joy, timeless wisdom, and historic memories from decades of iconic cinema and stage roles.'
   },
@@ -86,7 +86,7 @@ export const episodes = [
     role: 'Veteran Actress (Part 2)',
     duration: '14:28',
     badge: 'PART 2',
-    color: '#FF6584',
+    color: '#7E3940',
     thumbnail: 'https://i.ytimg.com/vi/mYOTMGRifeY/hqdefault.jpg',
     description: 'Part 2 of the heartfelt session with Chetana Das discussing comedic timing, life lessons, resilience, and connecting with audiences.'
   },
@@ -99,7 +99,7 @@ export const episodes = [
     role: 'Veteran Actor',
     duration: '27:40',
     badge: 'EPISODE 08',
-    color: '#FFD166',
+    color: '#004958',
     thumbnail: 'https://i.ytimg.com/vi/TSOXopUkofw/hqdefault.jpg',
     description: 'Veteran actor Arun Nath reflects on the golden eras of drama, character immersion, and staying committed to the craft across generations.'
   },
@@ -112,7 +112,7 @@ export const episodes = [
     role: 'Actress & Academic',
     duration: '26:41',
     badge: 'EPISODE 09',
-    color: '#06D6A0',
+    color: '#CDD6B7',
     thumbnail: 'https://i.ytimg.com/vi/g8pyx8FLKNI/hqdefault.jpg',
     description: 'Dr. Jahanara Begum shares her inspirational journey balancing academics and acting, breaking barriers, and nurturing young creative talent.'
   },
@@ -125,7 +125,7 @@ export const episodes = [
     role: 'Director / Actor',
     duration: '27:20',
     badge: 'EPISODE 10',
-    color: '#FF8A5B',
+    color: '#7E3940',
     thumbnail: 'https://i.ytimg.com/vi/VJC2tLZ6wWE/hqdefault.jpg',
     description: 'Director and martial artist Kenny Deori Basumatary on DIY filmmaking, creating the legendary Local Kung Fu, and making independent cinema work.'
   },
@@ -138,7 +138,7 @@ export const episodes = [
     role: 'Director / Actor (Part 2)',
     duration: '24:52',
     badge: 'PART 2',
-    color: '#845EC2',
+    color: '#004958',
     thumbnail: 'https://i.ytimg.com/vi/1Gh2uEKV3ZU/hqdefault.jpg',
     description: 'Continuing the energetic chat with Kenny Basumatary on action choreography, script writing on low budgets, and upcoming projects.'
   },
@@ -151,7 +151,7 @@ export const episodes = [
     role: 'Social Activist',
     duration: '42:17',
     badge: 'EPISODE 12',
-    color: '#FF6584',
+    color: '#7E3940',
     thumbnail: 'https://i.ytimg.com/vi/Mf5axjDB1x4/hqdefault.jpg',
     description: 'Social activist Arpana Choudhury (Luku) delivers a deeply moving and soulful discussion on grassroots activism, social justice, and community empathy.'
   },
@@ -164,7 +164,7 @@ export const episodes = [
     role: 'Actor',
     duration: '22:11',
     badge: 'WE ARE BACK',
-    color: '#FFD166',
+    color: '#FFEDA8',
     thumbnail: 'https://i.ytimg.com/vi/KsVd5rGD4sM/hqdefault.jpg',
     description: 'Nappers returns with actor Nandini Handique discussing modern creative challenges, artistic vulnerability, and exciting future projects.'
   },
@@ -177,8 +177,21 @@ export const episodes = [
     role: 'Special Live Announcement',
     duration: '18:31',
     badge: 'SPECIAL',
-    color: '#06D6A0',
+    color: '#CDD6B7',
     thumbnail: 'https://i.ytimg.com/vi/EBnBAcngQvo/hqdefault.jpg',
     description: 'Breakfast Cartel special with NAP & BookOnZaatio: The official announcement of Amol Parashar live in Guwahati with Besharam Aadmi.'
+  },
+  {
+    id: 15,
+    youtubeId: 'mptUH3UgUwk',
+    url: 'https://youtu.be/mptUH3UgUwk',
+    title: 'An Aalap ft. Nilotpal Bora | Musician | Episode 14',
+    guest: 'Nilotpal Bora',
+    role: 'Musician & Composer',
+    duration: '23:44',
+    badge: 'EPISODE 14',
+    color: '#004958',
+    thumbnail: 'https://i.ytimg.com/vi/mptUH3UgUwk/hqdefault.jpg',
+    description: 'Acclaimed musician and composer Nilotpal Bora sits down for an intimate session on songwriting, film scoring, creative roots, and reflections beyond music.'
   }
 ];

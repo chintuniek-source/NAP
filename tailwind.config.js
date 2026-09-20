@@ -9,18 +9,25 @@ export default {
     extend: {
       colors: {
         nap: {
-          coral: '#FF6584',
-          tangerine: '#FF8A5B',
-          sunshine: '#FFD166',
-          mint: '#06D6A0',
-          sky: '#118AB2',
-          lavender: '#845EC2',
-          lilac: '#B39CD0',
-          cream: '#FFFDF9',
+          russet: '#7E3940',
+          butter: '#FFEDA8',
+          espresso: '#3E2723',
+          ivory: '#F7F2E7',
+          peacock: '#004958',
+          mist: '#CDD6B7',
+          // semantic mapping aliases
+          coral: '#7E3940',
+          tangerine: '#7E3940',
+          sunshine: '#FFEDA8',
+          mint: '#CDD6B7',
+          sky: '#004958',
+          lavender: '#004958',
+          lilac: '#CDD6B7',
+          cream: '#F7F2E7',
           card: '#FFFFFF',
-          dark: '#161925',
-          navy: '#0F172A',
-          charcoal: '#2D3142'
+          dark: '#3E2723',
+          navy: '#004958',
+          charcoal: '#3E2723'
         }
       },
       fontFamily: {
@@ -29,10 +36,10 @@ export default {
         handwriting: ['Caveat', 'cursive']
       },
       boxShadow: {
-        'pop': '4px 4px 0px 0px rgba(0, 0, 0, 1)',
-        'pop-lg': '8px 8px 0px 0px rgba(0, 0, 0, 1)',
-        'pop-hover': '2px 2px 0px 0px rgba(0, 0, 0, 1)',
-        'soft-glow': '0 20px 40px -15px rgba(255, 101, 132, 0.3)',
+        'pop': '4px 4px 0px 0px #3E2723',
+        'pop-lg': '8px 8px 0px 0px #3E2723',
+        'pop-hover': '2px 2px 0px 0px #3E2723',
+        'soft-glow': '0 20px 40px -15px rgba(126, 57, 64, 0.3)',
       },
       animation: {
         'bounce-gentle': 'bounceGentle 3s ease-in-out infinite',

@@ -37,7 +37,7 @@ function AppContent() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FFFDF9] text-[#1E1E24] relative selection:bg-[#FF6584] selection:text-white flex flex-col justify-between">
+    <div className="min-h-screen bg-[#F7F2E7] text-[#3E2723] relative selection:bg-[#7E3940] selection:text-[#F7F2E7] flex flex-col justify-between">
       <ScrollToTop />
       
       {/* Top Universal Navbar */}

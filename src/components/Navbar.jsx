@@ -19,31 +19,31 @@ export default function Navbar() {
     { 
       name: 'Home', 
       path: '/', 
-      activeBg: 'bg-[#1E1E24]', 
-      activeText: 'text-white' 
+      activeBg: 'bg-[#3E2723]', 
+      activeText: 'text-[#F7F2E7]' 
     },
     { 
       name: 'Sleep Over', 
       path: '/sleep-over', 
-      activeBg: 'bg-[#FFD166]', 
-      activeText: 'text-[#1E1E24]' 
+      activeBg: 'bg-[#FFEDA8]', 
+      activeText: 'text-[#3E2723]' 
     },
     { 
       name: 'Image PR', 
       path: '/image-pr', 
-      activeBg: 'bg-[#FF8A5B]', 
+      activeBg: 'bg-[#7E3940]', 
       activeText: 'text-white' 
     },
     { 
       name: 'Media', 
       path: '/media', 
-      activeBg: 'bg-[#845EC2]', 
+      activeBg: 'bg-[#004958]', 
       activeText: 'text-white' 
     }
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#FFFDF9]/95 backdrop-blur-md border-b-2 border-[#1E1E24] ${
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#F7F2E7]/95 backdrop-blur-md border-b-2 border-[#3E2723] ${
       scrolled ? 'py-3 shadow-md' : 'py-4 shadow-sm'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,23 +51,23 @@ export default function Navbar() {
           
           {/* Brand Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-2xl bg-[#FF6584] border-2 border-[#1E1E24] shadow-[3px_3px_0px_#1E1E24] flex items-center justify-center text-2xl transform group-hover:rotate-6 group-hover:scale-105 transition-all">
+            <div className="w-11 h-11 rounded-2xl bg-[#7E3940] border-2 border-[#3E2723] shadow-[3px_3px_0px_#3E2723] flex items-center justify-center text-2xl transform group-hover:rotate-6 group-hover:scale-105 transition-all">
               🛋️
             </div>
             <div>
               <div className="flex items-center">
-                <span className="text-2xl sm:text-3xl font-black tracking-tight text-[#1E1E24] font-display">
+                <span className="text-2xl sm:text-3xl font-black tracking-tight text-[#3E2723] font-display">
                   NAP
                 </span>
               </div>
-              <p className="text-xs font-bold text-[#FF8A5B] tracking-wide -mt-1 font-handwriting text-base">
+              <p className="text-xs font-bold text-[#7E3940] tracking-wide -mt-1 font-handwriting text-base">
                 its time to take one :)
               </p>
             </div>
           </Link>
 
           {/* Desktop Nav Items */}
-          <div className="hidden md:flex items-center gap-1.5 p-1.5 rounded-2xl bg-white border-2 border-[#1E1E24] shadow-[3px_3px_0px_#1E1E24]">
+          <div className="hidden md:flex items-center gap-1.5 p-1.5 rounded-2xl bg-white border-2 border-[#3E2723] shadow-[3px_3px_0px_#3E2723]">
             {navLinks.map((link) => (
               <NavLink
                 key={link.path}
@@ -76,8 +76,8 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   `px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all border-2 ${
                     isActive
-                      ? `${link.activeBg} ${link.activeText} border-[#1E1E24] shadow-[2px_2px_0px_#1E1E24]`
-                      : 'border-transparent text-[#1E1E24] hover:bg-gray-100'
+                      ? `${link.activeBg} ${link.activeText} border-[#3E2723] shadow-[2px_2px_0px_#3E2723]`
+                      : 'border-transparent text-[#3E2723] hover:bg-[#F7F2E7]'
                   }`
                 }
               >
@@ -90,7 +90,7 @@ export default function Navbar() {
           <div className="flex md:hidden items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl bg-white border-2 border-[#1E1E24] shadow-[2px_2px_0px_#1E1E24] text-[#1E1E24]"
+              className="p-2 rounded-xl bg-white border-2 border-[#3E2723] shadow-[2px_2px_0px_#3E2723] text-[#3E2723]"
               aria-label="Toggle Navigation Menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -102,7 +102,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b-2 border-[#1E1E24] bg-[#FFFDF9] px-6 py-5 mt-2 animate-in fade-in duration-200 shadow-xl">
+        <div className="md:hidden border-b-2 border-[#3E2723] bg-[#F7F2E7] px-6 py-5 mt-2 animate-in fade-in duration-200 shadow-xl">
           <div className="flex flex-col gap-2.5">
             {navLinks.map((link) => (
               <NavLink
@@ -111,10 +111,10 @@ export default function Navbar() {
                 end={link.path === '/'}
                 onClick={() => setMobileMenuOpen(false)}
                 className={({ isActive }) =>
-                  `flex items-center justify-between p-3.5 rounded-xl border-2 border-[#1E1E24] font-extrabold text-sm transition-all ${
+                  `flex items-center justify-between p-3.5 rounded-xl border-2 border-[#3E2723] font-extrabold text-sm transition-all ${
                     isActive
-                      ? `${link.activeBg} ${link.activeText} shadow-[3px_3px_0px_#1E1E24]`
-                      : 'bg-white text-[#1E1E24] shadow-[2px_2px_0px_#1E1E24]'
+                      ? `${link.activeBg} ${link.activeText} shadow-[3px_3px_0px_#3E2723]`
+                      : 'bg-white text-[#3E2723] shadow-[2px_2px_0px_#3E2723]'
                   }`
                 }
               >

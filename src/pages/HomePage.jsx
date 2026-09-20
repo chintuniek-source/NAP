@@ -22,47 +22,46 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
   }, []);
 
   return (
-    <div className="pt-24 pb-16">
+    <div className="pt-24 pb-16 bg-[#F7F2E7]">
       
       {/* 1. Re-imagined Hero Section */}
       <section className="relative pt-12 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
         {/* Soft background ambient glows */}
-        <div className="absolute top-10 left-1/4 w-72 h-72 bg-[#FFD166]/30 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse"></div>
-        <div className="absolute top-36 right-10 w-80 h-80 bg-[#FF6584]/25 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse delay-500"></div>
-
+        <div className="absolute top-10 left-1/4 w-72 h-72 bg-[#FFEDA8]/40 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse"></div>
+        <div className="absolute top-36 right-10 w-80 h-80 bg-[#7E3940]/20 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse delay-500"></div>
 
         {/* Big Bold Hero Headline */}
         <div className="text-center max-w-5xl mx-auto">
-          <h1 className="text-6xl sm:text-8xl md:text-9xl font-black text-[#1E1E24] tracking-tight font-display leading-[0.98]">
+          <h1 className="text-6xl sm:text-8xl md:text-9xl font-black text-[#3E2723] tracking-tight font-display leading-[0.98]">
             <span className="relative inline-block">
               NAP
-              <svg className="absolute -bottom-2 sm:-bottom-4 left-0 w-full h-4 sm:h-7 text-[#FF6584]" viewBox="0 0 250 20" fill="none" preserveAspectRatio="none">
+              <svg className="absolute -bottom-2 sm:-bottom-4 left-0 w-full h-4 sm:h-7 text-[#7E3940]" viewBox="0 0 250 20" fill="none" preserveAspectRatio="none">
                 <path d="M3 15 Q 125 0, 247 15" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
               </svg>
             </span>
-            <span className="block mt-4 text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#FF8A5B] font-handwriting">
+            <span className="block mt-4 text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#7E3940] font-handwriting">
               — its time to take one :)
             </span>
           </h1>
 
           {/* Dynamic rotating sentence */}
-          <div className="mt-8 text-xl sm:text-3xl font-bold text-[#2D3142] flex flex-wrap items-center justify-center gap-2">
+          <div className="mt-8 text-xl sm:text-3xl font-bold text-[#3E2723] flex flex-wrap items-center justify-center gap-2">
             <span>Ready to take a nap</span>
-            <span className="inline-block px-4 py-1.5 rounded-2xl bg-[#FF6584] text-white border-2 border-[#1E1E24] shadow-[4px_4px_0px_#1E1E24] transform rotate-[-1deg] transition-all duration-300">
+            <span className="inline-block px-4 py-1.5 rounded-2xl bg-[#7E3940] text-white border-2 border-[#3E2723] shadow-[4px_4px_0px_#3E2723] transform rotate-[-1deg] transition-all duration-300">
               {words[wordIndex]}
             </span>
             <span>?</span>
           </div>
 
-          <p className="mt-6 text-base sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium">
-            Welcome to <strong className="font-extrabold text-black">NAP</strong>. We run 3 interconnected creative universes: joyful community gatherings at <Link to="/sleep-over" className="text-[#FF8A5B] underline font-extrabold">Sleep Over</Link>, culture-shaping PR advisory at <Link to="/image-pr" className="text-[#FF6584] underline font-extrabold">Image PR</Link>, and intimate acoustic storytelling on <Link to="/media" className="text-[#845EC2] underline font-extrabold">Nap Media</Link>.
+          <p className="mt-6 text-base sm:text-xl text-[#3E2723]/80 max-w-3xl mx-auto leading-relaxed font-medium">
+            Welcome to <strong className="font-extrabold text-[#3E2723]">NAP</strong>. We run 3 interconnected creative universes: joyful community gatherings at <Link to="/sleep-over" className="text-[#7E3940] underline font-extrabold">Sleep Over</Link>, culture-shaping PR advisory at <Link to="/image-pr" className="text-[#7E3940] underline font-extrabold">Image PR</Link>, and intimate acoustic storytelling on <Link to="/media" className="text-[#004958] underline font-extrabold">Nap Media</Link>.
           </p>
 
           {/* Hero CTAs */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
               to="/sleep-over"
-              className="px-8 py-4 rounded-2xl font-black text-lg bg-[#FFD166] text-[#1E1E24] border-3 border-[#1E1E24] shadow-[6px_6px_0px_#1E1E24] hover:shadow-[3px_3px_0px_#1E1E24] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-3 group"
+              className="px-8 py-4 rounded-2xl font-black text-lg bg-[#FFEDA8] hover:bg-[#ffe380] text-[#3E2723] border-3 border-[#3E2723] shadow-[6px_6px_0px_#3E2723] hover:shadow-[3px_3px_0px_#3E2723] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-3 group"
             >
               <span>Explore Our Wings</span>
               <span className="text-2xl group-hover:rotate-12 transition-transform">🛋️</span>
@@ -70,17 +69,17 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
 
             <a
               href="#specials"
-              className="px-7 py-4 rounded-2xl font-black text-lg bg-[#06D6A0] text-[#1E1E24] border-3 border-[#1E1E24] shadow-[6px_6px_0px_#1E1E24] hover:shadow-[3px_3px_0px_#1E1E24] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-2"
+              className="px-7 py-4 rounded-2xl font-black text-lg bg-[#CDD6B7] hover:bg-[#bcc7a1] text-[#3E2723] border-3 border-[#3E2723] shadow-[6px_6px_0px_#3E2723] hover:shadow-[3px_3px_0px_#3E2723] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-2"
             >
-              <Star className="w-5 h-5 fill-black" />
+              <Star className="w-5 h-5 fill-[#3E2723]" />
               <span>Amol Parashar Live</span>
             </a>
 
             <button
               onClick={onOpenQuiz}
-              className="px-6 py-4 rounded-2xl font-extrabold text-base bg-white text-[#1E1E24] border-3 border-[#1E1E24] shadow-[5px_5px_0px_#1E1E24] hover:shadow-[2px_2px_0px_#1E1E24] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-2"
+              className="px-6 py-4 rounded-2xl font-extrabold text-base bg-white hover:bg-[#F7F2E7] text-[#3E2723] border-3 border-[#3E2723] shadow-[5px_5px_0px_#3E2723] hover:shadow-[2px_2px_0px_#3E2723] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-2"
             >
-              <Sparkles className="w-4 h-4 text-[#845EC2]" />
+              <Sparkles className="w-4 h-4 text-[#004958]" />
               <span>Nap Persona Quiz</span>
             </button>
           </div>
@@ -88,14 +87,14 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
       </section>
 
       {/* 2. THE 3 WINGS GRAND PORTALS (Deep Page Gateways) */}
-      <section className="py-20 bg-white border-y-3 border-[#1E1E24]">
+      <section className="py-20 bg-white border-y-3 border-[#3E2723]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl sm:text-6xl font-black text-[#1E1E24] font-display">
+            <h2 className="text-4xl sm:text-6xl font-black text-[#3E2723] font-display">
               Step Into Our Wings
             </h2>
-            <p className="mt-3 text-lg font-bold text-gray-700">
+            <p className="mt-3 text-lg font-bold text-[#3E2723]/80">
               Each wing has its own dedicated universe, experiences, and tools. Choose your destination:
             </p>
           </div>
@@ -103,10 +102,10 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
             {/* Wing 1: Sleep Over Portal */}
-            <div className="bg-[#FFFDF9] rounded-3xl border-3 border-[#1E1E24] shadow-[8px_8px_0px_#1E1E24] hover:shadow-[12px_12px_0px_#1E1E24] hover:-translate-y-1.5 transition-all flex flex-col justify-between overflow-hidden group">
-              <div className="bg-[#FFD166] p-6 border-b-3 border-[#1E1E24] flex items-center justify-between">
+            <div className="bg-[#F7F2E7] rounded-3xl border-3 border-[#3E2723] shadow-[8px_8px_0px_#3E2723] hover:shadow-[12px_12px_0px_#3E2723] hover:-translate-y-1.5 transition-all flex flex-col justify-between overflow-hidden group">
+              <div className="bg-[#FFEDA8] p-6 border-b-3 border-[#3E2723] flex items-center justify-between">
                 <div>
-                  <h3 className="text-3xl font-black text-[#1E1E24] font-display">
+                  <h3 className="text-3xl font-black text-[#3E2723] font-display">
                     Sleep Over
                   </h3>
                 </div>
@@ -115,32 +114,32 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
 
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <p className="text-sm font-bold text-[#FF8A5B] font-handwriting text-xl">
+                  <p className="text-sm font-bold text-[#7E3940] font-handwriting text-xl">
                     Community & Experience-Driven Activities
                   </p>
-                  <p className="mt-3 text-sm text-gray-700 font-medium leading-relaxed">
+                  <p className="mt-3 text-sm text-[#3E2723]/80 font-medium leading-relaxed">
                     Tactile joy and anti-burnout sanctuaries in the heart of the city:
                   </p>
 
                   <div className="mt-4 space-y-2">
-                    <div className="p-2.5 rounded-xl bg-yellow-50 border border-[#FFD166] flex items-center justify-between text-xs font-bold">
+                    <div className="p-2.5 rounded-xl bg-white border border-[#3E2723] flex items-center justify-between text-xs font-bold text-[#3E2723]">
                       <span>🎙️ Nap-O-Casting</span>
-                      <span className="text-[10px] bg-white px-2 py-0.5 rounded border border-black font-extrabold">Couch Mic</span>
+                      <span className="text-[10px] bg-[#FFEDA8] px-2 py-0.5 rounded border border-[#3E2723] font-extrabold text-[#3E2723]">Couch Mic</span>
                     </div>
-                    <div className="p-2.5 rounded-xl bg-orange-50 border border-[#FF8A5B] flex items-center justify-between text-xs font-bold">
+                    <div className="p-2.5 rounded-xl bg-white border border-[#3E2723] flex items-center justify-between text-xs font-bold text-[#3E2723]">
                       <span>🥞 Breakfast Castle</span>
-                      <span className="text-[10px] bg-white px-2 py-0.5 rounded border border-black font-extrabold">Waffle Sanctuary</span>
+                      <span className="text-[10px] bg-[#FFEDA8] px-2 py-0.5 rounded border border-[#3E2723] font-extrabold text-[#3E2723]">Waffle Sanctuary</span>
                     </div>
-                    <div className="p-2.5 rounded-xl bg-emerald-50 border border-[#06D6A0] flex items-center justify-between text-xs font-bold">
+                    <div className="p-2.5 rounded-xl bg-white border border-[#3E2723] flex items-center justify-between text-xs font-bold text-[#3E2723]">
                       <span>🪶 Pillow Fight</span>
-                      <span className="text-[10px] bg-white px-2 py-0.5 rounded border border-black font-extrabold">Stress Buster</span>
+                      <span className="text-[10px] bg-[#CDD6B7] px-2 py-0.5 rounded border border-[#3E2723] font-extrabold text-[#3E2723]">Stress Buster</span>
                     </div>
                   </div>
                 </div>
 
                 <Link
                   to="/sleep-over"
-                  className="mt-8 w-full py-4 rounded-xl font-black text-sm bg-[#FFD166] hover:bg-[#ffe082] text-[#1E1E24] border-2 border-[#1E1E24] shadow-[4px_4px_0px_#1E1E24] flex items-center justify-center gap-2 group-hover:translate-x-0.5 transition-all"
+                  className="mt-8 w-full py-4 rounded-xl font-black text-sm bg-[#FFEDA8] hover:bg-[#ffe380] text-[#3E2723] border-2 border-[#3E2723] shadow-[4px_4px_0px_#3E2723] flex items-center justify-center gap-2 group-hover:translate-x-0.5 transition-all"
                 >
                   <span>Open Sleep Over Page</span>
                   <ArrowRight className="w-4 h-4" />
@@ -149,8 +148,8 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
             </div>
 
             {/* Wing 2: Image PR Portal */}
-            <div className="bg-[#FFFDF9] rounded-3xl border-3 border-[#1E1E24] shadow-[8px_8px_0px_#1E1E24] hover:shadow-[12px_12px_0px_#1E1E24] hover:-translate-y-1.5 transition-all flex flex-col justify-between overflow-hidden group">
-              <div className="bg-[#FF8A5B] p-6 border-b-3 border-[#1E1E24] flex items-center justify-between text-white">
+            <div className="bg-[#F7F2E7] rounded-3xl border-3 border-[#3E2723] shadow-[8px_8px_0px_#3E2723] hover:shadow-[12px_12px_0px_#3E2723] hover:-translate-y-1.5 transition-all flex flex-col justify-between overflow-hidden group">
+              <div className="bg-[#7E3940] p-6 border-b-3 border-[#3E2723] flex items-center justify-between text-white">
                 <div>
                   <h3 className="text-3xl font-black text-white font-display">
                     Image PR
@@ -161,36 +160,36 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
 
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <p className="text-sm font-bold text-[#FF6584] font-handwriting text-xl">
+                  <p className="text-sm font-bold text-[#7E3940] font-handwriting text-xl">
                     Brand Consulting & Narrative Craft
                   </p>
-                  <p className="mt-3 text-sm text-gray-700 font-medium leading-relaxed">
+                  <p className="mt-3 text-sm text-[#3E2723]/80 font-medium leading-relaxed">
                     Sharpening public perception with authentic, outside-the-box PR:
                   </p>
 
                   <div className="mt-4 space-y-2">
-                    <div className="p-2.5 rounded-xl bg-pink-50 border border-[#FF6584] flex items-center justify-between text-xs font-bold">
+                    <div className="p-2.5 rounded-xl bg-white border border-[#3E2723] flex items-center justify-between text-xs font-bold text-[#3E2723]">
                       <span>🧠 Counsellor</span>
-                      <span className="text-[10px] bg-white px-2 py-0.5 rounded border border-black font-extrabold">Brand Therapy</span>
+                      <span className="text-[10px] bg-[#F7F2E7] px-2 py-0.5 rounded border border-[#3E2723] font-extrabold text-[#3E2723]">Brand Therapy</span>
                     </div>
-                    <div className="p-2.5 rounded-xl bg-orange-50 border border-[#FF8A5B] flex items-center justify-between text-xs font-bold">
+                    <div className="p-2.5 rounded-xl bg-white border border-[#3E2723] flex items-center justify-between text-xs font-bold text-[#3E2723]">
                       <span>🎪 Event Curation</span>
-                      <span className="text-[10px] bg-white px-2 py-0.5 rounded border border-black font-extrabold">Pop-Up Magic</span>
+                      <span className="text-[10px] bg-[#F7F2E7] px-2 py-0.5 rounded border border-[#3E2723] font-extrabold text-[#3E2723]">Pop-Up Magic</span>
                     </div>
-                    <div className="p-2.5 rounded-xl bg-yellow-50 border border-[#FFD166] flex items-center justify-between text-xs font-bold">
+                    <div className="p-2.5 rounded-xl bg-white border border-[#3E2723] flex items-center justify-between text-xs font-bold text-[#3E2723]">
                       <span>💡 What-an-idea Promotion</span>
-                      <span className="text-[10px] bg-white px-2 py-0.5 rounded border border-black font-extrabold">Guerrilla Stunts</span>
+                      <span className="text-[10px] bg-[#FFEDA8] px-2 py-0.5 rounded border border-[#3E2723] font-extrabold text-[#3E2723]">Guerrilla Stunts</span>
                     </div>
-                    <div className="p-2.5 rounded-xl bg-purple-50 border border-[#845EC2] flex items-center justify-between text-xs font-bold">
+                    <div className="p-2.5 rounded-xl bg-white border border-[#3E2723] flex items-center justify-between text-xs font-bold text-[#3E2723]">
                       <span>🏛️ Brand Image Building</span>
-                      <span className="text-[10px] bg-white px-2 py-0.5 rounded border border-black font-extrabold">Identity Craft</span>
+                      <span className="text-[10px] bg-[#CDD6B7] px-2 py-0.5 rounded border border-[#3E2723] font-extrabold text-[#3E2723]">Identity Craft</span>
                     </div>
                   </div>
                 </div>
 
                 <Link
                   to="/image-pr"
-                  className="mt-8 w-full py-4 rounded-xl font-black text-sm bg-[#FF8A5B] hover:bg-[#ff7b47] text-white border-2 border-[#1E1E24] shadow-[4px_4px_0px_#1E1E24] flex items-center justify-center gap-2 group-hover:translate-x-0.5 transition-all"
+                  className="mt-8 w-full py-4 rounded-xl font-black text-sm bg-[#7E3940] hover:bg-[#6c3036] text-white border-2 border-[#3E2723] shadow-[4px_4px_0px_#3E2723] flex items-center justify-center gap-2 group-hover:translate-x-0.5 transition-all"
                 >
                   <span>Open Image PR Page</span>
                   <ArrowRight className="w-4 h-4" />
@@ -199,8 +198,8 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
             </div>
 
             {/* Wing 3: Media Wing Portal */}
-            <div className="bg-[#FFFDF9] rounded-3xl border-3 border-[#1E1E24] shadow-[8px_8px_0px_#1E1E24] hover:shadow-[12px_12px_0px_#1E1E24] hover:-translate-y-1.5 transition-all flex flex-col justify-between overflow-hidden group">
-              <div className="bg-[#845EC2] p-6 border-b-3 border-[#1E1E24] flex items-center justify-between text-white">
+            <div className="bg-[#F7F2E7] rounded-3xl border-3 border-[#3E2723] shadow-[8px_8px_0px_#3E2723] hover:shadow-[12px_12px_0px_#3E2723] hover:-translate-y-1.5 transition-all flex flex-col justify-between overflow-hidden group">
+              <div className="bg-[#004958] p-6 border-b-3 border-[#3E2723] flex items-center justify-between text-white">
                 <div>
                   <h3 className="text-3xl font-black text-white font-display">
                     Media Wing
@@ -211,32 +210,32 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
 
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <p className="text-sm font-bold text-[#845EC2] font-handwriting text-xl">
+                  <p className="text-sm font-bold text-[#004958] font-handwriting text-xl">
                     The Media & Content Wing • A Alap
                   </p>
-                  <p className="mt-3 text-sm text-gray-700 font-medium leading-relaxed">
+                  <p className="mt-3 text-sm text-[#3E2723]/80 font-medium leading-relaxed">
                     Long-form soul, unscripted podcasts, and acoustic discovery:
                   </p>
 
                   <div className="mt-4 space-y-2">
-                    <div className="p-2.5 rounded-xl bg-purple-50 border border-[#845EC2] flex items-center justify-between text-xs font-bold">
+                    <div className="p-2.5 rounded-xl bg-white border border-[#3E2723] flex items-center justify-between text-xs font-bold text-[#3E2723]">
                       <span>🎙️ A Alap Flagship Show</span>
-                      <span className="text-[10px] bg-white px-2 py-0.5 rounded border border-black font-extrabold text-black">Acoustic Talks</span>
+                      <span className="text-[10px] bg-[#CDD6B7] px-2 py-0.5 rounded border border-[#3E2723] font-extrabold text-[#3E2723]">Acoustic Talks</span>
                     </div>
-                    <div className="p-2.5 rounded-xl bg-pink-50 border border-[#FF6584] flex items-center justify-between text-xs font-bold">
+                    <div className="p-2.5 rounded-xl bg-white border border-[#3E2723] flex items-center justify-between text-xs font-bold text-[#3E2723]">
                       <span>📻 Audio Docuseries</span>
-                      <span className="text-[10px] bg-white px-2 py-0.5 rounded border border-black font-extrabold text-black">Midnight Audio</span>
+                      <span className="text-[10px] bg-[#FFEDA8] px-2 py-0.5 rounded border border-[#3E2723] font-extrabold text-[#3E2723]">Midnight Audio</span>
                     </div>
-                    <div className="p-2.5 rounded-xl bg-yellow-50 border border-[#FFD166] flex items-center justify-between text-xs font-bold">
+                    <div className="p-2.5 rounded-xl bg-white border border-[#3E2723] flex items-center justify-between text-xs font-bold text-[#3E2723]">
                       <span>📖 The Napper Zine</span>
-                      <span className="text-[10px] bg-white px-2 py-0.5 rounded border border-black font-extrabold text-black">Indie Essays</span>
+                      <span className="text-[10px] bg-[#F7F2E7] px-2 py-0.5 rounded border border-[#3E2723] font-extrabold text-[#3E2723]">Indie Essays</span>
                     </div>
                   </div>
                 </div>
 
                 <Link
                   to="/media"
-                  className="mt-8 w-full py-4 rounded-xl font-black text-sm bg-[#845EC2] hover:bg-[#734db3] text-white border-2 border-[#1E1E24] shadow-[4px_4px_0px_#1E1E24] flex items-center justify-center gap-2 group-hover:translate-x-0.5 transition-all"
+                  className="mt-8 w-full py-4 rounded-xl font-black text-sm bg-[#004958] hover:bg-[#003844] text-white border-2 border-[#3E2723] shadow-[4px_4px_0px_#3E2723] flex items-center justify-center gap-2 group-hover:translate-x-0.5 transition-all"
                 >
                   <span>Open Media Wing Page</span>
                   <ArrowRight className="w-4 h-4" />

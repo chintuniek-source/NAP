@@ -21,60 +21,60 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-doodle-pattern">
       {/* Decorative Floating Colorful Blobs / Shapes */}
-      <div className="absolute top-16 left-10 w-32 h-32 bg-[#FFD166]/40 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse"></div>
-      <div className="absolute top-40 right-10 w-48 h-48 bg-[#FF6584]/30 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse delay-700"></div>
-      <div className="absolute bottom-10 left-1/3 w-64 h-64 bg-[#845EC2]/20 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+      <div className="absolute top-16 left-10 w-32 h-32 bg-[#FFEDA8]/50 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse"></div>
+      <div className="absolute top-40 right-10 w-48 h-48 bg-[#7E3940]/20 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse delay-700"></div>
+      <div className="absolute bottom-10 left-1/3 w-64 h-64 bg-[#004958]/15 rounded-full blur-3xl -z-10 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Floating fun pill notices */}
         <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
-          <div className="badge-sticker bg-[#FFD166] text-[#1E1E24] rotate-[-2deg]">
-            <Sparkles className="w-4 h-4 text-amber-600" />
+          <div className="badge-sticker bg-[#FFEDA8] text-[#3E2723] rotate-[-2deg]">
+            <Sparkles className="w-4 h-4 text-[#7E3940]" />
             <span>Official Community Wing</span>
           </div>
-          <div className="badge-sticker bg-[#06D6A0] text-[#1E1E24] rotate-[1.5deg]">
-            <Flame className="w-4 h-4 text-emerald-800" />
+          <div className="badge-sticker bg-[#CDD6B7] text-[#3E2723] rotate-[1.5deg]">
+            <Flame className="w-4 h-4 text-[#7E3940]" />
             <span>Special: Amol Parashar In The House</span>
           </div>
-          <div className="badge-sticker bg-[#B39CD0] text-[#1E1E24] rotate-[-1deg]">
-            <Coffee className="w-4 h-4 text-purple-900" />
+          <div className="badge-sticker bg-[#F7F2E7] text-[#3E2723] rotate-[-1deg]">
+            <Coffee className="w-4 h-4 text-[#004958]" />
             <span>Breakfast Castle & Pillow Fights</span>
           </div>
         </div>
 
         {/* Main Hero Header */}
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl font-black text-[#1E1E24] tracking-tight font-display leading-[1.05]">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-black text-[#3E2723] tracking-tight font-display leading-[1.05]">
             <span className="relative inline-block">
               NAP
               {/* Playful drawn highlight / smile underline */}
-              <svg className="absolute -bottom-2 sm:-bottom-4 left-0 w-full h-4 sm:h-6 text-[#FF6584]" viewBox="0 0 250 20" fill="none" preserveAspectRatio="none">
+              <svg className="absolute -bottom-2 sm:-bottom-4 left-0 w-full h-4 sm:h-6 text-[#7E3940]" viewBox="0 0 250 20" fill="none" preserveAspectRatio="none">
                 <path d="M3 15 Q 125 0, 247 15" stroke="currentColor" strokeWidth="6" strokeLinecap="round" />
               </svg>
             </span>
-            <span className="block mt-3 text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#FF8A5B] font-handwriting">
+            <span className="block mt-3 text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#7E3940] font-handwriting">
               — its time to take one :)
             </span>
           </h1>
 
           {/* Dynamic rotating subtext */}
-          <div className="mt-8 text-xl sm:text-2xl md:text-3xl font-bold text-[#2D3142] flex flex-wrap items-center justify-center gap-2">
+          <div className="mt-8 text-xl sm:text-2xl md:text-3xl font-bold text-[#3E2723] flex flex-wrap items-center justify-center gap-2">
             <span>Ready to take a nap</span>
-            <span className="inline-block px-4 py-1.5 rounded-2xl bg-[#FF6584] text-white border-2 border-[#1E1E24] shadow-[3px_3px_0px_#1E1E24] transform rotate-[-1deg] transition-all duration-300">
+            <span className="inline-block px-4 py-1.5 rounded-2xl bg-[#7E3940] text-white border-2 border-[#3E2723] shadow-[3px_3px_0px_#3E2723] transform rotate-[-1deg] transition-all duration-300">
               {words[wordIndex]}
             </span>
             <span>?</span>
           </div>
 
-          <p className="mt-6 text-base sm:text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed font-medium">
-            We are <strong className="font-extrabold text-black">NAP</strong>: the creative nexus where high-energy community experiences meet sharp narrative PR and intimate, soulful media. Recharging culture, one conversation and pillow fight at a time.
+          <p className="mt-6 text-base sm:text-lg text-[#3E2723]/80 max-w-2xl mx-auto leading-relaxed font-medium">
+            We are <strong className="font-extrabold text-[#3E2723]">NAP</strong>: the creative nexus where high-energy community experiences meet sharp narrative PR and intimate, soulful media. Recharging culture, one conversation and pillow fight at a time.
           </p>
 
           {/* Action CTAs */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <button
               onClick={onOpenJoin}
-              className="px-8 py-4 rounded-2xl font-black text-lg bg-[#FFD166] text-[#1E1E24] border-3 border-[#1E1E24] shadow-[6px_6px_0px_#1E1E24] hover:shadow-[3px_3px_0px_#1E1E24] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-3 group"
+              className="px-8 py-4 rounded-2xl font-black text-lg bg-[#FFEDA8] hover:bg-[#ffe380] text-[#3E2723] border-3 border-[#3E2723] shadow-[6px_6px_0px_#3E2723] hover:shadow-[3px_3px_0px_#3E2723] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-3 group"
             >
               <span>Become a napper</span>
               <span className="text-2xl group-hover:rotate-12 transition-transform">🛋️</span>
@@ -82,37 +82,37 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
 
             <a
               href="#specials"
-              className="px-8 py-4 rounded-2xl font-black text-lg bg-[#06D6A0] text-[#1E1E24] border-3 border-[#1E1E24] shadow-[6px_6px_0px_#1E1E24] hover:shadow-[3px_3px_0px_#1E1E24] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-3"
+              className="px-8 py-4 rounded-2xl font-black text-lg bg-[#CDD6B7] hover:bg-[#bcc7a1] text-[#3E2723] border-3 border-[#3E2723] shadow-[6px_6px_0px_#3E2723] hover:shadow-[3px_3px_0px_#3E2723] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-3"
             >
-              <Star className="w-5 h-5 fill-black" />
+              <Star className="w-5 h-5 fill-[#3E2723]" />
               <span>Amol Parashar Special</span>
             </a>
 
             <button
               onClick={onOpenQuiz}
-              className="px-6 py-4 rounded-2xl font-extrabold text-base bg-white text-[#1E1E24] border-3 border-[#1E1E24] shadow-[5px_5px_0px_#1E1E24] hover:shadow-[2px_2px_0px_#1E1E24] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-2"
+              className="px-6 py-4 rounded-2xl font-extrabold text-base bg-white hover:bg-[#F7F2E7] text-[#3E2723] border-3 border-[#3E2723] shadow-[5px_5px_0px_#3E2723] hover:shadow-[2px_2px_0px_#3E2723] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-2"
             >
-              <Sparkles className="w-4 h-4 text-[#845EC2]" />
+              <Sparkles className="w-4 h-4 text-[#004958]" />
               <span>Take the Nap Quiz</span>
             </button>
           </div>
 
           {/* Quick Stats / Quirky Social Proof Ticker */}
           <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <div className="p-4 bg-white rounded-2xl border-2 border-[#1E1E24] shadow-[4px_4px_0px_#1E1E24] text-center">
-              <span className="text-3xl font-black text-[#FF6584]">3 Wings</span>
+            <div className="p-4 bg-white rounded-2xl border-2 border-[#3E2723] shadow-[4px_4px_0px_#3E2723] text-center">
+              <span className="text-3xl font-black text-[#7E3940]">3 Wings</span>
               <p className="text-xs font-bold text-gray-600 mt-1 uppercase">Community, PR & Media</p>
             </div>
-            <div className="p-4 bg-white rounded-2xl border-2 border-[#1E1E24] shadow-[4px_4px_0px_#1E1E24] text-center">
-              <span className="text-3xl font-black text-[#845EC2]">1,450+</span>
+            <div className="p-4 bg-white rounded-2xl border-2 border-[#3E2723] shadow-[4px_4px_0px_#3E2723] text-center">
+              <span className="text-3xl font-black text-[#004958]">1,450+</span>
               <p className="text-xs font-bold text-gray-600 mt-1 uppercase">Pillows Fluffed</p>
             </div>
-            <div className="p-4 bg-white rounded-2xl border-2 border-[#1E1E24] shadow-[4px_4px_0px_#1E1E24] text-center">
-              <span className="text-3xl font-black text-[#06D6A0]">100%</span>
+            <div className="p-4 bg-white rounded-2xl border-2 border-[#3E2723] shadow-[4px_4px_0px_#3E2723] text-center">
+              <span className="text-3xl font-black text-[#3E2723]">100%</span>
               <p className="text-xs font-bold text-gray-600 mt-1 uppercase">Good Vibes Only</p>
             </div>
-            <div className="p-4 bg-white rounded-2xl border-2 border-[#1E1E24] shadow-[4px_4px_0px_#1E1E24] text-center">
-              <span className="text-3xl font-black text-[#FF8A5B]">A Alap</span>
+            <div className="p-4 bg-white rounded-2xl border-2 border-[#3E2723] shadow-[4px_4px_0px_#3E2723] text-center">
+              <span className="text-3xl font-black text-[#7E3940]">A Alap</span>
               <p className="text-xs font-bold text-gray-600 mt-1 uppercase">Original Episodes</p>
             </div>
           </div>
@@ -124,48 +124,48 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
           {/* Card 1: Sleep Over */}
           <a 
             href="#sleep-over"
-            className="group relative bg-[#FFD166]/20 hover:bg-[#FFD166]/40 p-6 rounded-3xl border-3 border-[#1E1E24] shadow-[6px_6px_0px_#1E1E24] hover:shadow-[9px_9px_0px_#1E1E24] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
+            className="group relative bg-[#FFEDA8]/30 hover:bg-[#FFEDA8]/60 p-6 rounded-3xl border-3 border-[#3E2723] shadow-[6px_6px_0px_#3E2723] hover:shadow-[9px_9px_0px_#3E2723] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between">
-                <span className="px-3 py-1 rounded-full text-xs font-black bg-[#FFD166] text-[#1E1E24] border border-black shadow-[2px_2px_0px_#1E1E24]">
-                  PAGE 1
+                <span className="px-3 py-1 rounded-full text-xs font-black bg-[#FFEDA8] text-[#3E2723] border border-[#3E2723] shadow-[2px_2px_0px_#3E2723]">
+                  WING 1
                 </span>
                 <span className="text-3xl">🛏️</span>
               </div>
-              <h3 className="mt-4 text-2xl font-black text-[#1E1E24] font-display group-hover:text-[#FF8A5B] transition-colors">
+              <h3 className="mt-4 text-2xl font-black text-[#3E2723] font-display group-hover:text-[#7E3940] transition-colors">
                 Sleep Over
               </h3>
-              <p className="mt-2 text-sm text-gray-700 font-medium leading-relaxed">
+              <p className="mt-2 text-sm text-[#3E2723]/80 font-medium leading-relaxed">
                 Experience-driven community sanctuaries: <strong>Nap-O-Casting</strong>, <strong>Breakfast Castle</strong>, and cathartic <strong>Pillow Fights</strong>.
               </p>
             </div>
-            <div className="mt-6 flex items-center justify-between text-xs font-black text-[#1E1E24] pt-4 border-t-2 border-[#1E1E24]/20">
+            <div className="mt-6 flex items-center justify-between text-xs font-black text-[#3E2723] pt-4 border-t-2 border-[#3E2723]/20">
               <span>EXPLORE EXPERIENCES</span>
               <ArrowDownRight className="w-4 h-4 transform group-hover:rotate-[-45deg] transition-transform" />
             </div>
           </a>
 
-          {/* Card 2: Image Management */}
+          {/* Card 2: Image PR */}
           <a 
             href="#image-management"
-            className="group relative bg-[#FF8A5B]/20 hover:bg-[#FF8A5B]/40 p-6 rounded-3xl border-3 border-[#1E1E24] shadow-[6px_6px_0px_#1E1E24] hover:shadow-[9px_9px_0px_#1E1E24] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
+            className="group relative bg-[#7E3940]/10 hover:bg-[#7E3940]/20 p-6 rounded-3xl border-3 border-[#3E2723] shadow-[6px_6px_0px_#3E2723] hover:shadow-[9px_9px_0px_#3E2723] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between">
-                <span className="px-3 py-1 rounded-full text-xs font-black bg-[#FF8A5B] text-white border border-black shadow-[2px_2px_0px_#1E1E24]">
-                  PAGE 2
+                <span className="px-3 py-1 rounded-full text-xs font-black bg-[#7E3940] text-white border border-[#3E2723] shadow-[2px_2px_0px_#3E2723]">
+                  WING 2
                 </span>
                 <span className="text-3xl">⚡</span>
               </div>
-              <h3 className="mt-4 text-2xl font-black text-[#1E1E24] font-display group-hover:text-[#FF6584] transition-colors">
-                Image Management
+              <h3 className="mt-4 text-2xl font-black text-[#3E2723] font-display group-hover:text-[#7E3940] transition-colors">
+                Image PR
               </h3>
-              <p className="mt-2 text-sm text-gray-700 font-medium leading-relaxed">
+              <p className="mt-2 text-sm text-[#3E2723]/80 font-medium leading-relaxed">
                 Modern brand consulting & PR: <strong>Counsellor</strong> advisory, <strong>Event Curation</strong>, <strong>What-an-idea Promotion</strong> & cultural image building.
               </p>
             </div>
-            <div className="mt-6 flex items-center justify-between text-xs font-black text-[#1E1E24] pt-4 border-t-2 border-[#1E1E24]/20">
+            <div className="mt-6 flex items-center justify-between text-xs font-black text-[#3E2723] pt-4 border-t-2 border-[#3E2723]/20">
               <span>EXPLORE PR & CONSULTING</span>
               <ArrowDownRight className="w-4 h-4 transform group-hover:rotate-[-45deg] transition-transform" />
             </div>
@@ -174,23 +174,23 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
           {/* Card 3: Nap Media */}
           <a 
             href="#nap-media"
-            className="group relative bg-[#845EC2]/20 hover:bg-[#845EC2]/35 p-6 rounded-3xl border-3 border-[#1E1E24] shadow-[6px_6px_0px_#1E1E24] hover:shadow-[9px_9px_0px_#1E1E24] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
+            className="group relative bg-[#004958]/10 hover:bg-[#004958]/20 p-6 rounded-3xl border-3 border-[#3E2723] shadow-[6px_6px_0px_#3E2723] hover:shadow-[9px_9px_0px_#3E2723] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between">
-                <span className="px-3 py-1 rounded-full text-xs font-black bg-[#845EC2] text-white border border-black shadow-[2px_2px_0px_#1E1E24]">
-                  PAGE 3
+                <span className="px-3 py-1 rounded-full text-xs font-black bg-[#004958] text-white border border-[#3E2723] shadow-[2px_2px_0px_#3E2723]">
+                  WING 3
                 </span>
                 <span className="text-3xl">🎙️</span>
               </div>
-              <h3 className="mt-4 text-2xl font-black text-[#1E1E24] font-display group-hover:text-[#845EC2] transition-colors">
+              <h3 className="mt-4 text-2xl font-black text-[#3E2723] font-display group-hover:text-[#004958] transition-colors">
                 Nap Media
               </h3>
-              <p className="mt-2 text-sm text-gray-700 font-medium leading-relaxed">
+              <p className="mt-2 text-sm text-[#3E2723]/80 font-medium leading-relaxed">
                 The content & media wing: Home to <strong>A Alap</strong> — intimate, acoustic conversations and unfiltered storytelling with icons.
               </p>
             </div>
-            <div className="mt-6 flex items-center justify-between text-xs font-black text-[#1E1E24] pt-4 border-t-2 border-[#1E1E24]/20">
+            <div className="mt-6 flex items-center justify-between text-xs font-black text-[#3E2723] pt-4 border-t-2 border-[#3E2723]/20">
               <span>STREAM A ALAP</span>
               <ArrowDownRight className="w-4 h-4 transform group-hover:rotate-[-45deg] transition-transform" />
             </div>
