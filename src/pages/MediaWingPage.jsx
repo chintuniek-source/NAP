@@ -262,7 +262,7 @@ export default function MediaWingPage({ onOpenJoin }) {
               <div className="mt-6 pt-4 border-t border-white/20 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/90">
                 <div className="flex items-center gap-2 font-bold">
                   <span className="w-2 h-2 rounded-full bg-[#CDD6B7] animate-pulse"></span>
-                  <span>NAP Media Wing • Recording Studios</span>
+                  <span>NAP Media Wing</span>
                 </div>
                 <div className="text-white/80 font-semibold">
                   Open for artist collaborations, indie podcasts & acoustic specials
