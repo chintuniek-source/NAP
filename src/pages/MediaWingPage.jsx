@@ -226,11 +226,11 @@ export default function MediaWingPage({ onOpenJoin }) {
                     </p>
                   </div>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+91XXXXXXXXXX"
                     className="mt-4 inline-flex items-center justify-center gap-1.5 w-full py-2.5 px-3 rounded-xl bg-[#CDD6B7] hover:bg-[#bcc6a3] text-[#3E2723] border-2 border-[#3E2723] font-black text-xs shadow-[2px_2px_0px_#3E2723] transition-all hover:translate-x-0.5 hover:translate-y-0.5"
                   >
                     <Phone className="w-3.5 h-3.5" />
-                    +91 98765 43210
+                    +91 XXXXXXXXXX
                   </a>
                 </div>
 
