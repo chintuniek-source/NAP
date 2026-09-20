@@ -67,28 +67,28 @@ export default function Footer({ onOpenJoin }) {
 
           {/* Col 3: Sleep Over */}
           <div>
-            <span className="text-xs font-black uppercase tracking-wider text-[#FFEDA8] flex items-center gap-1.5">
-              <span>Sleep Over</span>
+            <span className="text-xs font-black uppercase tracking-wider text-[#FFEDA8]">
+              Sleep Over
             </span>
             <ul className="mt-4 space-y-2.5 text-xs font-bold text-[#F7F2E7]/80">
               <li>
-                <Link to="/sleep-over" className="hover:text-[#FFEDA8] transition-colors flex items-center gap-1.5">
-                  <span>🎙️</span> Nap-O-Casting
+                <Link to="/sleep-over" className="hover:text-[#FFEDA8] transition-colors">
+                  Nap-O-Casting
                 </Link>
               </li>
               <li>
-                <Link to="/sleep-over" className="hover:text-[#FFEDA8] transition-colors flex items-center gap-1.5">
-                  <span>🥞</span> Breakfast Castle
+                <Link to="/sleep-over" className="hover:text-[#FFEDA8] transition-colors">
+                  Breakfast Castle
                 </Link>
               </li>
               <li>
-                <Link to="/sleep-over" className="hover:text-[#FFEDA8] transition-colors flex items-center gap-1.5">
-                  <span>🪶</span> Pillow Fight Arena
+                <Link to="/sleep-over" className="hover:text-[#FFEDA8] transition-colors">
+                  Pillow Fight Arena
                 </Link>
               </li>
               <li>
-                <Link to="/sleep-over" className="hover:text-[#FFEDA8] transition-colors flex items-center gap-1.5">
-                  <span>🎫</span> Experience Passes
+                <Link to="/sleep-over" className="hover:text-[#FFEDA8] transition-colors">
+                  Experience Passes
                 </Link>
               </li>
             </ul>
@@ -96,28 +96,28 @@ export default function Footer({ onOpenJoin }) {
 
           {/* Col 4: Image PR */}
           <div>
-            <span className="text-xs font-black uppercase tracking-wider text-[#CDD6B7] flex items-center gap-1.5">
-              <span>Image PR</span>
+            <span className="text-xs font-black uppercase tracking-wider text-[#CDD6B7]">
+              Image PR
             </span>
             <ul className="mt-4 space-y-2.5 text-xs font-bold text-[#F7F2E7]/80">
               <li>
-                <Link to="/image-pr" className="hover:text-[#CDD6B7] transition-colors flex items-center gap-1.5">
-                  <span>🧠</span> Counsellor Advisory
+                <Link to="/image-pr" className="hover:text-[#CDD6B7] transition-colors">
+                  Counsellor Advisory
                 </Link>
               </li>
               <li>
-                <Link to="/image-pr" className="hover:text-[#CDD6B7] transition-colors flex items-center gap-1.5">
-                  <span>🎪</span> Event Curation
+                <Link to="/image-pr" className="hover:text-[#CDD6B7] transition-colors">
+                  Event Curation
                 </Link>
               </li>
               <li>
-                <Link to="/image-pr" className="hover:text-[#CDD6B7] transition-colors flex items-center gap-1.5">
-                  <span>💡</span> What-an-idea Promotion
+                <Link to="/image-pr" className="hover:text-[#CDD6B7] transition-colors">
+                  What-an-idea Promotion
                 </Link>
               </li>
               <li>
-                <Link to="/image-pr" className="hover:text-[#CDD6B7] transition-colors flex items-center gap-1.5">
-                  <span>🏛️</span> Brand Image Building
+                <Link to="/image-pr" className="hover:text-[#CDD6B7] transition-colors">
+                  Brand Image Building
                 </Link>
               </li>
             </ul>
@@ -125,28 +125,28 @@ export default function Footer({ onOpenJoin }) {
 
           {/* Col 5: Media Wing */}
           <div>
-            <span className="text-xs font-black uppercase tracking-wider text-[#CDD6B7] flex items-center gap-1.5">
-              <span>Media Wing</span>
+            <span className="text-xs font-black uppercase tracking-wider text-[#CDD6B7]">
+              Media Wing
             </span>
             <ul className="mt-4 space-y-2.5 text-xs font-bold text-[#F7F2E7]/80">
               <li>
-                <Link to="/media" className="hover:text-[#FFEDA8] transition-colors flex items-center gap-1.5">
-                  <span>🎙️</span> A Alap Series
+                <Link to="/media" className="hover:text-[#FFEDA8] transition-colors">
+                  A Alap Series
                 </Link>
               </li>
               <li>
-                <Link to="/#specials" className="hover:text-[#FFEDA8] transition-colors flex items-center gap-1.5">
-                  <span>⭐</span> Amol Parashar Special
+                <Link to="/#specials" className="hover:text-[#FFEDA8] transition-colors">
+                  Amol Parashar Special
                 </Link>
               </li>
               <li>
-                <Link to="/media" className="hover:text-[#FFEDA8] transition-colors flex items-center gap-1.5">
-                  <span>📻</span> Audio Documentaries
+                <Link to="/media" className="hover:text-[#FFEDA8] transition-colors">
+                  Audio Documentaries
                 </Link>
               </li>
               <li>
-                <Link to="/media" className="hover:text-[#CDD6B7] transition-colors flex items-center gap-1.5">
-                  <span>💌</span> Pitch Music & Talks
+                <Link to="/media" className="hover:text-[#CDD6B7] transition-colors">
+                  Pitch Music & Talks
                 </Link>
               </li>
             </ul>
