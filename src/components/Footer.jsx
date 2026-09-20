@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp, Instagram, Mail } from 'lucide-react';
 
 export default function Footer({ onOpenJoin }) {
   const scrollToTop = () => {
@@ -48,13 +48,29 @@ export default function Footer({ onOpenJoin }) {
               We are a multi-disciplinary creative universe blending community experiences, high-velocity PR narrative craft, and soulful audiovisual media. Taking a nap is an act of creative rebellion.
             </p>
 
-            <div className="mt-6 flex items-center gap-3">
+            <div className="mt-6 flex flex-wrap items-center gap-3">
               <Link
                 to="/sleep-over"
                 className="px-4 py-2 rounded-xl text-xs font-black bg-[#FFEDA8] text-[#3E2723] border-2 border-white shadow-[3px_3px_0px_white] hover:translate-x-0.5 hover:translate-y-0.5 transition-all"
               >
                 Join Sleep Over ✨
               </Link>
+              <a
+                href="https://www.instagram.com/nappers.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white transition-colors"
+                title="Follow us on Instagram @nappers.in"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a
+                href="mailto:nap@nappers.in"
+                className="p-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white transition-colors"
+                title="Email nap@nappers.in"
+              >
+                <Mail className="w-4 h-4" />
+              </a>
               <button
                 onClick={scrollToTop}
                 className="p-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white"

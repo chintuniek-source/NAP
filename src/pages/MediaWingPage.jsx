@@ -206,11 +206,11 @@ export default function MediaWingPage({ onOpenJoin }) {
                     </p>
                   </div>
                   <a
-                    href="mailto:media@napcreative.in?subject=A%20Alap%20Creator%20Pitch"
+                    href="mailto:nap@nappers.in?subject=A%20Alap%20Creator%20Pitch"
                     className="mt-4 inline-flex items-center justify-center gap-1.5 w-full py-2.5 px-3 rounded-xl bg-[#FFEDA8] hover:bg-[#ffe380] text-[#3E2723] border-2 border-[#3E2723] font-black text-xs shadow-[2px_2px_0px_#3E2723] transition-all hover:translate-x-0.5 hover:translate-y-0.5"
                   >
                     <Mail className="w-3.5 h-3.5" />
-                    media@napcreative.in
+                    nap@nappers.in
                   </a>
                 </div>
 
@@ -246,13 +246,13 @@ export default function MediaWingPage({ onOpenJoin }) {
                     </p>
                   </div>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/nappers.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 inline-flex items-center justify-center gap-1.5 w-full py-2.5 px-3 rounded-xl bg-[#004958] hover:bg-[#003742] text-white border-2 border-[#3E2723] font-black text-xs shadow-[2px_2px_0px_#3E2723] transition-all hover:translate-x-0.5 hover:translate-y-0.5"
                   >
                     <Instagram className="w-3.5 h-3.5" />
-                    @nap.media
+                    @nappers.in
                   </a>
                 </div>
 
