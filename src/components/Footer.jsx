@@ -155,16 +155,6 @@ export default function Footer({ onOpenJoin }) {
                   Amol Parashar Special
                 </Link>
               </li>
-              <li>
-                <Link to="/media" className="hover:text-[#FFEDA8] transition-colors">
-                  Audio Documentaries
-                </Link>
-              </li>
-              <li>
-                <Link to="/media" className="hover:text-[#CDD6B7] transition-colors">
-                  Pitch Music & Talks
-                </Link>
-              </li>
             </ul>
           </div>
 
