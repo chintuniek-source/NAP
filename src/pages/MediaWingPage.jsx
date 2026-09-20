@@ -30,7 +30,7 @@ export default function MediaWingPage({ onOpenJoin }) {
           </p>
           
           <p className="mt-4 text-base sm:text-lg text-[#3E2723]/80 max-w-2xl mx-auto font-medium leading-relaxed">
-            The counter-weight to hyper-speed short-form noise. We produce intimate acoustic concerts, thoughtful conversations, and tactile storytelling created for unhurried ears.
+            We produce intimate acoustic concerts, thoughtful conversations, and tactile storytelling created for unhurried ears.
           </p>
         </div>
       </section>
