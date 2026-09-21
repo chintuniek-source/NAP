@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUp, Instagram, Mail, Phone } from 'lucide-react';
+import { ArrowUp, Instagram, Mail } from 'lucide-react';
 
 export default function Footer({ onOpenJoin }) {
   const scrollToTop = () => {
@@ -63,13 +63,6 @@ export default function Footer({ onOpenJoin }) {
                 title="Follow us on Instagram @nappers.in"
               >
                 <Instagram className="w-4 h-4" />
-              </a>
-              <a
-                href="tel:+918721892914"
-                className="p-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white transition-colors"
-                title="Call +91 87218 92914"
-              >
-                <Phone className="w-4 h-4" />
               </a>
               <a
                 href="mailto:nap@nappers.in"
