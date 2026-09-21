@@ -91,13 +91,13 @@ export default function ImageManagement({ onOpenJoin }) {
   ];
 
   return (
-    <section id="image-management" className="py-24 bg-[#F7F2E7] border-t-3 border-[#3E2723] relative">
+    <section id="image-management" className="py-24 bg-[#F7F2E7] border-t-3 border-[#320b35] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
-            <h2 className="text-4xl sm:text-6xl font-black text-[#3E2723] tracking-tight font-display">
+            <h2 className="text-4xl sm:text-6xl font-black text-[#320b35] tracking-tight font-display">
               Image Management
             </h2>
             <p className="mt-3 text-lg font-bold text-[#7E3940] font-handwriting text-2xl">
@@ -107,7 +107,7 @@ export default function ImageManagement({ onOpenJoin }) {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
             <button
               onClick={() => { setSelectedService('Full Suite Consulting'); setShowInquiryModal(true); }}
-              className="px-6 py-3 rounded-2xl font-black text-sm bg-[#7E3940] hover:bg-[#6c3036] text-white border-2 border-[#3E2723] shadow-[4px_4px_0px_#3E2723] hover:shadow-[2px_2px_0px_#3E2723] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-2"
+              className="px-6 py-3 rounded-2xl font-black text-sm bg-[#7E3940] hover:bg-[#6c3036] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] hover:shadow-[2px_2px_0px_#320b35] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-2"
             >
               <Sparkles className="w-4 h-4 text-[#FFEDA8]" />
               <span>Book a Brand Consultation</span>
@@ -120,45 +120,45 @@ export default function ImageManagement({ onOpenJoin }) {
           {services.map((srv) => (
             <div
               key={srv.id}
-              className={`${srv.bgCard} p-8 sm:p-10 rounded-3xl border-3 border-[#3E2723] shadow-[7px_7px_0px_#3E2723] flex flex-col justify-between hover:shadow-[10px_10px_0px_#3E2723] hover:-translate-y-1 transition-all`}
+              className={`${srv.bgCard} p-8 sm:p-10 rounded-3xl border-3 border-[#320b35] shadow-[7px_7px_0px_#320b35] flex flex-col justify-between hover:shadow-[10px_10px_0px_#320b35] hover:-translate-y-1 transition-all`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-14 h-14 rounded-2xl bg-white border-2 border-[#3E2723] shadow-[2px_2px_0px_#3E2723] flex items-center justify-center text-3xl">
+                  <div className="w-14 h-14 rounded-2xl bg-white border-2 border-[#320b35] shadow-[2px_2px_0px_#320b35] flex items-center justify-center text-3xl">
                     {srv.icon}
                   </div>
-                  <span className="text-[11px] font-black px-3 py-1 rounded-full bg-white text-[#3E2723] border border-[#3E2723] shadow-[1px_1px_0px_#3E2723] uppercase tracking-wider">
+                  <span className="text-[11px] font-black px-3 py-1 rounded-full bg-white text-[#320b35] border border-[#320b35] shadow-[1px_1px_0px_#320b35] uppercase tracking-wider">
                     {srv.tag}
                   </span>
                 </div>
 
-                <h3 className="text-3xl font-black text-[#3E2723] font-display">
+                <h3 className="text-3xl font-black text-[#320b35] font-display">
                   {srv.name}
                 </h3>
                 
-                <p className="mt-3 text-base text-[#3E2723]/80 font-medium leading-relaxed">
+                <p className="mt-3 text-base text-[#320b35]/80 font-medium leading-relaxed">
                   {srv.summary}
                 </p>
 
                 {/* Deliverables */}
-                <div className="mt-6 pt-5 border-t-2 border-[#3E2723]/15 space-y-2.5">
-                  <p className="text-xs font-black uppercase tracking-wider text-[#3E2723]/60">Core Deliverables</p>
+                <div className="mt-6 pt-5 border-t-2 border-[#320b35]/15 space-y-2.5">
+                  <p className="text-xs font-black uppercase tracking-wider text-[#320b35]/60">Core Deliverables</p>
                   {srv.deliverables.map((item, idx) => (
                     <div key={idx} className="flex items-start gap-2.5">
                       <CheckCircle2 className="w-4 h-4 text-[#7E3940] stroke-[3] mt-0.5 flex-shrink-0" />
-                      <span className="text-xs sm:text-sm font-bold text-[#3E2723]">{item}</span>
+                      <span className="text-xs sm:text-sm font-bold text-[#320b35]">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="mt-8 pt-5 border-t-2 border-[#3E2723]/15 flex items-center justify-between">
-                <p className="text-xs italic font-semibold text-[#3E2723]/70">
+              <div className="mt-8 pt-5 border-t-2 border-[#320b35]/15 flex items-center justify-between">
+                <p className="text-xs italic font-semibold text-[#320b35]/70">
                   {srv.quote}
                 </p>
                 <button
                   onClick={() => { setSelectedService(srv.name); setShowInquiryModal(true); }}
-                  className="px-4 py-2 rounded-xl text-xs font-black bg-white hover:bg-[#FFEDA8]/30 text-[#3E2723] border-2 border-[#3E2723] shadow-[2px_2px_0px_#3E2723] flex items-center gap-1 flex-shrink-0"
+                  className="px-4 py-2 rounded-xl text-xs font-black bg-white hover:bg-[#FFEDA8]/30 text-[#320b35] border-2 border-[#320b35] shadow-[2px_2px_0px_#320b35] flex items-center gap-1 flex-shrink-0"
                 >
                   <span>Inquire</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
@@ -170,9 +170,9 @@ export default function ImageManagement({ onOpenJoin }) {
         </div>
 
         {/* Consulting Banner */}
-        <div className="mt-14 bg-gradient-to-r from-[#7E3940] to-[#5b242a] p-8 sm:p-10 rounded-3xl border-3 border-[#3E2723] shadow-[8px_8px_0px_#3E2723] text-white flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-14 bg-gradient-to-r from-[#7E3940] to-[#5b242a] p-8 sm:p-10 rounded-3xl border-3 border-[#320b35] shadow-[8px_8px_0px_#320b35] text-white flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <span className="bg-[#FFEDA8] text-[#3E2723] font-black text-xs px-3 py-1 rounded-full border border-[#3E2723] shadow-[2px_2px_0px_#3E2723] uppercase">
+            <span className="bg-[#FFEDA8] text-[#320b35] font-black text-xs px-3 py-1 rounded-full border border-[#320b35] shadow-[2px_2px_0px_#320b35] uppercase">
               Brand Diagnostic Clinic
             </span>
             <h3 className="text-2xl sm:text-4xl font-black mt-3 font-display">
@@ -184,7 +184,7 @@ export default function ImageManagement({ onOpenJoin }) {
           </div>
           <button
             onClick={() => { setSelectedService('Brand Diagnostic Clinic'); setShowInquiryModal(true); }}
-            className="px-7 py-4 rounded-2xl font-black text-base bg-[#FFEDA8] text-[#3E2723] border-2 border-[#3E2723] shadow-[4px_4px_0px_#3E2723] hover:shadow-[2px_2px_0px_#3E2723] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex-shrink-0"
+            className="px-7 py-4 rounded-2xl font-black text-base bg-[#FFEDA8] text-[#320b35] border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] hover:shadow-[2px_2px_0px_#320b35] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex-shrink-0"
           >
             Start Free Diagnostic
           </button>
@@ -194,16 +194,16 @@ export default function ImageManagement({ onOpenJoin }) {
 
       {/* Brand Inquiry Modal */}
       {showInquiryModal && (
-        <div className="fixed inset-0 z-50 bg-[#3E2723]/70 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl border-3 border-[#3E2723] shadow-[8px_8px_0px_#3E2723] max-w-lg w-full p-6 sm:p-8 relative">
-            <div className="flex items-center justify-between pb-4 border-b-2 border-[#3E2723]/20">
+        <div className="fixed inset-0 z-50 bg-[#320b35]/70 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white rounded-3xl border-3 border-[#320b35] shadow-[8px_8px_0px_#320b35] max-w-lg w-full p-6 sm:p-8 relative">
+            <div className="flex items-center justify-between pb-4 border-b-2 border-[#320b35]/20">
               <div>
                 <span className="text-xs font-black uppercase text-[#7E3940]">Image Management PR Wing</span>
-                <h4 className="font-black text-2xl text-[#3E2723] font-display">Project Brief Inquiry</h4>
+                <h4 className="font-black text-2xl text-[#320b35] font-display">Project Brief Inquiry</h4>
               </div>
               <button 
                 onClick={() => { setShowInquiryModal(false); setInquirySubmitted(false); }}
-                className="w-8 h-8 rounded-full bg-[#F7F2E7] hover:bg-[#FFEDA8] flex items-center justify-center font-black border border-[#3E2723] text-[#3E2723]"
+                className="w-8 h-8 rounded-full bg-[#F7F2E7] hover:bg-[#FFEDA8] flex items-center justify-center font-black border border-[#320b35] text-[#320b35]"
               >
                 ✕
               </button>
@@ -212,20 +212,20 @@ export default function ImageManagement({ onOpenJoin }) {
             {!inquirySubmitted ? (
               <form onSubmit={handleInquirySubmit} className="mt-5 space-y-4">
                 <div>
-                  <label className="block text-xs font-black uppercase tracking-wider text-[#3E2723]/70 mb-1">
+                  <label className="block text-xs font-black uppercase tracking-wider text-[#320b35]/70 mb-1">
                     Selected Focus Area
                   </label>
                   <input
                     type="text"
                     value={selectedService}
                     readOnly
-                    className="w-full px-4 py-2.5 rounded-xl border-2 border-[#3E2723] bg-[#F7F2E7] text-sm font-bold text-[#3E2723]"
+                    className="w-full px-4 py-2.5 rounded-xl border-2 border-[#320b35] bg-[#F7F2E7] text-sm font-bold text-[#320b35]"
                   />
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
-                    <label className="block text-xs font-black uppercase tracking-wider text-[#3E2723]/70 mb-1">
+                    <label className="block text-xs font-black uppercase tracking-wider text-[#320b35]/70 mb-1">
                       Brand / Founder Name
                     </label>
                     <input
@@ -234,11 +234,11 @@ export default function ImageManagement({ onOpenJoin }) {
                       required
                       value={formData.brandName}
                       onChange={(e) => setFormData({ ...formData, brandName: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl border-2 border-[#3E2723] text-sm font-bold bg-[#F7F2E7] text-[#3E2723] focus:outline-none focus:ring-2 focus:ring-[#7E3940]"
+                      className="w-full px-4 py-2.5 rounded-xl border-2 border-[#320b35] text-sm font-bold bg-[#F7F2E7] text-[#320b35] focus:outline-none focus:ring-2 focus:ring-[#7E3940]"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-black uppercase tracking-wider text-[#3E2723]/70 mb-1">
+                    <label className="block text-xs font-black uppercase tracking-wider text-[#320b35]/70 mb-1">
                       Email Address
                     </label>
                     <input
@@ -247,13 +247,13 @@ export default function ImageManagement({ onOpenJoin }) {
                       required
                       value={formData.contactEmail}
                       onChange={(e) => setFormData({ ...formData, contactEmail: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl border-2 border-[#3E2723] text-sm font-bold bg-[#F7F2E7] text-[#3E2723] focus:outline-none focus:ring-2 focus:ring-[#7E3940]"
+                      className="w-full px-4 py-2.5 rounded-xl border-2 border-[#320b35] text-sm font-bold bg-[#F7F2E7] text-[#320b35] focus:outline-none focus:ring-2 focus:ring-[#7E3940]"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-black uppercase tracking-wider text-[#3E2723]/70 mb-1">
+                  <label className="block text-xs font-black uppercase tracking-wider text-[#320b35]/70 mb-1">
                     What narrative or PR hurdle can we solve?
                   </label>
                   <textarea
@@ -261,13 +261,13 @@ export default function ImageManagement({ onOpenJoin }) {
                     placeholder="Tell us about your brand goals, launch, or identity makeover..."
                     value={formData.challenge}
                     onChange={(e) => setFormData({ ...formData, challenge: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl border-2 border-[#3E2723] text-sm font-bold bg-[#F7F2E7] text-[#3E2723] focus:outline-none focus:ring-2 focus:ring-[#7E3940]"
+                    className="w-full px-4 py-2.5 rounded-xl border-2 border-[#320b35] text-sm font-bold bg-[#F7F2E7] text-[#320b35] focus:outline-none focus:ring-2 focus:ring-[#7E3940]"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 rounded-xl font-black text-base bg-[#7E3940] hover:bg-[#6c3036] text-white border-2 border-[#3E2723] shadow-[4px_4px_0px_#3E2723] flex items-center justify-center gap-2"
+                  className="w-full py-3.5 rounded-xl font-black text-base bg-[#7E3940] hover:bg-[#6c3036] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] flex items-center justify-center gap-2"
                 >
                   <Send className="w-4 h-4" />
                   <span>Send Consultation Brief</span>
@@ -275,16 +275,16 @@ export default function ImageManagement({ onOpenJoin }) {
               </form>
             ) : (
               <div className="py-8 text-center space-y-3">
-                <div className="w-16 h-16 rounded-full bg-[#CDD6B7] text-[#3E2723] flex items-center justify-center mx-auto border-2 border-[#3E2723] shadow-[3px_3px_0px_#3E2723]">
-                  <CheckCircle2 className="w-8 h-8 text-[#3E2723]" />
+                <div className="w-16 h-16 rounded-full bg-[#CDD6B7] text-[#320b35] flex items-center justify-center mx-auto border-2 border-[#320b35] shadow-[3px_3px_0px_#320b35]">
+                  <CheckCircle2 className="w-8 h-8 text-[#320b35]" />
                 </div>
-                <h5 className="text-2xl font-black font-display text-[#3E2723]">Brief Received!</h5>
-                <p className="text-sm font-semibold text-[#3E2723]/80 max-w-sm mx-auto">
+                <h5 className="text-2xl font-black font-display text-[#320b35]">Brief Received!</h5>
+                <p className="text-sm font-semibold text-[#320b35]/80 max-w-sm mx-auto">
                   Our PR & Brand Counsellor team will review <strong>{formData.brandName || 'your brand'}</strong> and reply within 24 hours.
                 </p>
                 <button
                   onClick={() => setShowInquiryModal(false)}
-                  className="mt-4 px-6 py-2.5 rounded-xl bg-[#FFEDA8] text-[#3E2723] font-black text-xs border-2 border-[#3E2723] shadow-[2px_2px_0px_#3E2723]"
+                  className="mt-4 px-6 py-2.5 rounded-xl bg-[#FFEDA8] text-[#320b35] font-black text-xs border-2 border-[#320b35] shadow-[2px_2px_0px_#320b35]"
                 >
                   Done
                 </button>

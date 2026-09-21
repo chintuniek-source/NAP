@@ -57,41 +57,41 @@
   border-radius: 9999px;
   font-weight: 700;
   font-size: 0.85rem;
-  border: 2px solid #3E2723;
-  box-shadow: 2px 2px 0px #3E2723;
+  border: 2px solid #320b35;
+  box-shadow: 2px 2px 0px #320b35;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .badge-sticker:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0px #3E2723;
+  box-shadow: 3px 3px 0px #320b35;
 }
 
 /* Retro card button click effect */
 .btn-pop {
-  border: 2.5px solid #3E2723;
-  box-shadow: 4px 4px 0px #3E2723;
+  border: 2.5px solid #320b35;
+  box-shadow: 4px 4px 0px #320b35;
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-pop:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px #3E2723;
+  box-shadow: 6px 6px 0px #320b35;
 }
 
 .btn-pop:active {
   transform: translate(2px, 2px);
-  box-shadow: 1px 1px 0px #3E2723;
+  box-shadow: 1px 1px 0px #320b35;
 }
 
 /* Soft card hover */
 .card-pop {
-  border: 2.5px solid #3E2723;
-  box-shadow: 6px 6px 0px #3E2723;
+  border: 2.5px solid #320b35;
+  box-shadow: 6px 6px 0px #320b35;
   transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .card-pop:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 9px 9px 0px #3E2723;
+  box-shadow: 9px 9px 0px #320b35;
 }

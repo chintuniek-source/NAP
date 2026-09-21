@@ -8,10 +8,10 @@ export default function Footer({ onOpenJoin }) {
   };
 
   return (
-    <footer className="bg-[#3E2723] text-[#F7F2E7] border-t-3 border-[#3E2723] pt-16 pb-14 relative overflow-hidden">
+    <footer className="bg-[#320b35] text-[#F7F2E7] border-t-3 border-[#320b35] pt-16 pb-14 relative overflow-hidden">
       
       {/* Ticker strip */}
-      <div className="bg-[#FFEDA8] text-[#3E2723] font-black text-xs sm:text-sm py-2 px-4 border-b-2 border-[#3E2723] overflow-hidden flex items-center justify-around whitespace-nowrap uppercase tracking-wider">
+      <div className="bg-[#FFEDA8] text-[#320b35] font-black text-xs sm:text-sm py-2 px-4 border-b-2 border-[#320b35] overflow-hidden flex items-center justify-around whitespace-nowrap uppercase tracking-wider">
         <span>✨ NAP-O-CASTING</span>
         <span>•</span>
         <span>🥞 BREAKFAST CASTLE</span>
@@ -51,7 +51,7 @@ export default function Footer({ onOpenJoin }) {
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <Link
                 to="/sleep-over"
-                className="px-4 py-2 rounded-xl text-xs font-black bg-[#FFEDA8] text-[#3E2723] border-2 border-white shadow-[3px_3px_0px_white] hover:translate-x-0.5 hover:translate-y-0.5 transition-all"
+                className="px-4 py-2 rounded-xl text-xs font-black bg-[#FFEDA8] text-[#320b35] border-2 border-white shadow-[3px_3px_0px_white] hover:translate-x-0.5 hover:translate-y-0.5 transition-all"
               >
                 Join Sleep Over ✨
               </Link>

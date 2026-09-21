@@ -11,7 +11,7 @@ export default {
         nap: {
           russet: '#7E3940',
           butter: '#FFEDA8',
-          espresso: '#3E2723',
+          espresso: '#320b35',
           ivory: '#F7F2E7',
           peacock: '#004958',
           mist: '#CDD6B7',
@@ -25,9 +25,9 @@ export default {
           lilac: '#CDD6B7',
           cream: '#F7F2E7',
           card: '#FFFFFF',
-          dark: '#3E2723',
+          dark: '#320b35',
           navy: '#004958',
-          charcoal: '#3E2723'
+          charcoal: '#320b35'
         }
       },
       fontFamily: {
@@ -36,9 +36,9 @@ export default {
         handwriting: ['Caveat', 'cursive']
       },
       boxShadow: {
-        'pop': '4px 4px 0px 0px #3E2723',
-        'pop-lg': '8px 8px 0px 0px #3E2723',
-        'pop-hover': '2px 2px 0px 0px #3E2723',
+        'pop': '4px 4px 0px 0px #320b35',
+        'pop-lg': '8px 8px 0px 0px #320b35',
+        'pop-hover': '2px 2px 0px 0px #320b35',
         'soft-glow': '0 20px 40px -15px rgba(126, 57, 64, 0.3)',
       },
       animation: {

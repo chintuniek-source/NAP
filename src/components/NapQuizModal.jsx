@@ -64,7 +64,7 @@ export default function NapQuizModal({ isOpen, onClose, onSelectResult }) {
           wing: "Sleep Over Wing",
           recommendation: "You belong at Breakfast Castle and the Pillow Fight Arena!",
           emoji: "🥞",
-          bg: "bg-[#FFEDA8] text-[#3E2723]",
+          bg: "bg-[#FFEDA8] text-[#320b35]",
           cta: "#sleep-over"
         };
       } else if (highestCategory === 'pr') {
@@ -103,21 +103,21 @@ export default function NapQuizModal({ isOpen, onClose, onSelectResult }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-[#3E2723]/70 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="bg-white rounded-3xl border-3 border-[#3E2723] shadow-[10px_10px_0px_#3E2723] max-w-lg w-full p-6 sm:p-8 relative">
+    <div className="fixed inset-0 z-50 bg-[#320b35]/70 backdrop-blur-sm flex items-center justify-center p-4">
+      <div className="bg-white rounded-3xl border-3 border-[#320b35] shadow-[10px_10px_0px_#320b35] max-w-lg w-full p-6 sm:p-8 relative">
         
         {/* Modal Header */}
-        <div className="flex items-center justify-between pb-4 border-b-2 border-[#3E2723]/20">
+        <div className="flex items-center justify-between pb-4 border-b-2 border-[#320b35]/20">
           <div className="flex items-center gap-2">
             <span className="text-2xl">✨</span>
             <div>
-              <h4 className="font-black text-xl text-[#3E2723] font-display">Find Your Nap Persona</h4>
-              <p className="text-[11px] font-bold text-[#3E2723]/70">Quick 30-second personality alignment</p>
+              <h4 className="font-black text-xl text-[#320b35] font-display">Find Your Nap Persona</h4>
+              <p className="text-[11px] font-bold text-[#320b35]/70">Quick 30-second personality alignment</p>
             </div>
           </div>
           <button 
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-[#F7F2E7] hover:bg-[#FFEDA8] flex items-center justify-center font-black border border-[#3E2723] text-[#3E2723]"
+            className="w-8 h-8 rounded-full bg-[#F7F2E7] hover:bg-[#FFEDA8] flex items-center justify-center font-black border border-[#320b35] text-[#320b35]"
           >
             ✕
           </button>
@@ -126,19 +126,19 @@ export default function NapQuizModal({ isOpen, onClose, onSelectResult }) {
         {/* Modal Body */}
         {!result ? (
           <div className="mt-6">
-            <div className="flex items-center justify-between text-xs font-black text-[#3E2723]/60 mb-2 uppercase">
+            <div className="flex items-center justify-between text-xs font-black text-[#320b35]/60 mb-2 uppercase">
               <span>Question {currentQuestion + 1} of {questions.length}</span>
               <div className="flex gap-1">
                 {questions.map((_, i) => (
                   <div 
                     key={i} 
-                    className={`w-5 h-2 rounded-full border border-[#3E2723] ${i <= currentQuestion ? 'bg-[#7E3940]' : 'bg-[#CDD6B7]/40'}`}
+                    className={`w-5 h-2 rounded-full border border-[#320b35] ${i <= currentQuestion ? 'bg-[#7E3940]' : 'bg-[#CDD6B7]/40'}`}
                   ></div>
                 ))}
               </div>
             </div>
 
-            <h5 className="text-lg sm:text-xl font-black text-[#3E2723] mt-2 mb-6 font-display">
+            <h5 className="text-lg sm:text-xl font-black text-[#320b35] mt-2 mb-6 font-display">
               {questions[currentQuestion].question}
             </h5>
 
@@ -147,33 +147,33 @@ export default function NapQuizModal({ isOpen, onClose, onSelectResult }) {
                 <button
                   key={i}
                   onClick={() => handleSelectOption(opt.category)}
-                  className="w-full text-left p-4 rounded-2xl border-2 border-[#3E2723] bg-[#F7F2E7] hover:bg-[#FFEDA8] hover:border-[#7E3940] font-bold text-sm text-[#3E2723] shadow-[3px_3px_0px_#3E2723] hover:shadow-[1px_1px_0px_#3E2723] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center justify-between group"
+                  className="w-full text-left p-4 rounded-2xl border-2 border-[#320b35] bg-[#F7F2E7] hover:bg-[#FFEDA8] hover:border-[#7E3940] font-bold text-sm text-[#320b35] shadow-[3px_3px_0px_#320b35] hover:shadow-[1px_1px_0px_#320b35] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center justify-between group"
                 >
                   <span>{opt.label}</span>
-                  <ArrowRight className="w-4 h-4 text-[#3E2723]/60 group-hover:text-[#3E2723] group-hover:translate-x-1 transition-all flex-shrink-0 ml-2" />
+                  <ArrowRight className="w-4 h-4 text-[#320b35]/60 group-hover:text-[#320b35] group-hover:translate-x-1 transition-all flex-shrink-0 ml-2" />
                 </button>
               ))}
             </div>
           </div>
         ) : (
           <div className="mt-6 text-center animate-in zoom-in-95 duration-200">
-            <div className="w-20 h-20 rounded-3xl bg-white border-3 border-[#3E2723] shadow-[5px_5px_0px_#3E2723] mx-auto flex items-center justify-center text-5xl mb-4">
+            <div className="w-20 h-20 rounded-3xl bg-white border-3 border-[#320b35] shadow-[5px_5px_0px_#320b35] mx-auto flex items-center justify-center text-5xl mb-4">
               {result.emoji}
             </div>
-            <span className={`inline-block px-3 py-1 rounded-full text-xs font-black border border-[#3E2723] uppercase tracking-wider mb-2 ${result.bg}`}>
+            <span className={`inline-block px-3 py-1 rounded-full text-xs font-black border border-[#320b35] uppercase tracking-wider mb-2 ${result.bg}`}>
               {result.wing}
             </span>
-            <h5 className="text-3xl font-black text-[#3E2723] font-display">
+            <h5 className="text-3xl font-black text-[#320b35] font-display">
               {result.title}
             </h5>
-            <p className="mt-3 text-sm font-bold text-[#3E2723]/80 max-w-xs mx-auto">
+            <p className="mt-3 text-sm font-bold text-[#320b35]/80 max-w-xs mx-auto">
               {result.recommendation}
             </p>
 
             <div className="mt-8 flex gap-3">
               <button
                 onClick={handleReset}
-                className="flex-1 py-3 rounded-xl bg-[#F7F2E7] hover:bg-[#FFEDA8]/40 text-[#3E2723] font-black text-xs border-2 border-[#3E2723] flex items-center justify-center gap-1.5"
+                className="flex-1 py-3 rounded-xl bg-[#F7F2E7] hover:bg-[#FFEDA8]/40 text-[#320b35] font-black text-xs border-2 border-[#320b35] flex items-center justify-center gap-1.5"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
                 <span>Retake</span>
@@ -181,7 +181,7 @@ export default function NapQuizModal({ isOpen, onClose, onSelectResult }) {
               <a
                 href={result.cta}
                 onClick={onClose}
-                className="flex-2 py-3 px-6 rounded-xl bg-[#7E3940] hover:bg-[#6c3036] text-white font-black text-xs border-2 border-[#3E2723] shadow-[3px_3px_0px_#3E2723] flex items-center justify-center gap-1.5"
+                className="flex-2 py-3 px-6 rounded-xl bg-[#7E3940] hover:bg-[#6c3036] text-white font-black text-xs border-2 border-[#320b35] shadow-[3px_3px_0px_#320b35] flex items-center justify-center gap-1.5"
               >
                 <span>Jump To Your Wing</span>
                 <ArrowRight className="w-3.5 h-3.5" />
