@@ -31,7 +31,7 @@ export default function ImagePRPage({ onOpenJoin }) {
       icon: '🧠',
       title: 'Reputation Advisory & Strategic Narrative Therapy',
       color: 'bg-white',
-      badgeColor: 'bg-[#7E3940] text-white',
+      badgeColor: 'bg-[#320b35] text-white',
       tagline: 'Fixing the story before the headlines break.',
       overview: 'Modern founders, creators, and public leaders are exposed to constant public scrutiny. Our Counsellor practice provides confidential, psychological, and strategic narrative guidance.',
       deliverables: [
@@ -49,7 +49,7 @@ export default function ImagePRPage({ onOpenJoin }) {
       icon: '🎪',
       title: 'Experiential Brand Lounges & Cultural Activations',
       color: 'bg-[#FFEDA8]/40',
-      badgeColor: 'bg-[#7E3940] text-white',
+      badgeColor: 'bg-[#320b35] text-white',
       tagline: 'Events so cozy and impactful, guests refuse to leave.',
       overview: 'We banish cold corporate conference rooms and awkward networking happy hours. We build sensory-rich spaces, ambient sleep-ins, and living-room style press gatherings.',
       deliverables: [
@@ -85,7 +85,7 @@ export default function ImagePRPage({ onOpenJoin }) {
       icon: '🏛️',
       title: 'Holistic Visual Identity & Cultural Worldbuilding',
       color: 'bg-white',
-      badgeColor: 'bg-[#7E3940] text-white',
+      badgeColor: 'bg-[#320b35] text-white',
       tagline: 'Crafting brands that live rent-free in culture.',
       overview: 'A brand is not just a logo; it is an atmosphere, a vocabulary, and an attitude. We build iconic visual identities and tone-of-voice playbooks designed to endure.',
       deliverables: [
@@ -102,13 +102,13 @@ export default function ImagePRPage({ onOpenJoin }) {
     <div className="pt-24 pb-20 bg-[#F7F2E7]">
       
       {/* Banner */}
-      <section className="bg-gradient-to-b from-[#7E3940]/15 to-[#F7F2E7] py-16 px-4 sm:px-6 lg:px-8 border-b-3 border-[#320b35]">
+      <section className="bg-gradient-to-b from-[#320b35]/15 to-[#F7F2E7] py-16 px-4 sm:px-6 lg:px-8 border-b-3 border-[#320b35]">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl sm:text-7xl md:text-8xl font-black text-[#320b35] font-display tracking-tight">
             Image PR
           </h1>
           
-          <p className="mt-4 text-2xl sm:text-3xl font-extrabold text-[#7E3940] font-handwriting">
+          <p className="mt-4 text-2xl sm:text-3xl font-extrabold text-[#320b35] font-handwriting">
             Brand Consulting & Modern PR Services
           </p>
           
@@ -124,7 +124,7 @@ export default function ImagePRPage({ onOpenJoin }) {
                 onClick={() => setSelectedPillar(p.id)}
                 className={`badge-sticker transition-all ${
                   selectedPillar === p.id 
-                    ? 'bg-[#7E3940] text-white shadow-[3px_3px_0px_#320b35]' 
+                    ? 'bg-[#320b35] text-white shadow-[3px_3px_0px_#320b35]' 
                     : 'bg-white text-[#320b35] hover:bg-[#FFEDA8]/40 border border-[#320b35]'
                 }`}
               >
@@ -174,7 +174,7 @@ export default function ImagePRPage({ onOpenJoin }) {
                     <p className="text-xs font-black uppercase tracking-wider text-[#320b35]/60">Key Deliverables</p>
                     {p.deliverables.map((d, i) => (
                       <div key={i} className="flex items-start gap-3">
-                        <div className="w-5 h-5 rounded-full bg-[#7E3940] text-white flex items-center justify-center text-xs flex-shrink-0 mt-0.5 font-bold">
+                        <div className="w-5 h-5 rounded-full bg-[#320b35] text-white flex items-center justify-center text-xs flex-shrink-0 mt-0.5 font-bold">
                           ✓
                         </div>
                         <span className="text-sm font-bold text-[#320b35]">{d}</span>
@@ -185,8 +185,8 @@ export default function ImagePRPage({ onOpenJoin }) {
 
                 <div className="lg:col-span-5 flex flex-col justify-between bg-white p-6 sm:p-8 rounded-2xl border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35]">
                   <div>
-                    <div className="flex items-center gap-2 text-xs font-black uppercase text-[#7E3940]">
-                      <Star className="w-4 h-4 fill-current text-[#7E3940]" />
+                    <div className="flex items-center gap-2 text-xs font-black uppercase text-[#320b35]">
+                      <Star className="w-4 h-4 fill-current text-[#320b35]" />
                       <span>Representative Case Study</span>
                     </div>
                     <p className="mt-3 text-sm font-bold text-[#320b35]/80 leading-relaxed">
@@ -197,7 +197,7 @@ export default function ImagePRPage({ onOpenJoin }) {
                   <div className="mt-6 pt-4 border-t border-[#320b35]/20">
                     <a
                       href="#inquiry"
-                      className="w-full py-3 rounded-xl font-black text-xs bg-[#7E3940] text-white border-2 border-[#320b35] shadow-[2px_2px_0px_#320b35] flex items-center justify-center gap-2 hover:bg-[#6c3036]"
+                      className="w-full py-3 rounded-xl font-black text-xs bg-[#320b35] text-white border-2 border-[#320b35] shadow-[2px_2px_0px_#320b35] flex items-center justify-center gap-2 hover:bg-[#240726]"
                     >
                       <span>Inquire About {p.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
@@ -232,7 +232,7 @@ export default function ImagePRPage({ onOpenJoin }) {
         <section id="inquiry" className="bg-white rounded-3xl border-3 border-[#320b35] shadow-[8px_8px_0px_#320b35] p-8 sm:p-12 scroll-mt-28">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-8">
-              <span className="px-3 py-1 rounded-full text-xs font-black bg-[#7E3940] text-white border border-[#320b35] uppercase">
+              <span className="px-3 py-1 rounded-full text-xs font-black bg-[#320b35] text-white border border-[#320b35] uppercase">
                 Brand Consultation Form
               </span>
               <h3 className="text-3xl sm:text-4xl font-black text-[#320b35] font-display mt-3">
@@ -325,7 +325,7 @@ export default function ImagePRPage({ onOpenJoin }) {
 
                 <button
                   type="submit"
-                  className="w-full py-4 rounded-xl font-black text-base bg-[#7E3940] hover:bg-[#6c3036] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] flex items-center justify-center gap-2"
+                  className="w-full py-4 rounded-xl font-black text-base bg-[#320b35] hover:bg-[#240726] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] flex items-center justify-center gap-2"
                 >
                   <Send className="w-4 h-4" />
                   <span>Request Strategic Consultation</span>
@@ -333,7 +333,7 @@ export default function ImagePRPage({ onOpenJoin }) {
               </form>
             ) : (
               <div className="py-10 text-center space-y-3 bg-[#CDD6B7]/40 rounded-2xl border-2 border-[#320b35]">
-                <div className="w-14 h-14 rounded-full bg-[#7E3940] text-white flex items-center justify-center mx-auto text-2xl border-2 border-[#320b35]">
+                <div className="w-14 h-14 rounded-full bg-[#320b35] text-white flex items-center justify-center mx-auto text-2xl border-2 border-[#320b35]">
                   ✓
                 </div>
                 <h4 className="text-2xl font-black text-[#320b35] font-display">

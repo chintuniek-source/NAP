@@ -88,7 +88,7 @@ export default function SleepOver({ onOpenJoin }) {
             <h2 className="text-4xl sm:text-6xl font-black text-[#320b35] tracking-tight font-display">
               Sleep Over
             </h2>
-            <p className="mt-3 text-lg font-bold text-[#7E3940] font-handwriting text-2xl">
+            <p className="mt-3 text-lg font-bold text-[#320b35] font-handwriting text-2xl">
               Community & Experience-Driven Activities
             </p>
           </div>
@@ -167,7 +167,7 @@ export default function SleepOver({ onOpenJoin }) {
                   {/* Slot & Capacity info */}
                   <div className="mt-8 flex flex-wrap gap-4 items-center text-xs font-extrabold text-[#320b35]">
                     <div className="flex items-center gap-1.5 bg-[#F7F2E7] px-3 py-2 rounded-xl border border-[#320b35]">
-                      <Calendar className="w-4 h-4 text-[#7E3940]" />
+                      <Calendar className="w-4 h-4 text-[#320b35]" />
                       <span>{act.upcomingSlot}</span>
                     </div>
                     <div className="flex items-center gap-1.5 bg-[#F7F2E7] px-3 py-2 rounded-xl border border-[#320b35]">
@@ -192,7 +192,7 @@ export default function SleepOver({ onOpenJoin }) {
 
                     <div className="my-6 p-4 rounded-2xl bg-white border-2 border-dashed border-[#320b35]/40">
                       <p className="text-xs uppercase font-extrabold tracking-wider text-[#320b35]/60">Community Access Pass</p>
-                      <p className="text-2xl font-black text-[#7E3940] mt-1 font-display">NAP-COMMUNITY</p>
+                      <p className="text-2xl font-black text-[#320b35] mt-1 font-display">NAP-COMMUNITY</p>
                       <p className="text-[11px] text-[#320b35]/70 font-semibold mt-1">Valid across Delhi NCR, Mumbai & Bengaluru lounges</p>
                     </div>
                   </div>
@@ -213,7 +213,7 @@ export default function SleepOver({ onOpenJoin }) {
                   )}
 
                   <p className="text-[11px] font-bold text-[#320b35]/70 mt-3">
-                    Looking for custom private community booking? <button onClick={onOpenJoin} className="underline text-[#7E3940] font-extrabold">Ask our team</button>
+                    Looking for custom private community booking? <button onClick={onOpenJoin} className="underline text-[#320b35] font-extrabold">Ask our team</button>
                   </p>
                 </div>
 

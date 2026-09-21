@@ -22,18 +22,18 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-doodle-pattern">
       {/* Decorative Floating Colorful Blobs / Shapes */}
       <div className="absolute top-16 left-10 w-32 h-32 bg-[#FFEDA8]/50 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse"></div>
-      <div className="absolute top-40 right-10 w-48 h-48 bg-[#7E3940]/20 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse delay-700"></div>
+      <div className="absolute top-40 right-10 w-48 h-48 bg-[#320b35]/20 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse delay-700"></div>
       <div className="absolute bottom-10 left-1/3 w-64 h-64 bg-[#004958]/15 rounded-full blur-3xl -z-10 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Floating fun pill notices */}
         <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
           <div className="badge-sticker bg-[#FFEDA8] text-[#320b35] rotate-[-2deg]">
-            <Sparkles className="w-4 h-4 text-[#7E3940]" />
+            <Sparkles className="w-4 h-4 text-[#320b35]" />
             <span>Official Community Wing</span>
           </div>
           <div className="badge-sticker bg-[#CDD6B7] text-[#320b35] rotate-[1.5deg]">
-            <Flame className="w-4 h-4 text-[#7E3940]" />
+            <Flame className="w-4 h-4 text-[#320b35]" />
             <span>Special: Amol Parashar In The House</span>
           </div>
           <div className="badge-sticker bg-[#F7F2E7] text-[#320b35] rotate-[-1deg]">
@@ -46,7 +46,7 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-5xl sm:text-7xl md:text-8xl font-black text-[#320b35] tracking-tight font-display leading-[1.05]">
             <span>NAP</span>
-            <span className="block mt-3 text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#7E3940] font-handwriting">
+            <span className="block mt-3 text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#320b35] font-handwriting">
               — its time to take one :)
             </span>
           </h1>
@@ -54,7 +54,7 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
           {/* Dynamic rotating subtext */}
           <div className="mt-8 text-xl sm:text-2xl md:text-3xl font-bold text-[#320b35] flex flex-wrap items-center justify-center gap-2">
             <span>Ready to take a nap</span>
-            <span className="inline-block px-4 py-1.5 rounded-2xl bg-[#7E3940] text-white border-2 border-[#320b35] shadow-[3px_3px_0px_#320b35] transform rotate-[-1deg] transition-all duration-300">
+            <span className="inline-block px-4 py-1.5 rounded-2xl bg-[#320b35] text-white border-2 border-[#320b35] shadow-[3px_3px_0px_#320b35] transform rotate-[-1deg] transition-all duration-300">
               {words[wordIndex]}
             </span>
             <span>?</span>
@@ -94,7 +94,7 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
           {/* Quick Stats / Quirky Social Proof Ticker */}
           <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
             <div className="p-4 bg-white rounded-2xl border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] text-center">
-              <span className="text-3xl font-black text-[#7E3940]">3 Wings</span>
+              <span className="text-3xl font-black text-[#320b35]">3 Wings</span>
               <p className="text-xs font-bold text-gray-600 mt-1 uppercase">Community, PR & Media</p>
             </div>
             <div className="p-4 bg-white rounded-2xl border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] text-center">
@@ -106,7 +106,7 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
               <p className="text-xs font-bold text-gray-600 mt-1 uppercase">Good Vibes Only</p>
             </div>
             <div className="p-4 bg-white rounded-2xl border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] text-center">
-              <span className="text-3xl font-black text-[#7E3940]">An Alap</span>
+              <span className="text-3xl font-black text-[#320b35]">An Alap</span>
               <p className="text-xs font-bold text-gray-600 mt-1 uppercase">Original Episodes</p>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
                 </span>
                 <span className="text-3xl">🛏️</span>
               </div>
-              <h3 className="mt-4 text-2xl font-black text-[#320b35] font-display group-hover:text-[#7E3940] transition-colors">
+              <h3 className="mt-4 text-2xl font-black text-[#320b35] font-display group-hover:text-[#320b35] transition-colors">
                 Sleep Over
               </h3>
               <p className="mt-2 text-sm text-[#320b35]/80 font-medium leading-relaxed">
@@ -143,16 +143,16 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
           {/* Card 2: Image PR */}
           <a 
             href="#image-management"
-            className="group relative bg-[#7E3940]/10 hover:bg-[#7E3940]/20 p-6 rounded-3xl border-3 border-[#320b35] shadow-[6px_6px_0px_#320b35] hover:shadow-[9px_9px_0px_#320b35] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
+            className="group relative bg-[#320b35]/10 hover:bg-[#320b35]/20 p-6 rounded-3xl border-3 border-[#320b35] shadow-[6px_6px_0px_#320b35] hover:shadow-[9px_9px_0px_#320b35] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between">
-                <span className="px-3 py-1 rounded-full text-xs font-black bg-[#7E3940] text-white border border-[#320b35] shadow-[2px_2px_0px_#320b35]">
+                <span className="px-3 py-1 rounded-full text-xs font-black bg-[#320b35] text-white border border-[#320b35] shadow-[2px_2px_0px_#320b35]">
                   WING 2
                 </span>
                 <span className="text-3xl">⚡</span>
               </div>
-              <h3 className="mt-4 text-2xl font-black text-[#320b35] font-display group-hover:text-[#7E3940] transition-colors">
+              <h3 className="mt-4 text-2xl font-black text-[#320b35] font-display group-hover:text-[#320b35] transition-colors">
                 Image PR
               </h3>
               <p className="mt-2 text-sm text-[#320b35]/80 font-medium leading-relaxed">

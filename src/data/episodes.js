@@ -21,7 +21,7 @@ export const episodes = [
     role: 'Filmmaker (Part 2)',
     duration: '37:19',
     badge: 'PART 2',
-    color: '#7E3940',
+    color: '#320b35',
     thumbnail: 'https://i.ytimg.com/vi/APeJ09g2TW0/hqdefault.jpg',
     description: 'Part 2 with filmmaker Jahnu Barua delving into authentic narrative discipline, world cinema, and preserving indigenous identity in film.'
   },
@@ -60,7 +60,7 @@ export const episodes = [
     role: 'Filmmaker & Playwright',
     duration: '14:43',
     badge: 'EPISODE 05',
-    color: '#7E3940',
+    color: '#320b35',
     thumbnail: 'https://i.ytimg.com/vi/u-I5XIc1atM/hqdefault.jpg',
     description: 'Outspoken filmmaker and theatre writer Himanshu Prasad Das shares his perspectives on independent voices, social commentary, and fearless art.'
   },
@@ -86,7 +86,7 @@ export const episodes = [
     role: 'Veteran Actress (Part 2)',
     duration: '14:28',
     badge: 'PART 2',
-    color: '#7E3940',
+    color: '#320b35',
     thumbnail: 'https://i.ytimg.com/vi/mYOTMGRifeY/hqdefault.jpg',
     description: 'Part 2 of the heartfelt session with Chetana Das discussing comedic timing, life lessons, resilience, and connecting with audiences.'
   },
@@ -125,7 +125,7 @@ export const episodes = [
     role: 'Director / Actor',
     duration: '27:20',
     badge: 'EPISODE 10',
-    color: '#7E3940',
+    color: '#320b35',
     thumbnail: 'https://i.ytimg.com/vi/VJC2tLZ6wWE/hqdefault.jpg',
     description: 'Director and martial artist Kenny Deori Basumatary on DIY filmmaking, creating the legendary Local Kung Fu, and making independent cinema work.'
   },
@@ -151,7 +151,7 @@ export const episodes = [
     role: 'Social Activist',
     duration: '42:17',
     badge: 'EPISODE 12',
-    color: '#7E3940',
+    color: '#320b35',
     thumbnail: 'https://i.ytimg.com/vi/Mf5axjDB1x4/hqdefault.jpg',
     description: 'Social activist Arpana Choudhury (Luku) delivers a deeply moving and soulful discussion on grassroots activism, social justice, and community empathy.'
   },

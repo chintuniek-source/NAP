@@ -29,7 +29,7 @@ export default function ImageManagement({ onOpenJoin }) {
       name: 'Counsellor',
       tag: 'PR ADVISORY & THERAPY',
       icon: '🧠',
-      accentColor: '#7E3940',
+      accentColor: '#320b35',
       bgCard: 'bg-white',
       summary: 'Brand reputation therapy and 1-on-1 strategic narrative advisory for founders, creators, and public figures.',
       deliverables: [
@@ -45,7 +45,7 @@ export default function ImageManagement({ onOpenJoin }) {
       name: 'Event Curation',
       tag: 'EXPERIENTIAL ACTIVATIONS',
       icon: '🎪',
-      accentColor: '#7E3940',
+      accentColor: '#320b35',
       bgCard: 'bg-[#FFEDA8]/40',
       summary: 'Immersive, high-retention brand activations, intimate media pop-ups, and experiential launches that people remember forever.',
       deliverables: [
@@ -77,7 +77,7 @@ export default function ImageManagement({ onOpenJoin }) {
       name: 'Brand Image Building',
       tag: 'HOLISTIC IDENTITY & PR',
       icon: '🏛️',
-      accentColor: '#7E3940',
+      accentColor: '#320b35',
       bgCard: 'bg-white',
       summary: 'End-to-end visual identity, tone of voice, narrative playbooks, and lasting cultural relevance for ambitious companies.',
       deliverables: [
@@ -100,14 +100,14 @@ export default function ImageManagement({ onOpenJoin }) {
             <h2 className="text-4xl sm:text-6xl font-black text-[#320b35] tracking-tight font-display">
               Image Management
             </h2>
-            <p className="mt-3 text-lg font-bold text-[#7E3940] font-handwriting text-2xl">
+            <p className="mt-3 text-lg font-bold text-[#320b35] font-handwriting text-2xl">
               Brand Consulting & Modern PR Services
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
             <button
               onClick={() => { setSelectedService('Full Suite Consulting'); setShowInquiryModal(true); }}
-              className="px-6 py-3 rounded-2xl font-black text-sm bg-[#7E3940] hover:bg-[#6c3036] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] hover:shadow-[2px_2px_0px_#320b35] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-2"
+              className="px-6 py-3 rounded-2xl font-black text-sm bg-[#320b35] hover:bg-[#240726] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] hover:shadow-[2px_2px_0px_#320b35] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center gap-2"
             >
               <Sparkles className="w-4 h-4 text-[#FFEDA8]" />
               <span>Book a Brand Consultation</span>
@@ -145,7 +145,7 @@ export default function ImageManagement({ onOpenJoin }) {
                   <p className="text-xs font-black uppercase tracking-wider text-[#320b35]/60">Core Deliverables</p>
                   {srv.deliverables.map((item, idx) => (
                     <div key={idx} className="flex items-start gap-2.5">
-                      <CheckCircle2 className="w-4 h-4 text-[#7E3940] stroke-[3] mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-[#320b35] stroke-[3] mt-0.5 flex-shrink-0" />
                       <span className="text-xs sm:text-sm font-bold text-[#320b35]">{item}</span>
                     </div>
                   ))}
@@ -170,7 +170,7 @@ export default function ImageManagement({ onOpenJoin }) {
         </div>
 
         {/* Consulting Banner */}
-        <div className="mt-14 bg-gradient-to-r from-[#7E3940] to-[#5b242a] p-8 sm:p-10 rounded-3xl border-3 border-[#320b35] shadow-[8px_8px_0px_#320b35] text-white flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-14 bg-gradient-to-r from-[#320b35] to-[#240726] p-8 sm:p-10 rounded-3xl border-3 border-[#320b35] shadow-[8px_8px_0px_#320b35] text-white flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <span className="bg-[#FFEDA8] text-[#320b35] font-black text-xs px-3 py-1 rounded-full border border-[#320b35] shadow-[2px_2px_0px_#320b35] uppercase">
               Brand Diagnostic Clinic
@@ -198,7 +198,7 @@ export default function ImageManagement({ onOpenJoin }) {
           <div className="bg-white rounded-3xl border-3 border-[#320b35] shadow-[8px_8px_0px_#320b35] max-w-lg w-full p-6 sm:p-8 relative">
             <div className="flex items-center justify-between pb-4 border-b-2 border-[#320b35]/20">
               <div>
-                <span className="text-xs font-black uppercase text-[#7E3940]">Image Management PR Wing</span>
+                <span className="text-xs font-black uppercase text-[#320b35]">Image Management PR Wing</span>
                 <h4 className="font-black text-2xl text-[#320b35] font-display">Project Brief Inquiry</h4>
               </div>
               <button 
@@ -234,7 +234,7 @@ export default function ImageManagement({ onOpenJoin }) {
                       required
                       value={formData.brandName}
                       onChange={(e) => setFormData({ ...formData, brandName: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl border-2 border-[#320b35] text-sm font-bold bg-[#F7F2E7] text-[#320b35] focus:outline-none focus:ring-2 focus:ring-[#7E3940]"
+                      className="w-full px-4 py-2.5 rounded-xl border-2 border-[#320b35] text-sm font-bold bg-[#F7F2E7] text-[#320b35] focus:outline-none focus:ring-2 focus:ring-[#320b35]"
                     />
                   </div>
                   <div>
@@ -247,7 +247,7 @@ export default function ImageManagement({ onOpenJoin }) {
                       required
                       value={formData.contactEmail}
                       onChange={(e) => setFormData({ ...formData, contactEmail: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl border-2 border-[#320b35] text-sm font-bold bg-[#F7F2E7] text-[#320b35] focus:outline-none focus:ring-2 focus:ring-[#7E3940]"
+                      className="w-full px-4 py-2.5 rounded-xl border-2 border-[#320b35] text-sm font-bold bg-[#F7F2E7] text-[#320b35] focus:outline-none focus:ring-2 focus:ring-[#320b35]"
                     />
                   </div>
                 </div>
@@ -261,13 +261,13 @@ export default function ImageManagement({ onOpenJoin }) {
                     placeholder="Tell us about your brand goals, launch, or identity makeover..."
                     value={formData.challenge}
                     onChange={(e) => setFormData({ ...formData, challenge: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl border-2 border-[#320b35] text-sm font-bold bg-[#F7F2E7] text-[#320b35] focus:outline-none focus:ring-2 focus:ring-[#7E3940]"
+                    className="w-full px-4 py-2.5 rounded-xl border-2 border-[#320b35] text-sm font-bold bg-[#F7F2E7] text-[#320b35] focus:outline-none focus:ring-2 focus:ring-[#320b35]"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 rounded-xl font-black text-base bg-[#7E3940] hover:bg-[#6c3036] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] flex items-center justify-center gap-2"
+                  className="w-full py-3.5 rounded-xl font-black text-base bg-[#320b35] hover:bg-[#240726] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] flex items-center justify-center gap-2"
                 >
                   <Send className="w-4 h-4" />
                   <span>Send Consultation Brief</span>

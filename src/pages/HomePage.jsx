@@ -28,13 +28,13 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
       <section className="relative pt-12 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
         {/* Soft background ambient glows */}
         <div className="absolute top-10 left-1/4 w-72 h-72 bg-[#FFEDA8]/40 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse"></div>
-        <div className="absolute top-36 right-10 w-80 h-80 bg-[#7E3940]/20 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse delay-500"></div>
+        <div className="absolute top-36 right-10 w-80 h-80 bg-[#320b35]/20 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse delay-500"></div>
 
         {/* Big Bold Hero Headline */}
         <div className="text-center max-w-5xl mx-auto">
           <h1 className="text-6xl sm:text-8xl md:text-9xl font-black text-[#320b35] tracking-tight font-display leading-[0.98]">
             <span>NAP</span>
-            <span className="block mt-4 text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#7E3940] font-handwriting">
+            <span className="block mt-4 text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#320b35] font-handwriting">
               — its time to take one :)
             </span>
           </h1>
@@ -42,14 +42,14 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
           {/* Dynamic rotating sentence */}
           <div className="mt-8 text-xl sm:text-3xl font-bold text-[#320b35] flex flex-wrap items-center justify-center gap-2">
             <span>Ready to take a nap</span>
-            <span className="inline-block px-4 py-1.5 rounded-2xl bg-[#7E3940] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] transform rotate-[-1deg] transition-all duration-300">
+            <span className="inline-block px-4 py-1.5 rounded-2xl bg-[#320b35] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] transform rotate-[-1deg] transition-all duration-300">
               {words[wordIndex]}
             </span>
             <span>?</span>
           </div>
 
           <p className="mt-6 text-base sm:text-xl text-[#320b35]/80 max-w-3xl mx-auto leading-relaxed font-medium">
-            Welcome to <strong className="font-extrabold text-[#320b35]">NAP</strong>. We run 3 interconnected creative universes: joyful community gatherings at <Link to="/sleep-over" className="text-[#7E3940] underline font-extrabold">Sleep Over</Link>, culture-shaping PR advisory at <Link to="/image-pr" className="text-[#7E3940] underline font-extrabold">Image PR</Link>, and intimate acoustic storytelling on <Link to="/media" className="text-[#004958] underline font-extrabold">Nap Media</Link>.
+            Welcome to <strong className="font-extrabold text-[#320b35]">NAP</strong>. We run 3 interconnected creative universes: joyful community gatherings at <Link to="/sleep-over" className="text-[#320b35] underline font-extrabold">Sleep Over</Link>, culture-shaping PR advisory at <Link to="/image-pr" className="text-[#320b35] underline font-extrabold">Image PR</Link>, and intimate acoustic storytelling on <Link to="/media" className="text-[#004958] underline font-extrabold">Nap Media</Link>.
           </p>
         </div>
       </section>
@@ -82,7 +82,7 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
 
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <p className="text-sm font-bold text-[#7E3940] font-handwriting text-xl">
+                  <p className="text-sm font-bold text-[#320b35] font-handwriting text-xl">
                     Community & Experience-Driven Activities
                   </p>
                   <p className="mt-3 text-sm text-[#320b35]/80 font-medium leading-relaxed">
@@ -117,7 +117,7 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
 
             {/* Wing 2: Image PR Portal */}
             <div className="bg-[#F7F2E7] rounded-3xl border-3 border-[#320b35] shadow-[8px_8px_0px_#320b35] hover:shadow-[12px_12px_0px_#320b35] hover:-translate-y-1.5 transition-all flex flex-col justify-between overflow-hidden group">
-              <div className="bg-[#7E3940] p-6 border-b-3 border-[#320b35] flex items-center justify-between text-white">
+              <div className="bg-[#320b35] p-6 border-b-3 border-[#320b35] flex items-center justify-between text-white">
                 <div>
                   <h3 className="text-3xl font-black text-white font-display">
                     Image PR
@@ -128,7 +128,7 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
 
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <p className="text-sm font-bold text-[#7E3940] font-handwriting text-xl">
+                  <p className="text-sm font-bold text-[#320b35] font-handwriting text-xl">
                     Brand Consulting & Narrative Craft
                   </p>
                   <p className="mt-3 text-sm text-[#320b35]/80 font-medium leading-relaxed">
@@ -157,7 +157,7 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
 
                 <Link
                   to="/image-pr"
-                  className="mt-8 w-full py-4 rounded-xl font-black text-sm bg-[#7E3940] hover:bg-[#6c3036] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] flex items-center justify-center gap-2 group-hover:translate-x-0.5 transition-all"
+                  className="mt-8 w-full py-4 rounded-xl font-black text-sm bg-[#320b35] hover:bg-[#240726] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] flex items-center justify-center gap-2 group-hover:translate-x-0.5 transition-all"
                 >
                   <span>Open Image PR Page</span>
                   <ArrowRight className="w-4 h-4" />

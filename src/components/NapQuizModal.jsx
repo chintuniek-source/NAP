@@ -73,7 +73,7 @@ export default function NapQuizModal({ isOpen, onClose, onSelectResult }) {
           wing: "Image Management Wing",
           recommendation: "You belong with our What-an-idea Promotion & Brand Counsellors!",
           emoji: "⚡",
-          bg: "bg-[#7E3940] text-white",
+          bg: "bg-[#320b35] text-white",
           cta: "#image-management"
         };
       } else {
@@ -132,7 +132,7 @@ export default function NapQuizModal({ isOpen, onClose, onSelectResult }) {
                 {questions.map((_, i) => (
                   <div 
                     key={i} 
-                    className={`w-5 h-2 rounded-full border border-[#320b35] ${i <= currentQuestion ? 'bg-[#7E3940]' : 'bg-[#CDD6B7]/40'}`}
+                    className={`w-5 h-2 rounded-full border border-[#320b35] ${i <= currentQuestion ? 'bg-[#320b35]' : 'bg-[#CDD6B7]/40'}`}
                   ></div>
                 ))}
               </div>
@@ -147,7 +147,7 @@ export default function NapQuizModal({ isOpen, onClose, onSelectResult }) {
                 <button
                   key={i}
                   onClick={() => handleSelectOption(opt.category)}
-                  className="w-full text-left p-4 rounded-2xl border-2 border-[#320b35] bg-[#F7F2E7] hover:bg-[#FFEDA8] hover:border-[#7E3940] font-bold text-sm text-[#320b35] shadow-[3px_3px_0px_#320b35] hover:shadow-[1px_1px_0px_#320b35] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center justify-between group"
+                  className="w-full text-left p-4 rounded-2xl border-2 border-[#320b35] bg-[#F7F2E7] hover:bg-[#FFEDA8] hover:border-[#320b35] font-bold text-sm text-[#320b35] shadow-[3px_3px_0px_#320b35] hover:shadow-[1px_1px_0px_#320b35] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center justify-between group"
                 >
                   <span>{opt.label}</span>
                   <ArrowRight className="w-4 h-4 text-[#320b35]/60 group-hover:text-[#320b35] group-hover:translate-x-1 transition-all flex-shrink-0 ml-2" />
@@ -181,7 +181,7 @@ export default function NapQuizModal({ isOpen, onClose, onSelectResult }) {
               <a
                 href={result.cta}
                 onClick={onClose}
-                className="flex-2 py-3 px-6 rounded-xl bg-[#7E3940] hover:bg-[#6c3036] text-white font-black text-xs border-2 border-[#320b35] shadow-[3px_3px_0px_#320b35] flex items-center justify-center gap-1.5"
+                className="flex-2 py-3 px-6 rounded-xl bg-[#320b35] hover:bg-[#240726] text-white font-black text-xs border-2 border-[#320b35] shadow-[3px_3px_0px_#320b35] flex items-center justify-center gap-1.5"
               >
                 <span>Jump To Your Wing</span>
                 <ArrowRight className="w-3.5 h-3.5" />

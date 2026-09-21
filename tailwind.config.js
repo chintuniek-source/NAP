@@ -9,15 +9,15 @@ export default {
     extend: {
       colors: {
         nap: {
-          russet: '#7E3940',
+          russet: '#320b35',
           butter: '#FFEDA8',
           espresso: '#320b35',
           ivory: '#F7F2E7',
           peacock: '#004958',
           mist: '#CDD6B7',
           // semantic mapping aliases
-          coral: '#7E3940',
-          tangerine: '#7E3940',
+          coral: '#320b35',
+          tangerine: '#320b35',
           sunshine: '#FFEDA8',
           mint: '#CDD6B7',
           sky: '#004958',

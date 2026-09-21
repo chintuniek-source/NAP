@@ -98,7 +98,7 @@ export default function MediaWingPage({ onOpenJoin }) {
                   <span className="bg-[#004958]/10 text-[#004958] px-2 py-0.5 rounded-md text-xs border border-[#004958]/30 font-black">{current.role}</span>
                   <span>•</span>
                   <span className="inline-flex items-center gap-1 bg-[#FFEDA8] text-[#320b35] px-2 py-0.5 rounded-md text-xs border border-[#320b35] font-black font-mono">
-                    <Clock className="w-3.5 h-3.5 text-[#7E3940]" />
+                    <Clock className="w-3.5 h-3.5 text-[#320b35]" />
                     {current.duration}
                   </span>
                 </p>
@@ -163,7 +163,7 @@ export default function MediaWingPage({ onOpenJoin }) {
                             </p>
                           </div>
                           {isSelected && (
-                            <span className="w-2.5 h-2.5 rounded-full bg-[#7E3940] animate-pulse flex-shrink-0"></span>
+                            <span className="w-2.5 h-2.5 rounded-full bg-[#320b35] animate-pulse flex-shrink-0"></span>
                           )}
                         </div>
                       </div>
@@ -217,7 +217,7 @@ export default function MediaWingPage({ onOpenJoin }) {
                 {/* Direct Line / WhatsApp */}
                 <div className="bg-[#F7F2E7] p-5 rounded-2xl border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] text-[#320b35] flex flex-col justify-between">
                   <div>
-                    <div className="w-10 h-10 rounded-xl bg-[#7E3940] text-white flex items-center justify-center mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-[#320b35] text-white flex items-center justify-center mb-3">
                       <Phone className="w-5 h-5" />
                     </div>
                     <h4 className="font-black text-sm uppercase tracking-wide text-[#320b35]">Direct Desk</h4>

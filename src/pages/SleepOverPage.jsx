@@ -62,7 +62,7 @@ export default function SleepOverPage({ onOpenJoin }) {
             Sleep Over
           </h1>
           
-          <p className="mt-4 text-2xl sm:text-3xl font-extrabold text-[#7E3940] font-handwriting">
+          <p className="mt-4 text-2xl sm:text-3xl font-extrabold text-[#320b35] font-handwriting">
             Community & Experience-Driven Activities
           </p>
           
@@ -122,7 +122,7 @@ export default function SleepOverPage({ onOpenJoin }) {
 
                 <div className="mt-8 flex items-center gap-4 text-xs font-bold text-gray-600">
                   <div className="flex items-center gap-1 bg-[#F7F2E7] px-3 py-2 rounded-xl border border-[#320b35]">
-                    <Calendar className="w-4 h-4 text-[#7E3940]" />
+                    <Calendar className="w-4 h-4 text-[#320b35]" />
                     <span>Every Thursday • 7:00 PM</span>
                   </div>
                   <div className="flex items-center gap-1 bg-[#F7F2E7] px-3 py-2 rounded-xl border border-[#320b35]">
@@ -188,7 +188,7 @@ export default function SleepOverPage({ onOpenJoin }) {
         {/* 2. BREAKFAST CASTLE DEEP DIVE */}
         <section id="breakfast-castle" className="scroll-mt-28">
           <div className="bg-white rounded-3xl border-3 border-[#320b35] shadow-[10px_10px_0px_#320b35] overflow-hidden">
-            <div className="bg-[#7E3940] text-white p-8 border-b-3 border-[#320b35] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="bg-[#320b35] text-white p-8 border-b-3 border-[#320b35] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
                 <h2 className="text-3xl sm:text-5xl font-black text-white font-display">
                   Breakfast Castle
@@ -209,15 +209,15 @@ export default function SleepOverPage({ onOpenJoin }) {
 
                 <div className="mt-6 space-y-2.5 text-xs font-bold text-[#320b35]">
                   <div className="flex items-center gap-2">
-                    <span className="w-5 h-5 rounded-full bg-[#7E3940] text-white flex items-center justify-center text-[10px]">🥞</span>
+                    <span className="w-5 h-5 rounded-full bg-[#320b35] text-white flex items-center justify-center text-[10px]">🥞</span>
                     <span>All-you-can-stack pancake & Belgian waffle station</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="w-5 h-5 rounded-full bg-[#7E3940] text-white flex items-center justify-center text-[10px]">☕</span>
+                    <span className="w-5 h-5 rounded-full bg-[#320b35] text-white flex items-center justify-center text-[10px]">☕</span>
                     <span>Single-origin cold brews and spiced cinnamon chai</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="w-5 h-5 rounded-full bg-[#7E3940] text-white flex items-center justify-center text-[10px]">📖</span>
+                    <span className="w-5 h-5 rounded-full bg-[#320b35] text-white flex items-center justify-center text-[10px]">📖</span>
                     <span>Reading nook with zines, comics, and art journals</span>
                   </div>
                 </div>
@@ -229,7 +229,7 @@ export default function SleepOverPage({ onOpenJoin }) {
                   </div>
                   <button
                     onClick={onOpenJoin}
-                    className="px-4 py-2 rounded-xl bg-[#7E3940] text-white font-black text-xs border border-[#320b35] shadow-[2px_2px_0px_#320b35]"
+                    className="px-4 py-2 rounded-xl bg-[#320b35] text-white font-black text-xs border border-[#320b35] shadow-[2px_2px_0px_#320b35]"
                   >
                     Claim Seat
                   </button>
@@ -239,7 +239,7 @@ export default function SleepOverPage({ onOpenJoin }) {
               {/* Interactive Pancake Tower Toy */}
               <div className="lg:col-span-6 bg-[#F7F2E7] p-6 sm:p-8 rounded-3xl border-3 border-[#320b35] shadow-[4px_4px_0px_#320b35] text-center">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-black uppercase text-[#7E3940]">Interactive Pancake Lab</span>
+                  <span className="text-xs font-black uppercase text-[#320b35]">Interactive Pancake Lab</span>
                   <span className="text-xs font-mono font-bold bg-white px-2 py-0.5 rounded border border-[#320b35]">
                     Stack: {pancakeStack.length} Layers
                   </span>
@@ -334,7 +334,7 @@ export default function SleepOverPage({ onOpenJoin }) {
                     <span className="text-xs font-black bg-[#CDD6B7] px-2.5 py-0.5 rounded border border-[#320b35] uppercase text-[#320b35]">
                       Pass Reservation
                     </span>
-                    <span className="text-xs font-bold text-[#7E3940] bg-[#7E3940]/10 px-2 py-0.5 rounded border border-[#7E3940]/30">
+                    <span className="text-xs font-bold text-[#320b35] bg-[#320b35]/10 px-2 py-0.5 rounded border border-[#320b35]/30">
                       ⚡ Filling Fast
                     </span>
                   </div>

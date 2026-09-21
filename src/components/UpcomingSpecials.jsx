@@ -7,14 +7,14 @@ export default function UpcomingSpecials() {
   return (
     <section id="specials" className="py-20 bg-[#F7F2E7] border-y-3 border-[#320b35] relative overflow-hidden">
       {/* Background graphic elements */}
-      <div className="absolute -top-10 -right-10 w-52 h-52 bg-[#7E3940]/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute -top-10 -right-10 w-52 h-52 bg-[#320b35]/15 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute -bottom-10 -left-10 w-52 h-52 bg-[#FFEDA8]/30 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Module Header Badge */}
         <div className="flex flex-col items-center text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#7E3940] text-white border-2 border-[#320b35] shadow-[3px_3px_0px_#320b35] font-black text-xs uppercase tracking-wider mb-4 animate-bounce-gentle">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#320b35] text-white border-2 border-[#320b35] shadow-[3px_3px_0px_#320b35] font-black text-xs uppercase tracking-wider mb-4 animate-bounce-gentle">
             <Flame className="w-4 h-4 fill-[#FFEDA8] text-[#FFEDA8]" />
             <span>Featured Tour Spotlight</span>
             <Flame className="w-4 h-4 fill-[#FFEDA8] text-[#FFEDA8]" />
@@ -33,7 +33,7 @@ export default function UpcomingSpecials() {
           <div className="grid grid-cols-1 lg:grid-cols-12">
             
             {/* Left Column: Official Poster Showcase */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-[#7E3940] to-[#552328] p-6 sm:p-8 flex flex-col justify-between relative border-b-3 lg:border-b-0 lg:border-r-3 border-[#320b35] text-white">
+            <div className="lg:col-span-5 bg-gradient-to-br from-[#320b35] to-[#240726] p-6 sm:p-8 flex flex-col justify-between relative border-b-3 lg:border-b-0 lg:border-r-3 border-[#320b35] text-white">
               <div className="flex items-center justify-between mb-4">
                 <span className="px-3 py-1 rounded-full text-xs font-black bg-[#FFEDA8] text-[#320b35] border-2 border-[#320b35] shadow-[2px_2px_0px_#320b35] flex items-center gap-1 uppercase tracking-wider">
                   ⭐ LIVE THEATRE
@@ -73,7 +73,7 @@ export default function UpcomingSpecials() {
                 onClick={() => setShowPosterModal(true)}
                 className="mt-6 w-full py-3 px-4 rounded-xl bg-white hover:bg-[#FFEDA8] text-[#320b35] font-black text-xs border-2 border-[#320b35] shadow-[3px_3px_0px_#320b35] flex items-center justify-center gap-2 transition-all uppercase tracking-wider"
               >
-                <Maximize2 className="w-3.5 h-3.5 text-[#7E3940]" />
+                <Maximize2 className="w-3.5 h-3.5 text-[#320b35]" />
                 <span>View Full Show Poster</span>
               </button>
             </div>
@@ -84,31 +84,31 @@ export default function UpcomingSpecials() {
                 
                 {/* Meta Location & Date Banner */}
                 <div className="flex flex-wrap items-center gap-2 text-xs font-extrabold text-gray-700 mb-4">
-                  <span className="flex items-center gap-1.5 bg-[#F7F2E7] text-[#7E3940] px-3.5 py-1.5 rounded-xl border border-[#7E3940]/30">
-                    <Calendar className="w-4 h-4 text-[#7E3940]" />
+                  <span className="flex items-center gap-1.5 bg-[#F7F2E7] text-[#320b35] px-3.5 py-1.5 rounded-xl border border-[#320b35]/30">
+                    <Calendar className="w-4 h-4 text-[#320b35]" />
                     <span>26th September • Evening Show</span>
                   </span>
                   <span className="flex items-center gap-1.5 bg-[#F7F2E7] text-[#320b35] px-3.5 py-1.5 rounded-xl border border-[#320b35]/30">
-                    <MapPin className="w-4 h-4 text-[#7E3940]" />
+                    <MapPin className="w-4 h-4 text-[#320b35]" />
                     <span>ITA Machkhowa, Guwahati</span>
                   </span>
                 </div>
 
                 {/* Title and Subtitle */}
                 <div className="mb-4">
-                  <p className="text-xs font-black uppercase tracking-widest text-[#7E3940]">
+                  <p className="text-xs font-black uppercase tracking-widest text-[#320b35]">
                     AMOL PARASHAR LIVE
                   </p>
                   <h3 className="text-3xl sm:text-5xl font-black text-[#320b35] font-display uppercase tracking-tight mt-1 leading-none">
                     Besharam Aadmi
                   </h3>
-                  <p className="text-base font-extrabold text-[#7E3940] mt-1.5">
+                  <p className="text-base font-extrabold text-[#320b35] mt-1.5">
                     A Comedy Theatre Show
                   </p>
                 </div>
 
                 <p className="text-[#320b35]/80 text-sm sm:text-base leading-relaxed font-medium">
-                  Acclaimed actor and creator <strong className="font-extrabold text-[#320b35]">Amol Parashar</strong> takes the stage in Guwahati for <strong className="font-extrabold text-[#7E3940]">"Besharam Aadmi"</strong> — a hilarious, unfiltered comedy theatre spectacle exploring modern shamelessness, awkward truths, and chaotic life dilemmas.
+                  Acclaimed actor and creator <strong className="font-extrabold text-[#320b35]">Amol Parashar</strong> takes the stage in Guwahati for <strong className="font-extrabold text-[#320b35]">"Besharam Aadmi"</strong> — a hilarious, unfiltered comedy theatre spectacle exploring modern shamelessness, awkward truths, and chaotic life dilemmas.
                 </p>
 
                 {/* Show Production Credits Box */}
@@ -120,7 +120,7 @@ export default function UpcomingSpecials() {
                     </div>
                     <div>
                       <p className="text-[10px] font-black uppercase tracking-wider text-gray-500">Produced By</p>
-                      <p className="font-black text-[#7E3940] text-sm mt-0.5">Amol Parashar & Vyom Charaya</p>
+                      <p className="font-black text-[#320b35] text-sm mt-0.5">Amol Parashar & Vyom Charaya</p>
                     </div>
                     <div>
                       <p className="text-[10px] font-black uppercase tracking-wider text-gray-500">Managed By</p>
@@ -132,7 +132,7 @@ export default function UpcomingSpecials() {
                 {/* Highlights */}
                 <div className="mt-5 text-xs font-bold text-gray-800">
                   <div className="flex items-center gap-2 bg-[#FFEDA8]/40 p-2.5 rounded-xl border border-[#320b35]">
-                    <Sparkles className="w-4 h-4 text-[#7E3940] flex-shrink-0" />
+                    <Sparkles className="w-4 h-4 text-[#320b35] flex-shrink-0" />
                     <span className="text-[#320b35]">Live Stand-Up & Theatrical Blend</span>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ export default function UpcomingSpecials() {
                 {/* Fast Filling Notice */}
                 <div className="mt-5 flex items-center justify-between text-xs font-extrabold">
                   <span className="text-gray-500">Venue: ITA Machkhowa Auditorium</span>
-                  <span className="px-2.5 py-1 rounded-md bg-[#7E3940]/10 text-[#7E3940] border border-[#7E3940]/30 animate-pulse">
+                  <span className="px-2.5 py-1 rounded-md bg-[#320b35]/10 text-[#320b35] border border-[#320b35]/30 animate-pulse">
                     ⚡ Fast Filling • Limited Seats
                   </span>
                 </div>
@@ -152,7 +152,7 @@ export default function UpcomingSpecials() {
                   href="https://bookonzaatio.in/events/besharam-aadmi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-4 rounded-xl font-black text-base bg-[#7E3940] hover:bg-[#6a2f35] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] hover:shadow-[2px_2px_0px_#320b35] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center justify-center gap-2"
+                  className="w-full py-4 rounded-xl font-black text-base bg-[#320b35] hover:bg-[#240726] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] hover:shadow-[2px_2px_0px_#320b35] hover:translate-x-0.5 hover:translate-y-0.5 transition-all flex items-center justify-center gap-2"
                 >
                   <Ticket className="w-5 h-5" />
                   <span>Get Tickets on BOOKONZAATIO.IN</span>
@@ -180,7 +180,7 @@ export default function UpcomingSpecials() {
           >
             <div className="flex items-center justify-between pb-3 border-b-2 border-gray-200">
               <div>
-                <p className="text-[10px] font-black uppercase text-[#7E3940]">Official Show Poster</p>
+                <p className="text-[10px] font-black uppercase text-[#320b35]">Official Show Poster</p>
                 <h4 className="font-black text-base text-[#320b35]">Besharam Aadmi • Amol Parashar Live</h4>
               </div>
               <button 
@@ -205,7 +205,7 @@ export default function UpcomingSpecials() {
                 href="https://bookonzaatio.in/events/besharam-aadmi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-xl bg-[#7E3940] text-white font-black text-xs border-2 border-[#320b35] shadow-[2px_2px_0px_#320b35] flex items-center gap-1"
+                className="px-4 py-2 rounded-xl bg-[#320b35] text-white font-black text-xs border-2 border-[#320b35] shadow-[2px_2px_0px_#320b35] flex items-center gap-1"
               >
                 <span>Book on Zaatio</span>
                 <ExternalLink className="w-3.5 h-3.5" />

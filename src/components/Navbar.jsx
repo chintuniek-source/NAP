@@ -31,7 +31,7 @@ export default function Navbar() {
     { 
       name: 'Image PR', 
       path: '/image-pr', 
-      activeBg: 'bg-[#7E3940]', 
+      activeBg: 'bg-[#320b35]', 
       activeText: 'text-white' 
     },
     { 
@@ -60,7 +60,7 @@ export default function Navbar() {
                   NAP
                 </span>
               </div>
-              <p className="text-xs font-bold text-[#7E3940] tracking-wide -mt-1 font-handwriting text-base">
+              <p className="text-xs font-bold text-[#320b35] tracking-wide -mt-1 font-handwriting text-base">
                 its time to take one :)
               </p>
             </div>
