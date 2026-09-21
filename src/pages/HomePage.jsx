@@ -32,12 +32,16 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
 
         {/* Big Bold Hero Headline */}
         <div className="text-center max-w-5xl mx-auto">
-          <h1 className="text-6xl sm:text-8xl md:text-9xl font-black text-[#320b35] tracking-tight font-display leading-[0.98]">
-            <span>NAP</span>
-            <span className="block mt-4 text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#320b35] font-handwriting">
+          <div className="flex flex-col items-center justify-center">
+            <img 
+              src="/NAP-hero.png" 
+              alt="NAP" 
+              className="h-28 sm:h-40 md:h-52 lg:h-60 w-auto object-contain select-none mx-auto transform hover:scale-105 transition-transform duration-300" 
+            />
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#320b35] font-handwriting -mt-2 sm:-mt-4">
               — its time to take one :)
-            </span>
-          </h1>
+            </h1>
+          </div>
 
           {/* Dynamic rotating sentence */}
           <div className="mt-8 text-xl sm:text-3xl font-bold text-[#320b35] flex flex-wrap items-center justify-center gap-2">

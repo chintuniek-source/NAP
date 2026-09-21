@@ -44,12 +44,16 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
 
         {/* Main Hero Header */}
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl font-black text-[#320b35] tracking-tight font-display leading-[1.05]">
-            <span>NAP</span>
-            <span className="block mt-3 text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#320b35] font-handwriting">
+          <div className="flex flex-col items-center justify-center">
+            <img 
+              src="/NAP-hero.png" 
+              alt="NAP" 
+              className="h-24 sm:h-36 md:h-48 lg:h-56 w-auto object-contain select-none mx-auto transform hover:scale-105 transition-transform duration-300" 
+            />
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#320b35] font-handwriting -mt-2 sm:-mt-4">
               — its time to take one :)
-            </span>
-          </h1>
+            </h1>
+          </div>
 
           {/* Dynamic rotating subtext */}
           <div className="mt-8 text-xl sm:text-2xl md:text-3xl font-bold text-[#320b35] flex flex-wrap items-center justify-center gap-2">
