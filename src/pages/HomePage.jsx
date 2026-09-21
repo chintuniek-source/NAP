@@ -6,11 +6,11 @@ import NapMedia from '../components/NapMedia';
 
 export default function HomePage({ onOpenQuiz, onOpenJoin }) {
   const words = [
-    "from toxic hustle pressure",
-    "from boring corporate PR",
-    "with community & pillow fights",
-    "into soulful stories on An Alap",
-    "from endless screen fatigue"
+    "from boring corporate PR 🥱",
+    "from 9-to-5 burnout 😮‍💨",
+    "with waffles & pillow fights 🥞",
+    "into unscripted acoustic stories 🎙️",
+    "from endless screen fatigue 🛋️"
   ];
   const [wordIndex, setWordIndex] = useState(0);
 
@@ -46,14 +46,41 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
           {/* Dynamic rotating sentence */}
           <div className="mt-8 text-xl sm:text-3xl font-bold text-[#320b35] flex flex-wrap items-center justify-center gap-2">
             <span>Ready to take a nap</span>
-            <span className="inline-block px-4 py-1.5 rounded-2xl bg-[#320b35] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] transform rotate-[-1deg] transition-all duration-300">
+            <span className="inline-block px-4 py-1.5 rounded-2xl bg-[#320b35] text-white border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] transform rotate-[-1deg] transition-all duration-300 font-extrabold">
               {words[wordIndex]}
             </span>
             <span>?</span>
           </div>
 
-          <p className="mt-6 text-base sm:text-xl text-[#320b35]/80 max-w-3xl mx-auto leading-relaxed font-medium">
-            Welcome to <strong className="font-extrabold text-[#320b35]">NAP</strong>. We run 3 interconnected creative universes: joyful community gatherings at <Link to="/sleep-over" className="text-[#320b35] underline font-extrabold">Sleep Over</Link>, culture-shaping PR advisory at <Link to="/image-pr" className="text-[#320b35] underline font-extrabold">Image PR</Link>, and intimate acoustic storytelling on <Link to="/media" className="text-[#004958] underline font-extrabold">Nap Media</Link>.
+          <p className="mt-6 text-base sm:text-lg md:text-xl text-[#320b35]/90 max-w-3xl mx-auto leading-relaxed md:leading-loose font-bold">
+            Welcome to <span className="font-cantora text-lg sm:text-xl text-[#320b35] bg-[#FFEDA8] px-2.5 py-0.5 rounded-lg border-2 border-[#320b35] shadow-[2px_2px_0px_#320b35] inline-block -rotate-1 mx-1 font-black">NAP</span>. We run <span className="underline decoration-wavy decoration-[#004958] decoration-2 underline-offset-4">3 interconnected creative universes</span>: joyful community gatherings at{' '}
+            <Link
+              to="/sleep-over"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[#FFEDA8] hover:bg-[#ffe380] text-[#320b35] border-2 border-[#320b35] shadow-[2px_2px_0px_#320b35] hover:shadow-[1px_1px_0px_#320b35] hover:-translate-y-0.5 transition-all text-sm sm:text-base font-black mx-1 group"
+            >
+              <span className="group-hover:rotate-12 transition-transform">🥞</span>
+              <span>Sleep Over</span>
+              <span className="text-xs font-black">➔</span>
+            </Link>
+            , culture-shaping PR advisory at{' '}
+            <Link
+              to="/image-pr"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[#320b35] hover:bg-[#240726] text-white border-2 border-[#320b35] shadow-[2px_2px_0px_#320b35] hover:shadow-[1px_1px_0px_#320b35] hover:-translate-y-0.5 transition-all text-sm sm:text-base font-black mx-1 group"
+            >
+              <span className="group-hover:rotate-12 transition-transform">⚡</span>
+              <span>Image PR</span>
+              <span className="text-xs font-black text-[#FFEDA8]">➔</span>
+            </Link>
+            , and intimate acoustic storytelling on{' '}
+            <Link
+              to="/media"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[#CDD6B7] hover:bg-[#bcc7a1] text-[#320b35] border-2 border-[#320b35] shadow-[2px_2px_0px_#320b35] hover:shadow-[1px_1px_0px_#320b35] hover:-translate-y-0.5 transition-all text-sm sm:text-base font-black mx-1 group"
+            >
+              <span className="group-hover:rotate-12 transition-transform">🎙️</span>
+              <span>Nap Media</span>
+              <span className="text-xs font-black">➔</span>
+            </Link>
+            .
           </p>
         </div>
       </section>
