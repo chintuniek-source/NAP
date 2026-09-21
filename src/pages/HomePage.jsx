@@ -33,12 +33,7 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
         {/* Big Bold Hero Headline */}
         <div className="text-center max-w-5xl mx-auto">
           <h1 className="text-6xl sm:text-8xl md:text-9xl font-black text-[#3E2723] tracking-tight font-display leading-[0.98]">
-            <span className="relative inline-block">
-              NAP
-              <svg className="absolute -bottom-2 sm:-bottom-4 left-0 w-full h-4 sm:h-7 text-[#7E3940]" viewBox="0 0 250 20" fill="none" preserveAspectRatio="none">
-                <path d="M3 15 Q 125 0, 247 15" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
-              </svg>
-            </span>
+            <span>NAP</span>
             <span className="block mt-4 text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#7E3940] font-handwriting">
               — its time to take one :)
             </span>
