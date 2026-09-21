@@ -48,9 +48,9 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
             <img 
               src="/NAP-hero.png" 
               alt="NAP" 
-              className="h-24 sm:h-36 md:h-48 lg:h-56 w-auto object-contain select-none mx-auto transform hover:scale-105 transition-transform duration-300" 
+              className="h-16 sm:h-24 md:h-32 lg:h-36 w-auto object-contain select-none mx-auto" 
             />
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#320b35] font-handwriting -mt-2 sm:-mt-4">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#320b35] font-handwriting mt-2 sm:mt-3">
               — its time to take one :)
             </h1>
           </div>
