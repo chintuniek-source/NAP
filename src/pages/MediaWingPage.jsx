@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, Radio, Headphones, Sparkles, Send, Share2, Disc, Heart, BookOpen, Film, ExternalLink, Clock, Mail, Phone, Instagram, MessageCircle } from 'lucide-react';
 import { episodes } from '../data/episodes';
-import NeoDropdown from '../components/NeoDropdown';
 
 export default function MediaWingPage({ onOpenJoin }) {
   const [activeEp, setActiveEp] = useState(episodes.length > 0 ? episodes.length - 1 : 0);
@@ -113,7 +112,7 @@ export default function MediaWingPage({ onOpenJoin }) {
             {/* Archive List */}
             <div className="lg:col-span-5 p-6 sm:p-8 bg-[#F7F2E7] flex flex-col justify-between">
               <div>
-                <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center justify-between mb-4">
                   <h4 className="font-black text-xl text-[#3E2723] font-display flex items-center gap-2">
                     <Headphones className="w-5 h-5 text-[#004958]" />
                     <span>A Alap Episodes Archive</span>
@@ -121,25 +120,6 @@ export default function MediaWingPage({ onOpenJoin }) {
                   <span className="text-xs font-black bg-[#FFEDA8] text-[#3E2723] px-2.5 py-0.5 rounded-full border border-[#3E2723] shadow-[2px_2px_0px_#3E2723]">
                     {episodes.length} Episodes
                   </span>
-                </div>
-
-                <div className="mb-4">
-                  <NeoDropdown
-                    label="Quick Episode Jump"
-                    options={episodes.map((ep, idx) => ({
-                      value: idx,
-                      label: `${ep.guest} (${ep.badge})`,
-                      icon: '🎧',
-                      badge: ep.duration,
-                      description: ep.title
-                    }))}
-                    value={activeEp}
-                    onChange={(idx) => {
-                      setActiveEp(idx);
-                      setIsPlaying(false);
-                    }}
-                    theme="teal"
-                  />
                 </div>
 
                 <div className="max-h-[580px] overflow-y-auto pr-1.5 space-y-3">

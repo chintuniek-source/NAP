@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Sparkles, Heart, Check, QrCode, Shield, Zap, Smile, Coffee, Feather, Star, Download, PartyPopper } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import NeoDropdown from './NeoDropdown';
 
 export default function BecomeANapperCTA() {
   const [napperName, setNapperName] = useState('Alex River');
@@ -109,23 +108,26 @@ export default function BecomeANapperCTA() {
                 </div>
 
                 <div>
-                  <NeoDropdown
-                    label="Choose Your Special Napper Role"
-                    options={roles.map(r => ({
-                      value: r.title,
-                      label: r.title,
-                      icon: r.emoji,
-                      badge: r.wing,
-                      description: `Official ${r.wing} wing role`
-                    }))}
-                    value={napperRole}
-                    onChange={(val) => {
-                      setNapperRole(val);
-                      const found = roles.find(r => r.title === val);
-                      if (found) setNapperEmoji(found.emoji);
-                    }}
-                    theme="yellow"
-                  />
+                  <label className="block text-xs font-black uppercase text-[#3E2723]/70 mb-1">
+                    Choose Your Special Napper Role
+                  </label>
+                  <div className="grid grid-cols-2 gap-2">
+                    {roles.map((r) => (
+                      <button
+                        key={r.title}
+                        type="button"
+                        onClick={() => { setNapperRole(r.title); setNapperEmoji(r.emoji); }}
+                        className={`px-3 py-2 rounded-xl text-xs font-black border-2 border-[#3E2723] text-left transition-all flex items-center gap-1.5 ${
+                          napperRole === r.title 
+                            ? 'bg-[#FFEDA8] shadow-[2px_2px_0px_#3E2723] text-[#3E2723]' 
+                            : 'bg-white hover:bg-[#FFEDA8]/30 text-[#3E2723]'
+                        }`}
+                      >
+                        <span>{r.emoji}</span>
+                        <span className="truncate">{r.title}</span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
 
                 <div>
