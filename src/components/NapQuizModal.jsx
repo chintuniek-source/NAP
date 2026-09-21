@@ -33,7 +33,7 @@ export default function NapQuizModal({ isOpen, onClose, onSelectResult }) {
       options: [
         { label: "Warm sunrise, fresh coffee aromas, and waffle towers (Breakfast Castle)", category: 'sleep' },
         { label: "A sharp guerilla street campaign with bold neon typography", category: 'pr' },
-        { label: "Intimate candlelit sofa session with guitars and unfiltered stories (An Alap)", category: 'media' },
+        { label: "Intimate candlelit sofa session with guitars and unfiltered stories (An Aalap)", category: 'media' },
         { label: "Feathers flying in slow motion with joyful disco music (Pillow Fight)", category: 'sleep' }
       ]
     }
@@ -80,7 +80,7 @@ export default function NapQuizModal({ isOpen, onClose, onSelectResult }) {
         outcome = {
           title: "The Soulful Story Seeker",
           wing: "Nap Media Wing",
-          recommendation: "You belong on the couch of An Alap listening to unplugged magic!",
+          recommendation: "You belong on the couch of An Aalap listening to unplugged magic!",
           emoji: "🎧",
           bg: "bg-[#004958] text-white",
           cta: "#nap-media"

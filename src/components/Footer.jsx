@@ -22,7 +22,7 @@ export default function Footer({ onOpenJoin }) {
         <span>•</span>
         <span>💡 WHAT-AN-IDEA</span>
         <span>•</span>
-        <span>🎙️ AN ALAP</span>
+        <span>🎙️ AN AALAP</span>
         <span>•</span>
         <span>🛋️ ITS TIME TO TAKE ONE :)</span>
       </div>
@@ -134,7 +134,7 @@ export default function Footer({ onOpenJoin }) {
             <ul className="mt-4 space-y-2.5 text-xs font-bold text-[#F7F2E7]/80">
               <li>
                 <Link to="/media" className="hover:text-[#FFEDA8] transition-colors">
-                  An Alap Series
+                  An Aalap Series
                 </Link>
               </li>
               <li>

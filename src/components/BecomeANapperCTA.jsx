@@ -13,7 +13,7 @@ export default function BecomeANapperCTA() {
   const roles = [
     { title: 'Breakfast Sommelier', emoji: '🥞', wing: 'Sleep Over' },
     { title: 'Pillow Strategist', emoji: '🪶', wing: 'Sleep Over' },
-    { title: 'An Alap Listener', emoji: '🎧', wing: 'Nap Media' },
+    { title: 'An Aalap Listener', emoji: '🎧', wing: 'Nap Media' },
     { title: 'PR Guerrilla Maverick', emoji: '⚡', wing: 'Image Management' },
     { title: 'Chief Sloth Officer', emoji: '🛋️', wing: 'Culture' }
   ];
@@ -185,7 +185,7 @@ export default function BecomeANapperCTA() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <Check className="w-3.5 h-3.5 text-[#320b35]" />
-                  <span>Live An Alap Couch Passes</span>
+                  <span>Live An Aalap Couch Passes</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <Check className="w-3.5 h-3.5 text-[#320b35]" />

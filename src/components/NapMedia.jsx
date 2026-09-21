@@ -30,7 +30,7 @@ export default function NapMedia() {
               <span>Series Spotlight</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-[#320b35] font-display tracking-tight">
-              An Alap
+              An Aalap
             </h2>
             <p className="text-xs sm:text-sm font-bold text-[#320b35]/70 mt-0.5">
               Intimate acoustic conversations & unfiltered stories with creators and icons.

@@ -137,7 +137,7 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
               <p className="text-xs font-bold text-gray-600 mt-1 uppercase">Good Vibes Only</p>
             </div>
             <div className="p-4 bg-white rounded-2xl border-2 border-[#320b35] shadow-[4px_4px_0px_#320b35] text-center">
-              <span className="text-3xl font-black text-[#320b35]">An Alap</span>
+              <span className="text-3xl font-black text-[#320b35]">An Aalap</span>
               <p className="text-xs font-bold text-gray-600 mt-1 uppercase">Original Episodes</p>
             </div>
           </div>
@@ -212,11 +212,11 @@ export default function Hero({ onOpenJoin, onOpenQuiz }) {
                 Nap Media
               </h3>
               <p className="mt-2 text-sm text-[#320b35]/80 font-medium leading-relaxed">
-                The content & media wing: Home to <strong>An Alap</strong> — intimate, acoustic conversations and unfiltered storytelling with icons.
+                The content & media wing: Home to <strong>An Aalap</strong> — intimate, acoustic conversations and unfiltered storytelling with icons.
               </p>
             </div>
             <div className="mt-6 flex items-center justify-between text-xs font-black text-[#320b35] pt-4 border-t-2 border-[#320b35]/20">
-              <span>STREAM AN ALAP</span>
+              <span>STREAM AN AALAP</span>
               <ArrowDownRight className="w-4 h-4 transform group-hover:rotate-[-45deg] transition-transform" />
             </div>
           </a>

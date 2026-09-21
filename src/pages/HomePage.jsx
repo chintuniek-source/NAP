@@ -210,7 +210,7 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <p className="text-sm font-bold text-[#004958] font-handwriting text-xl">
-                    The Media & Content Wing • An Alap
+                    The Media & Content Wing • An Aalap
                   </p>
                   <p className="mt-3 text-sm text-[#320b35]/80 font-medium leading-relaxed">
                     Long-form soul, unscripted podcasts, and acoustic discovery:
@@ -218,7 +218,7 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
 
                   <div className="mt-4 space-y-2">
                     <div className="p-2.5 rounded-xl bg-white border border-[#320b35] flex items-center justify-between text-xs font-bold text-[#320b35]">
-                      <span>🎙️ An Alap Flagship Show</span>
+                      <span>🎙️ An Aalap Flagship Show</span>
                       <span className="text-[10px] bg-[#CDD6B7] px-2 py-0.5 rounded border border-[#320b35] font-extrabold text-[#320b35]">Acoustic Talks</span>
                     </div>
                     <div className="p-2.5 rounded-xl bg-white border border-[#320b35] flex items-center justify-between text-xs font-bold text-[#320b35]">
@@ -247,7 +247,7 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
         </div>
       </section>
 
-      {/* 3. An Alap Flagship Show Section */}
+      {/* 3. An Aalap Flagship Show Section */}
       <NapMedia onOpenJoin={onOpenJoin} />
 
       {/* 4. Upcoming Specials (Amol Parashar Featured Entry) */}

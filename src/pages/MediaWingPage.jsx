@@ -26,7 +26,7 @@ export default function MediaWingPage({ onOpenJoin }) {
           </h1>
           
           <p className="mt-4 text-2xl sm:text-3xl font-extrabold text-[#004958] font-handwriting">
-            Nap Media • Home to An Alap
+            Nap Media • Home to An Aalap
           </p>
           
           <p className="mt-4 text-base sm:text-lg text-[#320b35]/80 max-w-2xl mx-auto font-medium leading-relaxed">
@@ -37,12 +37,12 @@ export default function MediaWingPage({ onOpenJoin }) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 space-y-20">
         
-        {/* AN ALAP FLAGSHIP PLAYER MODULE */}
+        {/* AN AALAP FLAGSHIP PLAYER MODULE */}
         <section className="bg-white rounded-3xl border-3 border-[#320b35] shadow-[10px_10px_0px_#320b35] overflow-hidden">
           <div className="bg-[#004958] text-white p-6 sm:p-8 border-b-3 border-[#320b35] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
               <h2 className="text-3xl sm:text-5xl font-black text-white font-display">
-                An Alap
+                An Aalap
               </h2>
               <p className="text-sm font-bold text-white/90 mt-1">Intimate Acoustic Explorations & Unfiltered Conversations</p>
             </div>
@@ -115,7 +115,7 @@ export default function MediaWingPage({ onOpenJoin }) {
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="font-black text-xl text-[#320b35] font-display flex items-center gap-2">
                     <Headphones className="w-5 h-5 text-[#004958]" />
-                    <span>An Alap Episodes Archive</span>
+                    <span>An Aalap Episodes Archive</span>
                   </h4>
                   <span className="text-xs font-black bg-[#FFEDA8] text-[#320b35] px-2.5 py-0.5 rounded-full border border-[#320b35] shadow-[2px_2px_0px_#320b35]">
                     {episodes.length} Episodes
@@ -184,7 +184,7 @@ export default function MediaWingPage({ onOpenJoin }) {
                 Creator Open Call
               </span>
               <h3 className="text-3xl sm:text-4xl font-black font-display mt-3 text-white">
-                Pitch Yourself for An Alap
+                Pitch Yourself for An Aalap
               </h3>
               <p className="text-xs sm:text-sm text-white/90 font-semibold mt-1">
                 Are you an indie musician, storyteller, poet, or cultural explorer? Reach out to our curation team directly.
@@ -206,7 +206,7 @@ export default function MediaWingPage({ onOpenJoin }) {
                     </p>
                   </div>
                   <a
-                    href="mailto:nap@nappers.in?subject=An%20Alap%20Creator%20Pitch"
+                    href="mailto:nap@nappers.in?subject=An%20Aalap%20Creator%20Pitch"
                     className="mt-4 inline-flex items-center justify-center gap-1.5 w-full py-2.5 px-3 rounded-xl bg-[#FFEDA8] hover:bg-[#ffe380] text-[#320b35] border-2 border-[#320b35] font-black text-xs shadow-[2px_2px_0px_#320b35] transition-all hover:translate-x-0.5 hover:translate-y-0.5"
                   >
                     <Mail className="w-3.5 h-3.5" />
