@@ -9,7 +9,7 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
     "from toxic hustle pressure",
     "from boring corporate PR",
     "with community & pillow fights",
-    "into soulful stories on A Alap",
+    "into soulful stories on An Alap",
     "from endless screen fatigue"
   ];
   const [wordIndex, setWordIndex] = useState(0);
@@ -184,7 +184,7 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <p className="text-sm font-bold text-[#004958] font-handwriting text-xl">
-                    The Media & Content Wing • A Alap
+                    The Media & Content Wing • An Alap
                   </p>
                   <p className="mt-3 text-sm text-[#3E2723]/80 font-medium leading-relaxed">
                     Long-form soul, unscripted podcasts, and acoustic discovery:
@@ -192,7 +192,7 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
 
                   <div className="mt-4 space-y-2">
                     <div className="p-2.5 rounded-xl bg-white border border-[#3E2723] flex items-center justify-between text-xs font-bold text-[#3E2723]">
-                      <span>🎙️ A Alap Flagship Show</span>
+                      <span>🎙️ An Alap Flagship Show</span>
                       <span className="text-[10px] bg-[#CDD6B7] px-2 py-0.5 rounded border border-[#3E2723] font-extrabold text-[#3E2723]">Acoustic Talks</span>
                     </div>
                     <div className="p-2.5 rounded-xl bg-white border border-[#3E2723] flex items-center justify-between text-xs font-bold text-[#3E2723]">
@@ -221,7 +221,7 @@ export default function HomePage({ onOpenQuiz, onOpenJoin }) {
         </div>
       </section>
 
-      {/* 3. A Alap Flagship Show Section */}
+      {/* 3. An Alap Flagship Show Section */}
       <NapMedia onOpenJoin={onOpenJoin} />
 
       {/* 4. Upcoming Specials (Amol Parashar Featured Entry) */}

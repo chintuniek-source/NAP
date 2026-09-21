@@ -29,7 +29,7 @@ A colorful, vibrant, and interactive web platform built according to the **NAP M
 
 ### 3. Page 3 — Nap Media
 *The media/content wing:*
-- **A Alap**: Signature intimate musical & conversational series where creators, thinkers, and musicians share unfiltered stories.
+- **An Alap**: Signature intimate musical & conversational series where creators, thinkers, and musicians share unfiltered stories.
 - Features an interactive audio waveform player with episode browser, guest roster, and track playback.
 
 ### 4. Front-Page / Bottom Modules
