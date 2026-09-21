@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { Sparkles, Coffee, Mic, Trophy, Heart, Check, Calendar, Users, ShieldCheck, Flame, Plus, RotateCcw, Ticket, Star } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import NeoDropdown from '../components/NeoDropdown';
 
 export default function SleepOverPage({ onOpenJoin }) {
   // State for interactive pancake stacker
   const [pancakeStack, setPancakeStack] = useState(['Buttermilk Base', 'Wild Blueberry Puree', 'Whipped Cloud Butter']);
   const [bookedArena, setBookedArena] = useState(false);
   const [pitchSubmitted, setPitchSubmitted] = useState(false);
-  const [couchForm, setCouchForm] = useState({ name: '', talent: 'Spoken Word & Poetry', notes: '' });
+  const [pillowClass, setPillowClass] = useState('cloud-memory');
+  const [couchForm, setCouchForm] = useState({ name: '', talent: 'spoken-word', notes: '' });
 
   const toppings = [
     'Maple Syrup Drizzle 🍁',
@@ -147,16 +149,19 @@ export default function SleepOverPage({ onOpenJoin }) {
                       onChange={(e) => setCouchForm({ ...couchForm, name: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-xl border-2 border-[#3E2723] text-xs font-bold bg-white"
                     />
-                    <select
+                    <NeoDropdown
+                      options={[
+                        { value: 'spoken-word', label: 'Spoken Word & Poetry', icon: '🎙️', badge: 'Cozy Mic', description: 'Raw verses & spoken rhythm' },
+                        { value: 'acoustic-vocal', label: 'Acoustic Guitar / Vocal', icon: '🎸', badge: 'Unplugged', description: 'Original songs & warm chords' },
+                        { value: 'unfinished-comedy', label: 'Unfinished Comedy Thoughts', icon: '🎭', badge: 'Laughs', description: 'Observational riffs without hecklers' },
+                        { value: 'personal-story', label: 'Personal Storytelling', icon: '📖', badge: 'Unfiltered', description: 'Vulnerable & true human tales' },
+                        { value: 'ambient-lofi', label: 'Ambient & Chill Beats', icon: '🎧', badge: 'Zen Vibe', description: 'Modular synth & soft textures' }
+                      ]}
                       value={couchForm.talent}
-                      onChange={(e) => setCouchForm({ ...couchForm, talent: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border-2 border-[#3E2723] text-xs font-bold bg-white"
-                    >
-                      <option>Spoken Word & Poetry</option>
-                      <option>Acoustic Guitar / Vocal</option>
-                      <option>Unfinished Comedy Thoughts</option>
-                      <option>Personal Storytelling</option>
-                    </select>
+                      onChange={(val) => setCouchForm({ ...couchForm, talent: val })}
+                      theme="yellow"
+                      placeholder="Select your couch talent vibe"
+                    />
                     <textarea
                       rows="2"
                       placeholder="What vibe are you bringing to the lounge?"
@@ -344,9 +349,24 @@ export default function SleepOverPage({ onOpenJoin }) {
                   </h4>
                   <p className="text-xs text-gray-600 mt-1">Includes pillow loan, safety goggles, and post-match smoothie.</p>
 
-                  <div className="my-6 p-4 rounded-2xl bg-white border-2 border-dashed border-gray-400 text-center">
+                  <div className="my-4">
+                    <NeoDropdown
+                      label="Select Your Combat Pillow Class"
+                      options={[
+                        { value: 'featherweight', label: 'Featherweight Fluff', icon: '🪶', badge: 'Beginner', description: 'Ultra-light aerated down' },
+                        { value: 'cloud-memory', label: 'Cloud Memory Foam', icon: '☁️', badge: 'Balanced', description: 'Firm bounce & high velocity' },
+                        { value: 'velvet-bolster', label: 'Velvet Bolster Brawler', icon: '🛋️', badge: 'Legendary', description: 'Heavyweight cushion defense' },
+                        { value: 'silk-pillow', label: 'Silk Pajama Stealth', icon: '✨', badge: 'Speed', description: 'Fast tactical swings' }
+                      ]}
+                      value={pillowClass}
+                      onChange={setPillowClass}
+                      theme="mint"
+                    />
+                  </div>
+
+                  <div className="my-4 p-3.5 rounded-2xl bg-white border-2 border-dashed border-gray-400 text-center">
                     <p className="text-[10px] uppercase font-black text-gray-400">Entry Ticket ID</p>
-                    <p className="text-2xl font-black text-[#004958] font-mono">PILLOW-ARENA-99</p>
+                    <p className="text-xl font-black text-[#004958] font-mono">PILLOW-{pillowClass.toUpperCase()}-99</p>
                   </div>
                 </div>
 

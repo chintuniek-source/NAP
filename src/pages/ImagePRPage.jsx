@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, Brain, Compass, Lightbulb, Building, Send, CheckCircle2, ArrowRight, ShieldCheck, Flame, Star } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import NeoDropdown from '../components/NeoDropdown';
 
 export default function ImagePRPage({ onOpenJoin }) {
   const [selectedPillar, setSelectedPillar] = useState('counsellor');
@@ -277,36 +278,34 @@ export default function ImagePRPage({ onOpenJoin }) {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-black uppercase text-[#3E2723]/80 mb-1">
-                      Primary Practice Area
-                    </label>
-                    <select
+                    <NeoDropdown
+                      label="Primary Practice Area"
+                      options={[
+                        { value: 'counsellor', label: 'Counsellor', icon: '🧠', badge: 'Therapy & PR', description: 'Reputation advisory & executive narrative' },
+                        { value: 'event-curation', label: 'Event Curation', icon: '🎪', badge: 'Activations', description: 'Cozy pop-up lounges & experiential design' },
+                        { value: 'what-an-idea', label: 'What-an-idea Promotion', icon: '💡', badge: 'Guerrilla', description: 'Viral PR hooks & cultural street stunts' },
+                        { value: 'brand-building', label: 'Brand Image Building', icon: '🏛️', badge: 'Identity', description: 'End-to-end visual identity & tonality' },
+                        { value: 'full-suite', label: 'Full PR & Image Suite', icon: '⚡', badge: 'All-in-One', description: 'Complete holistic brand stewardship' }
+                      ]}
                       value={formData.serviceInterest}
-                      onChange={(e) => setFormData({ ...formData, serviceInterest: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl border-2 border-[#3E2723] text-sm font-bold bg-[#F7F2E7] text-[#3E2723]"
-                    >
-                      <option>Counsellor (Advisory & Therapy)</option>
-                      <option>Event Curation (Pop-Up & Activation)</option>
-                      <option>What-an-idea Promotion (Guerrilla Stunt)</option>
-                      <option>Brand Image Building (Full Identity)</option>
-                      <option>Full PR & Image Suite</option>
-                    </select>
+                      onChange={(val) => setFormData({ ...formData, serviceInterest: val })}
+                      theme="berry"
+                    />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-black uppercase text-[#3E2723]/80 mb-1">
-                      Project Timeline
-                    </label>
-                    <select
+                    <NeoDropdown
+                      label="Project Timeline"
+                      options={[
+                        { value: 'urgent', label: 'Immediate / Urgent', icon: '🔥', badge: '2 Weeks', description: 'Fast-track emergency launch or crisis' },
+                        { value: '30-days', label: 'Within 30 Days', icon: '⏳', badge: 'Standard', description: 'Upcoming campaign kickoff' },
+                        { value: 'next-quarter', label: 'Next Quarter', icon: '🗓️', badge: 'Planning', description: 'Strategic rebrand roadmap' },
+                        { value: 'exploring', label: 'Exploring Options', icon: '🌱', badge: 'Discovery', description: 'Initial diagnostic & conversation' }
+                      ]}
                       value={formData.timeline}
-                      onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl border-2 border-[#3E2723] text-sm font-bold bg-[#F7F2E7] text-[#3E2723]"
-                    >
-                      <option>Immediate / Urgent (Next 2 Weeks)</option>
-                      <option>Within 30 Days</option>
-                      <option>Next Quarter</option>
-                      <option>Exploring Options</option>
-                    </select>
+                      onChange={(val) => setFormData({ ...formData, timeline: val })}
+                      theme="peach"
+                    />
                   </div>
                 </div>
 

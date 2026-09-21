@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Target, Zap, Lightbulb, Compass, Award, ArrowUpRight, CheckCircle2, MessageSquare, Send, Sparkles } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import NeoDropdown from './NeoDropdown';
 
 export default function ImageManagement({ onOpenJoin }) {
   const [showInquiryModal, setShowInquiryModal] = useState(false);
@@ -211,16 +212,36 @@ export default function ImageManagement({ onOpenJoin }) {
 
             {!inquirySubmitted ? (
               <form onSubmit={handleInquirySubmit} className="mt-5 space-y-4">
-                <div>
-                  <label className="block text-xs font-black uppercase tracking-wider text-[#3E2723]/70 mb-1">
-                    Selected Focus Area
-                  </label>
-                  <input
-                    type="text"
-                    value={selectedService}
-                    readOnly
-                    className="w-full px-4 py-2.5 rounded-xl border-2 border-[#3E2723] bg-[#F7F2E7] text-sm font-bold text-[#3E2723]"
-                  />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <NeoDropdown
+                      label="Practice Focus"
+                      options={[
+                        { value: 'Brand Image Building', label: 'Brand Image Building', icon: '🏛️', badge: 'Identity' },
+                        { value: 'Counsellor', label: 'Counsellor', icon: '🧠', badge: 'Therapy & PR' },
+                        { value: 'Event Curation', label: 'Event Curation', icon: '🎪', badge: 'Activations' },
+                        { value: 'What-an-idea Promotion', label: 'What-an-idea Promotion', icon: '💡', badge: 'Guerrilla' },
+                        { value: 'Full Suite Consulting', label: 'Full Suite Consulting', icon: '⚡', badge: 'All Wings' }
+                      ]}
+                      value={selectedService}
+                      onChange={setSelectedService}
+                      theme="berry"
+                    />
+                  </div>
+                  <div>
+                    <NeoDropdown
+                      label="Budget Scope"
+                      options={[
+                        { value: '$5k - $15k', label: '$5k - $15k (Sprint)', icon: '💼', badge: 'Starter' },
+                        { value: '$15k - $50k', label: '$15k - $50k (Launch)', icon: '🚀', badge: 'Growth' },
+                        { value: '$50k+', label: '$50k+ (Enterprise)', icon: '🏛️', badge: 'Full Suite' },
+                        { value: 'Custom', label: 'Custom Partnership', icon: '🤝', badge: 'Special' }
+                      ]}
+                      value={formData.budget}
+                      onChange={(val) => setFormData({ ...formData, budget: val })}
+                      theme="yellow"
+                    />
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

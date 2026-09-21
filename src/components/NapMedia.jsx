@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Play, Headphones, Sparkles, ExternalLink, Clock, ArrowRight } from 'lucide-react';
 import { episodes } from '../data/episodes';
+import NeoDropdown from './NeoDropdown';
 
 export default function NapMedia() {
   const [activeEpisode, setActiveEpisode] = useState(episodes.length > 0 ? episodes.length - 1 : 0);
@@ -95,17 +96,27 @@ export default function NapMedia() {
 
             {/* Right: Brief Episode Selector */}
             <div className="lg:col-span-5 flex flex-col justify-between">
-              <div className="flex items-center justify-between pb-2 mb-2 border-b border-gray-200">
-                <span className="text-xs font-black uppercase text-gray-500 tracking-wider flex items-center gap-1.5">
-                  <Headphones className="w-3.5 h-3.5 text-[#004958]" />
-                  <span>Quick Selector</span>
-                </span>
-                <span className="text-[11px] font-bold text-[#004958]">
-                  {activeEpisode + 1} of {episodes.length}
-                </span>
+              <div className="mb-2">
+                <NeoDropdown
+                  options={episodes.map((ep, idx) => ({
+                    value: idx,
+                    label: `${ep.guest}`,
+                    icon: '🎙️',
+                    badge: ep.duration,
+                    description: ep.title
+                  }))}
+                  value={activeEpisode}
+                  onChange={(idx) => {
+                    setActiveEpisode(idx);
+                    setIsPlaying(false);
+                  }}
+                  theme="teal"
+                  size="sm"
+                  placeholder="Jump to episode..."
+                />
               </div>
 
-              <div className="max-h-[250px] overflow-y-auto pr-1 space-y-1.5">
+              <div className="max-h-[220px] overflow-y-auto pr-1 space-y-1.5">
                 {episodes.map((ep, index) => {
                   const isSelected = activeEpisode === index;
                   return (
