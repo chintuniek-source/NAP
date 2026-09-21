@@ -106,7 +106,7 @@ export default function Footer({ onOpenJoin }) {
               </li>
               <li>
                 <Link to="/sleep-over" className="hover:text-[#FFEDA8] transition-colors">
-                  Pillow Fight Arena
+                  Pillow Fight
                 </Link>
               </li>
             </ul>
