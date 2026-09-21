@@ -51,8 +51,8 @@ export default function Navbar() {
           
           {/* Brand Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-full bg-[#FFEDA8] border-2 border-[#320b35] shadow-[3px_3px_0px_#320b35] overflow-hidden flex items-center justify-center transform group-hover:rotate-6 group-hover:scale-105 transition-all">
-              <img src="/NAP.png" alt="NAP Logo" className="w-full h-full object-cover" />
+            <div className="w-11 h-11 rounded-full bg-[#320b35] border-2 border-[#320b35] shadow-[3px_3px_0px_#320b35] overflow-hidden flex items-center justify-center transform group-hover:rotate-6 group-hover:scale-105 transition-all">
+              <img src="/NAP-dark.png" alt="NAP Logo" className="w-full h-full object-cover" />
             </div>
             <div>
               <div className="flex items-center">
