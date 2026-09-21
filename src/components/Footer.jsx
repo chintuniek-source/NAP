@@ -124,23 +124,8 @@ export default function Footer({ onOpenJoin }) {
             </span>
             <ul className="mt-4 space-y-2.5 text-xs font-bold text-[#F7F2E7]/80">
               <li>
-                <Link to="/image-pr" className="hover:text-[#CDD6B7] transition-colors">
-                  Counsellor Advisory
-                </Link>
-              </li>
-              <li>
-                <Link to="/image-pr" className="hover:text-[#CDD6B7] transition-colors">
-                  Event Curation
-                </Link>
-              </li>
-              <li>
-                <Link to="/image-pr" className="hover:text-[#CDD6B7] transition-colors">
-                  What-an-idea Promotion
-                </Link>
-              </li>
-              <li>
-                <Link to="/image-pr" className="hover:text-[#CDD6B7] transition-colors">
-                  Brand Image Building
+                <Link to="/image-pr#inquiry" className="hover:text-[#CDD6B7] transition-colors">
+                  Brand Consultation Form
                 </Link>
               </li>
             </ul>
