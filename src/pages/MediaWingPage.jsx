@@ -42,7 +42,7 @@ export default function MediaWingPage({ onOpenJoin }) {
           <div className="bg-[#004958] text-white p-6 sm:p-8 border-b-3 border-[#320b35] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
               <h2 className="text-3xl sm:text-5xl font-black text-white font-display">
-                An Alap (এ আলাপ)
+                An Alap
               </h2>
               <p className="text-sm font-bold text-white/90 mt-1">Intimate Acoustic Explorations & Unfiltered Conversations</p>
             </div>
