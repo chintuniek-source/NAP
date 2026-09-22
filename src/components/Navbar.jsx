@@ -56,9 +56,7 @@ export default function Navbar() {
             </div>
             <div>
               <div className="flex items-center">
-                <span className="text-2xl sm:text-3xl font-black tracking-tight text-[#320b35] font-display">
-                  NAP
-                </span>
+                <img src="/NAP-hero.png" alt="NAP" className="h-6 sm:h-7 w-auto object-contain" />
               </div>
               <p className="text-xs font-bold text-[#320b35] tracking-wide -mt-1 font-handwriting text-base">
                 its time to take one :)

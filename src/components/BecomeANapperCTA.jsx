@@ -206,8 +206,8 @@ export default function BecomeANapperCTA() {
                         <img src="/NAP.png" alt="NAP Logo" className="w-full h-full object-cover" />
                       </div>
                       <div>
-                        <span className="font-black text-lg tracking-tight font-display text-[#320b35]">NAP</span>
-                        <p className="text-[9px] font-bold text-[#320b35] -mt-1 font-handwriting">its time to take one :)</p>
+                        <img src="/NAP-hero.png" alt="NAP" className="h-4 sm:h-5 w-auto object-contain" />
+                        <p className="text-[9px] font-bold text-[#320b35] -mt-0.5 font-handwriting">its time to take one :)</p>
                       </div>
                     </div>
                     <span className="text-[10px] font-black px-2.5 py-0.5 rounded-full bg-[#CDD6B7] text-[#320b35] border border-[#320b35] uppercase tracking-wider">
